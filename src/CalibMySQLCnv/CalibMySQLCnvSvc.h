@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.10 2003/05/01 21:54:08 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.11 2004/04/15 19:03:42 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -148,6 +148,8 @@ class CalibMySQLCnvSvc : public ConversionSvc,
 
   std::string m_enterTimeStartString;
   std::string m_enterTimeEndString;
+
+  std::string m_dbName;
 
   /// Interval in seconds
 
