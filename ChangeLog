@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 11 16:38:00 PST 2003
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Add some support for alternate flavors
+
+    *
+------------------------------------------------------------
 User: heather  Tue Feb 11 11:03:52 PST 2003
 CalibSvc/cmt
 
