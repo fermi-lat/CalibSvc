@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.14 2003/11/22 00:52:45 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.15 2004/01/08 18:30:59 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -32,11 +32,13 @@ namespace {
     using idents::CalXtalId;
 
     std::string att = Dom::getAttribute(rangeElt, "range");
+    if (att.size() == 0) {  // range not applicable
+      return 0;
+    }
     if (att.compare(std::string("LEX8")) == 0) return CalXtalId::LEX8;
     if (att.compare(std::string("LEX1")) == 0) return CalXtalId::LEX1;
     if (att.compare(std::string("HEX8")) == 0) return CalXtalId::HEX8;
     if (att.compare(std::string("HEX1")) == 0) return CalXtalId::HEX1; 
-    return 0;
   }
 
   unsigned findFace(const DOM_Element& faceElt) {
