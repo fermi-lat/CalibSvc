@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 13 16:25:53 PST 2005
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+      Tag: EM-HEAD1227
+	XmlCalBaseCnv.cxx 
+Log Message:
+Fix bug on EM branch as well as main
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: EM-HEAD1227, operation: add
 Package: CalibSvc
