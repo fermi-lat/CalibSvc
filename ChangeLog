@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:49:20 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add new compile directories.  Add use of calibRootData package
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 26 22:48:28 PDT 2004
 CalibSvc/CalibSvc
 
