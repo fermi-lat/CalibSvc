@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 14 16:17:40 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Translate environment variables in file name
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 14 15:26:06 PST 2003
 CalibSvc/src/test
 
