@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul 29 12:23:38 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions-acd.txt jobOptions-intNonlin.txt 
+	jobOptions-lightAsym.txt jobOptions.txt 
+	jobOptions.txt.dataTime jobOptions.txt.enter_time 
+	jobOptions.txt.gainsRoot jobOptions.txt.standard 
+Log Message:
+Bring sample job options files into conformance with new scheme for 
+requesting fake clock.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jul 29 12:22:59 PDT 2004
 CalibSvc/src/CalibDataSvc
 
