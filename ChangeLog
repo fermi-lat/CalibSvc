@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  2 16:30:51 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v0r12
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  2 16:26:45 PDT 2004
 CalibSvc/src/CalibDataSvc
 
