@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.8 2003/01/15 01:22:58 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.9 2003/01/18 00:59:11 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -126,6 +126,9 @@ class CalibMySQLCnvSvc : public ConversionSvc,
 
   /// Handle for metadata access
   calibUtil::Metadata*    m_meta;
+
+  /// MySQL host, a job options parameter.
+  std::string             m_host;  
 
   /// How official does a calibration have to be in order to be acceptable
   /// Should default to calibUtil::Metadata::LEVELProd
