@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb  5 14:49:00 PST 2003
+CalibSvc/src/CalibROOTCnv
+
+Added Files:
+	CalibRootCnvSvc.cxx CalibRootCnvSvc.h 
+Log Message:
+Start of Calibration ROOT conversion service implementation
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb  4 13:29:21 PST 2003
 CalibSvc/src/test
 
