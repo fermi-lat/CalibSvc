@@ -1,11 +1,7 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.2 2003/01/09 22:33:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.3 2003/01/15 01:23:40 jrb Exp $
 
 #include <string>
 #include "XmlTest1Cnv.h"
-
-// #include <util/XMLUni.hpp>
-// #include <util/XMLString.hpp>
-
 #include "GaudiKernel/CnvFactory.h"
 #include "GaudiKernel/IOpaqueAddress.h"
 #include "GaudiKernel/DataObject.h"

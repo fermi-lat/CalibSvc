@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.h,v 1.1 2003/01/29 18:32:15 jrb Exp $
 #ifndef CalibSvc_XmlBadStripsCnv_h
 #define CalibSvc_XmlBadStripsCnv_h
 
@@ -9,7 +9,7 @@
   @author J. Bogart
 */
 #include "XmlBaseCnv.h"
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 #include "CalibData/Tkr/BadStrips.h"
 
 

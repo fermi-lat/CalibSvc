@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.6 2003/01/15 01:23:40 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.7 2003/02/25 06:48:20 jrb Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -12,7 +12,7 @@
 */
 #include "GaudiKernel/Converter.h"
 #include "GaudiKernel/CnvFactory.h"
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 
 class ISvcLocator;
 class GenericAddress;

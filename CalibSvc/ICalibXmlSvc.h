@@ -1,4 +1,4 @@
-// $Header:   $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibXmlSvc.h,v 1.1 2002/12/14 00:07:38 jrb Exp $
 
 #ifndef IXMLSvc_h 
 #define IXMLSvc_h
@@ -15,7 +15,7 @@
 
 */
 #include "GaudiKernel/IInterface.h"
-#include <dom/DOM_Document.hpp>
+#include <xercesc/dom/DOM_Document.hpp>
 
 static const InterfaceID IID_ICalibXmlSvc("ICalibXmlSvc", 1, 0);
 

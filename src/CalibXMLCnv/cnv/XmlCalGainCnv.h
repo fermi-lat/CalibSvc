@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.h,v 1.1 2003/02/25 07:14:14 jrb Exp $
 #ifndef CalibSvc_XmlCalGainCnv_h
 #define CalibSvc_XmlCalGainCnv_h
 
@@ -9,7 +9,7 @@
   @author J. Bogart
 */
 #include "XmlBaseCnv.h"
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 
 template <class TYPE> class CnvFactory;
 

@@ -1,9 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.10 2003/02/27 01:03:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.11 2003/02/28 23:40:49 jrb Exp $
 
 #include "XmlBaseCnv.h"
-
-// #include <util/XMLUni.hpp>
-// #include <util/XMLString.hpp>
 
 #include "GaudiKernel/CnvFactory.h"
 #include "GaudiKernel/IOpaqueAddress.h"
@@ -25,8 +22,8 @@
 
 #include "facilities/Util.h"
 
-#include <dom/DOM_Document.hpp>
-#include <dom/DOM_NodeList.hpp>
+#include <xercesc/dom/DOM_Document.hpp>
+#include <xercesc/dom/DOM_NodeList.hpp>
 
 // Local utilities to interpret attributes 
 namespace {
