@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 14 15:26:06 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	EvtClock.cxx EvtClock.h UseCalib.cxx jobOptions.txt 
+Log Message:
+EvtClock:  Somewhat better use of properties
+UseCalib:  Be sure to look up a calib data type that's actually there
+jobOptions.txt:  Declare CalibXmlCnvSvc as a conversion service so that
+the persistency service can find it [definitely is necessary]
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 14 15:23:36 PST 2003
 CalibSvc/src/CalibXMLCnv
 
