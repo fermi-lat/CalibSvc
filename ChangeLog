@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov 22 10:12:08 PST 2002
+CalibSvc/CalibSvc
+
+Modified Files:
+	IInstrumentName.h 
+Log Message:
+Abstract interface for keeping track of instrument, implemented by CalibDataSvc
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 19 12:04:55 PST 2002
 CalibSvc/src/CalibMySQLCnv
 
