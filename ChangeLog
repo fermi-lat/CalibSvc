@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 10 16:12:35 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlAcdBaseCnv.cxx XmlAcdBaseCnv.h XmlAcdGainCnv.cxx 
+	XmlAcdGainCnv.h XmlAcdPedCnv.cxx XmlAcdPedCnv.h 
+	XmlBadStripsCnv.cxx XmlBadStripsCnv.h XmlBaseCnv.cxx 
+	XmlBaseCnv.h XmlCalAsym.cxx XmlCalBaseCnv.cxx XmlCalBaseCnv.h 
+	XmlCalGainCnv.cxx XmlCalGainCnv.h XmlCalIntNonlinCnv.cxx 
+	XmlCalIntNonlinCnv.h XmlCalLightAsymCnv.cxx 
+	XmlCalLightAsymCnv.h XmlCalLightAttCnv.cxx XmlCalLightAttCnv.h 
+	XmlCalMevPerDac.cxx XmlCalMuSlopeCnv.cxx XmlCalMuSlopeCnv.h 
+	XmlCalPedCnv.cxx XmlCalPedCnv.h XmlCalTholdCI.cxx 
+	XmlCalTholdMuon.cxx XmlTest1Cnv.cxx XmlTest1Cnv.h 
+	XmlTkrBaseCnv.cxx XmlTkrBaseCnv.h XmlTkrSplitsCnv.cxx 
+Log Message:
+Changes for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 10 16:12:22 PST 2004
 CalibSvc/src/CalibXMLCnv
 
