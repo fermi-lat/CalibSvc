@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 29 00:35:56 PST 2004
+CalibSvc/src/test
+
+Added Files:
+	UseTot.cxx jobOptions.txt.tot 
+Log Message:
+Test algorithm and job options for ToT calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Dec 29 00:34:58 PST 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
