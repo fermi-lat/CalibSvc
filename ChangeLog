@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct  7 12:49:12 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UseAsym.cxx UseIntNonlin.cxx UseMevPerDac.cxx UsePeds.cxx 
+	UseTholdMuon.cxx 
+Added Files:
+	jobOptions.txt.tholdCI 
+Log Message:
+To exercise last of new CAL calibration types
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct  6 17:10:44 PDT 2004
 CalibSvc/doc
 
