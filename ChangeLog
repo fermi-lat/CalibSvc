@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 16 16:09:57 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Don't misspell pattern names!
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 16 12:23:36 PST 2003
 CalibSvc/src/test
 
