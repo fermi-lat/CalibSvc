@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul 15 08:50:40 PDT 2004
+CalibSvc/src/test
+
+Removed Files:
+	recon.root 
+Log Message:
+Unused, so remove
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jul 14 23:27:36 PDT 2004
 CalibSvc/doc
 
