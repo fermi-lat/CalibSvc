@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 13 16:10:51 PST 2002
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h XmlTest1Cnv.h 
+Log Message:
+First draft of base xml converter; concrete converter XmlTest1Cnv still
+lacking implementation file
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 13 16:09:52 PST 2002
 CalibSvc/src/CalibXMLCnv
 
