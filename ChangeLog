@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:48:03 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add "use" of astro package in order to fetch missionStart time
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  2 16:32:41 PDT 2004
 CalibSvc/doc
 
