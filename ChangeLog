@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Mar 24 18:06:32 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlCalGainCnv.cxx 
+Log Message:
+Bug fix: put the per-range information in the right place.
+
+    *
+------------------------------------------------------------
 User: jrb  Sat Mar 22 13:26:29 PST 2003
 CalibSvc/doc
 
