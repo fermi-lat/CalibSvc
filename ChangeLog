@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 20 16:59:14 PST 2002
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h XmlTest1Cnv.h 
+Added Files:
+	XmlTest1Cnv.cxx 
+Log Message:
+First concrete converter and supporting cast
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 20 16:58:38 PST 2002
 CalibSvc/src/CalibMySQLCnv
 
