@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  8 10:30:59 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Minor change needed to support CAL light attenuation calibration type
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan  7 15:37:30 PST 2004
 CalibSvc/src/Dll
 
