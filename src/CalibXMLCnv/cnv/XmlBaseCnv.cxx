@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.20 2004/05/26 22:44:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.21 2004/06/11 20:48:34 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -17,7 +17,8 @@
 #include "xml/Dom.h"
 
 // A little ugly to include this here.  It's needed for 
-// CAL-specific utilities findNextRange, findFirstRange
+// CAL-specific utilities involving dac collections (maybe should be
+// moved to XmlCalbaseCnv ?)
 #include "idents/CalXtalId.h"
 
 // Similarly this is needed for calibrations involving dac settings
