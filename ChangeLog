@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Mar 17 09:48:32 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v0r2p2
+    *
+------------------------------------------------------------
 User: jrb  Sun Mar 16 22:55:34 PST 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
