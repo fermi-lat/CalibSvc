@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.3 2003/07/11 19:45:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.4 2003/11/22 00:52:45 jrb Exp $
 
 #include <string>
 #include "XmlBadStripsCnv.h"
@@ -233,32 +233,34 @@ StatusCode XmlBadStripsCnv::addStrips(const DOM_Element& uniElt,
                                       CalibData::StripCol* strips) {
   using xml::Dom;
 
-  // Children of uniElt are
-  //    at most one stripList, followed by
-  //    arbitrary number of span elements
-  DOM_Element child = Dom::findFirstChildByName(uniElt, "stripList");
-  if (child != DOM_Element()) {
-    std::string xmlList = Dom::getAttribute(child, "strips");
-    strToNum(xmlList, strips);
-    child = Dom::getSiblingElement(child);
-  }
-  else child = Dom::findFirstChildByName(uniElt, "stripSpan");
+  // Children of uniElt are an arbitrary collection of stripList
+  // and stripSpan elements
+  DOM_Element childElt = Dom::getFirstChildElement(uniElt);
 
-  while (child != DOM_Element()) {
-    std::string firstStr = Dom::getAttribute(child, "first");
-    unsigned short first = (unsigned short) atoi(firstStr.c_str());
-    std::string lastStr = Dom::getAttribute(child, "last");
-    unsigned short last = (unsigned short) atoi(lastStr.c_str());
+  while (childElt != DOM_Element() ) {
+    // must be list or span
+    if ((childElt.getTagName()).equals("stripList") ) {
+
+      std::string xmlList = Dom::getAttribute(childElt, "strips");
+      strToNum(xmlList, strips);
+    }
+    else if ((childElt.getTagName()).equals("stripSpan") ) {
+      std::string firstStr = Dom::getAttribute(childElt, "first");
+      unsigned short first = (unsigned short) atoi(firstStr.c_str());
+      std::string lastStr = Dom::getAttribute(childElt, "last");
+      unsigned short last = (unsigned short) atoi(lastStr.c_str());
       
-    if (last >= first) {
-      // Might as well reserve memory all at once
-      strips->reserve(strips->size() + last + 1 - first);  
-      for (unsigned short int i = first; i <= last; i++) {
-        strips->push_back(i);
+      if (last >= first) {
+        // Might as well reserve memory all at once
+        strips->reserve(strips->size() + last + 1 - first);  
+        for (unsigned short int i = first; i <= last; i++) {
+          strips->push_back(i);
+        }
       }
     }
-    child = Dom::getSiblingElement(child);
+    childElt = Dom::getSiblingElement(childElt);
   }
+
   return StatusCode::SUCCESS;
 }
 
