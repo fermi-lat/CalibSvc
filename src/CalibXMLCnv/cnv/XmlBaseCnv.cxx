@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.4 2003/01/15 00:17:40 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.5 2003/01/15 01:23:40 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -139,7 +139,7 @@ StatusCode XmlBaseCnv::internalCreateObj(const DOM_Element& elt,
   }
 
   unsigned int serNo = *(address->ipar());
-
+  m_serNo = serNo;
   StatusCode sc = m_metaSvc->getValidInterval(serNo, 
                                               &m_vstart, 
                                               &m_vend );
