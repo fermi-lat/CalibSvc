@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.7 2003/02/25 06:48:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.8 2003/03/17 06:55:34 jrb Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -101,11 +101,11 @@ protected:
   /// Convenience routine used by most CAL calibration types, which
   /// have a <dimension> element describing how the remainder of the
   /// data is laid out.
-  StatusCode XmlBaseCnv::readDimension(const DOM_Element& docElt, 
-                                       unsigned& nRow, unsigned& nCol, 
-                                       unsigned& nLayer,
-                                       unsigned& nXtal, unsigned& nFace,
-                                       unsigned& nRange);
+  StatusCode readDimension(const DOM_Element& docElt, 
+                           unsigned& nRow, unsigned& nCol, 
+                           unsigned& nLayer,
+                           unsigned& nXtal, unsigned& nFace,
+                           unsigned& nRange);
 
   /// Another one to find first range element
   DOM_Element findFirstRange(const DOM_Element& docElt);
