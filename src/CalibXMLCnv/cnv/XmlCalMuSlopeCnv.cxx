@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.2 2003/03/17 06:55:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.1 2003/03/21 00:05:52 jrb Exp $
 
 #include <string>
 #include "XmlCalMuSlopeCnv.h"
@@ -58,8 +58,10 @@ namespace {
 
     std::string att = Dom::getAttribute(slopeElt, "slope");
     float slope = atof(att.c_str());
+    att = Dom::getAttribute(slopeElt, "error");
+    float error = atof(att.c_str());
 
-    return new CalibData::MuSlope(slope);
+    return new CalibData::MuSlope(slope, error);
   }
 }
 
