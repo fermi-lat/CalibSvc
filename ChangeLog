@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov 22 10:12:34 PST 2002
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Pick up source from all relevant subdirectories
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 22 10:12:08 PST 2002
 CalibSvc/CalibSvc
 
