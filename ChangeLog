@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 13 16:12:18 PST 2002
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+oops.  Will have to modify and recommit.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 13 16:10:51 PST 2002
 CalibSvc/src/CalibXMLCnv/cnv
 
