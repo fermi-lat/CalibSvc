@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct  4 11:34:07 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UseAsym.cxx jobOptions.txt.asym 
+Log Message:
+Sample Asym calibration now has flavor = "test"
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct  4 11:33:32 PDT 2004
 CalibSvc/cmt
 
