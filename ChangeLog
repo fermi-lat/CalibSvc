@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 14 17:22:43 PST 2003
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibMetaCnvSvc.h 
+Log Message:
+Change getValidInterval interface to something workable
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 14 16:17:40 PST 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
