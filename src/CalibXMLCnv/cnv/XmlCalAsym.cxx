@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalAsym.cxx,v 1.1 2004/09/23 20:49:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalAsym.cxx,v 1.2 2004/11/11 00:12:35 jrb Exp $
 
 /** @class XmlCalAsymCnv
 
@@ -27,7 +27,7 @@
 #include "CalibData/Cal/CalAsym.h"
 
 #include "CalibData/CalibTime.h"
-#include "xml/Dom.h"
+#include "xmlBase/Dom.h"
 
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
@@ -77,7 +77,7 @@ const CLID& XmlCalAsymCnv::classID() {
 }
 
 CalibData::CalAsym* XmlCalAsymCnv::processRange(DOMElement* asymElt) {
-  using xml::Dom;
+  using xmlBase::Dom;
   using CalibData::ValSig;
   using CalibData::CalAsym;
   MsgStream log(msgSvc(), "XmlCalAsymCnv" );
@@ -97,7 +97,7 @@ CalibData::CalAsym* XmlCalAsymCnv::processRange(DOMElement* asymElt) {
     pSmallNBig = processValSigs(asymElt, "PsmallNbigVals", "PsmallNbigSigs");
 
   }
-  catch (xml::DomException ex) {
+  catch (xmlBase::DomException ex) {
     log << MSG::ERROR << "Error in calibration XML input" 
         << ex.getMsg() << endreq;
     if (bigs) delete bigs;
@@ -119,7 +119,7 @@ CalibData::CalAsym* XmlCalAsymCnv::processRange(DOMElement* asymElt) {
 StatusCode XmlCalAsymCnv::i_createObj(const DOMElement* docElt, 
                                            DataObject*& refpObject)
 {
-  using xml::Dom;
+  using xmlBase::Dom;
   using CalibData::CalAsym;
   using CalibData::CalAsymCol;
   using CalibData::Xpos;
