@@ -1,15 +1,14 @@
-//$Header:  $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.1 2002/12/14 00:09:52 jrb Exp $
 #ifndef CalibXmlCnvSvc_h
 #define CalibXmlCnvSvc_h  1
 
 #include <string>
 
 #include "CalibSvc/ICalibMetaCnvSvc.h"   // not sure if this is needed
-//   #include "CalibSvc/IInstrumentName.h"
 #include "GaudiKernel/ConversionSvc.h"
 #include "CalibSvc/ICalibXmlSvc.h"
 
-#include <dom/DOM_Document.hpp>
+#include <xercesc/dom/DOM_Document.hpp>
 
 /// Forward and external declarations
 template <class TYPE> class SvcFactory;
