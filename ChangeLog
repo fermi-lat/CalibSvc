@@ -20,8 +20,8 @@ Modified Files:
 Added Files:
 	jobOptions.txt.tholdCI 
 Log Message:
-To exercise last of new CAL calibration types
-
+jobOptions.txt.tholdCI: To exercise last of new CAL calibration types
+Use*.cxx: changes in light of better arg checking in CalibData::CalFinder
     *
 ------------------------------------------------------------
 User: jrb  Wed Oct  6 17:10:44 PDT 2004
