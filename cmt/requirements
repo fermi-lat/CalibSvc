@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.2 2002/11/22 18:12:34 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.3 2002/12/14 00:08:33 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 package CalibSvc
@@ -27,4 +27,10 @@ library CalibSvc *.cxx  CalibDataSvc/*.cxx      \
                         CalibXMLCnv/cnv/*.cxx   \
                         Dll/*.cxx ${CalibSvc_headers}
 
+private
+macro WinInclude "" WIN32 "test/*.h test/*.txt"
+
+public
+set JOBOPTIONS "${CALIBSVCROOT}/src/test/jobOptions.txt"
+application simpletest ${GlastMain} test/*.cxx $(WinInclude)
 
