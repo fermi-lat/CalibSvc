@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:53:08 PDT 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Add root conversion service, Root Cal Gain converter 
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 26 22:52:15 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
