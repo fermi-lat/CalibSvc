@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 28 22:59:08 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Bug fix: look up tower row and column by the proper name
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 28 22:58:29 PST 2003
 CalibSvc/src
 
