@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.1 2003/03/21 00:05:52 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.2 2003/03/22 01:39:52 jrb Exp $
 
 #include <string>
 #include "XmlCalMuSlopeCnv.h"
@@ -90,7 +90,8 @@ StatusCode XmlCalMuSlopeCnv::i_createObj(const DOM_Element& docElt,
 
   while (rangeElt != DOM_Element() ) {
     MuSlope* pMuSlope = processRange(rangeElt);
-    pObj->putRange(nRow, nCol, nLayer, nXtal, nRange, nFace, pMuSlope);
+    pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, m_nFace, 
+                   pMuSlope);
     rangeElt = findNextRange(rangeElt);
   }
 
