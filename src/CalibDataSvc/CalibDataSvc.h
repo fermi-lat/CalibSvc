@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.2 2002/11/22 18:13:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.3 2003/01/04 00:21:58 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -105,10 +105,9 @@ public:
 
   /// calibration types
   StringArrayProperty m_calibList;
-  /*
-  /// Flag to control if the persistency is required
-  bool             m_usePersistency;
-  */
+
+  //  StringArrayProperty m_flavorList;
+  std::vector<std::string>  m_flavorList;
 
   /// Has the event time been defined?
   bool             m_eventTimeDefined;
