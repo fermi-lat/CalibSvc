@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.3 2004/12/10 18:43:05 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.4 2004/12/17 19:15:59 jrb Exp $
 /**
             @file  RootBaseCnv.cxx
 
@@ -243,8 +243,9 @@ StatusCode RootBaseCnv::readRootObj(const std::string& treename,
 StatusCode RootBaseCnv::readRootObj(TTree* pTree,
                                     const std::string& branch,
                                     TObject*& pObj, unsigned ix){
-  pTree->SetBranchAddress(branch.c_str(), &pObj);
-  pTree->GetEvent(ix);
+  TBranch* pBranch=pTree->GetBranch(branch.c_str());
+  pBranch->SetAddress(&pObj);
+  pBranch->GetEntry(ix);
   return StatusCode::SUCCESS;
  }
 

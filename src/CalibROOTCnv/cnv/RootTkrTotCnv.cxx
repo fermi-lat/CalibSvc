@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.1 2004/12/17 19:16:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.2 2004/12/27 00:18:19 jrb Exp $
 
 #include <string>
 #include "RootCalGainCnv.h"
@@ -88,7 +88,7 @@ StatusCode RootTkrTotCnv::readUnis(TTree* tree, int iTow,
 
   for (unsigned ix = 0; ix < nEntries; ix++) {  // process a unilayer
 
-    calibRootData::TotUnilayer* rootUni = 0;
+    calibRootData::TotUnilayer* rootUni = new calibRootData::TotUnilayer();
     TObject* pObj = rootUni;
 
     StatusCode ret = 
