@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Mon Feb 24 22:48:20 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h 
+Added Files:
+	XmlCalPedCnv.cxx XmlCalPedCnv.h 
+Log Message:
+XmlBaseCnv:  Add convenience functions for derived classes.
+  setBaseInfo  for all such
+  findFirstRange, findNextRange specific to CAL, aids in navigating XML
+XmlCalPedCnv:  Converter for CalCalibPed
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 18 15:05:12 PST 2003
 CalibSvc/doc
 
