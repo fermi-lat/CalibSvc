@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 25 15:51:28 PST 2005
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+Change some INFO messages to DEBUG; decrease frequency of some DEBUG messages
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb 25 15:51:03 PST 2005
 CalibSvc/cmt
 
