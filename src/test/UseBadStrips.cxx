@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseBadStrips.cxx,v 1.2 2003/01/30 22:36:38 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseBadStrips.cxx,v 1.3 2003/02/12 00:38:11 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -21,8 +21,6 @@
    quantities in the data, the visitor interface is the only way
    to get at them.  
 */
-
-
 
 /**
      @class BadVisitor
@@ -123,11 +121,6 @@ StatusCode UseBadStrips::execute( ) {
   MsgStream log(msgSvc(), name());
   m_visitor->setLog(&log);
 
-  //  SmartDataPtr<CalibData::CalibTest1> test1(m_pCalibDataSvc,
-  //                                        CalibData::Test_Gen);
-  //  CalibData::CalibTest1* test1 = 
-  //    SmartDataPtr<CalibData::CalibTest1>(m_pCalibDataSvc, CalibData::Test_Gen);
-  
   std::string fullDeadPath = "/Calib/TKR_DeadChan/vanilla";
   DataObject *pDeadObject;
   

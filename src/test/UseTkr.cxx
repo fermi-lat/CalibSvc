@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.4 2004/07/12 18:17:05 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTkr.cxx,v 1.1 2004/08/09 17:50:19 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -12,14 +12,15 @@
 #include "idents/TkrId.h"
 
 /**
-   @file UsePeds.cxx
-   Simple algorithm to test functioning of "the other" TDS, Cal pedestals data
+   @file UseTkr.cxx
+   Simple algorithm to test functioning of "the other" TDS, 
+   Tkr splits data
 */
 
 
 
   /** 
-   @class UsePeds
+   @class UseTkr
 
    Algorithm exemplifying retrieval and use of Tkr calibration quantities
 */
@@ -93,8 +94,12 @@ StatusCode UseTkr::execute( ) {
   //  CalibData::CalibTest1* test1 = 
   //    SmartDataPtr<CalibData::CalibTest1>(m_pCalibDataSvc, CalibData::Test_Gen);
   
-  //  std::string fullPath = "/Calib/CAL_Ped/ideal";
-  std::string fullPath = CalibData::TKR_Splits + "/test";
+  // For the following to work on Windows, must add 
+  //     apply_pattern use_CalibData_symbols 
+  //  to requirements (it's a no-op for Linux)
+  //  std::string fullPath = CalibData::TKR_Splits + "/test";
+
+  std::string fullPath = "/Calib/TKR_Splits/test";
   DataObject *pObject;
   
 

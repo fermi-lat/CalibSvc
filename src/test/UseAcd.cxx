@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseGains.cxx,v 1.1 2003/03/29 07:00:51 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAcd.cxx,v 1.1 2004/06/11 20:49:32 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -93,11 +93,6 @@ StatusCode UseAcd::execute( ) {
 
   MsgStream log(msgSvc(), name());
 
-  //  SmartDataPtr<CalibData::CalibTest1> test1(m_pCalibDataSvc,
-  //                                        CalibData::Test_Gen);
-  //  CalibData::CalibTest1* test1 = 
-  //    SmartDataPtr<CalibData::CalibTest1>(m_pCalibDataSvc, CalibData::Test_Gen);
-  
   std::string fullPathGain = "/Calib/ACD_ElecGain/vanilla";
   std::string fullPathPed = "/Calib/ACD_Ped/vanilla";
   DataObject *pObjectGain;
