@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Dec  2 16:06:20 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBadStripsCnv.cxx 
+Log Message:
+Allow an arbitary sequence of <stripSpan> and <stripList> elements
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 21 17:02:21 PST 2003
 CalibSvc/doc
 
