@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 14 16:58:38 PDT 2004
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx 
+Log Message:
+Clean-up of support of non-event time based fetch
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jul 14 16:57:48 PDT 2004
 CalibSvc/src/CalibDataSvc
 
