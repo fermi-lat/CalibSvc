@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.2 2002/12/21 00:59:14 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.3 2003/01/09 22:33:48 jrb Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -29,7 +29,7 @@ class  XmlBaseCnv : public Converter {
   //  friend class CnvFactory<XmlBaseCnv>;
 
 public:
-  const CLID& objType() const;
+  //  const CLID& objType() const;
   //  static const CLID& classID();
 
   virtual ~XmlBaseCnv();
@@ -80,15 +80,15 @@ public:
 
   static const unsigned char storageType();
 
-protected:
   /**
      Constructor for this converter
      @param svc a ISvcLocator interface to find services
      @param clid the type of object the converter is able to convert
    */
-  XmlBaseCnv(ISvcLocator* svc, const CLID& clid = 0);
+  //  XmlBaseCnv(ISvcLocator* svc, const CLID& clid = 0);
+  XmlBaseCnv(ISvcLocator* svc, const CLID& clid);
 
-
+protected:
   /** This creates the transient representation of an object from the
    *  DOM_Element representing it, then fills it and process it.
    *  This implementation actually only calls the i_* methods of the
