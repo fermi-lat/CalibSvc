@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.11 2004/04/15 19:03:42 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.12 2004/06/21 22:48:04 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -164,6 +164,11 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   // Keep them separate for now to preserve possibility of putting
   // CalibDataSvc in a separate package.
   IInstrumentName*  m_instrSvc;
+
+  /// Job option parameter; individual items may take on values 
+  /// "PROD", "DEV", "TEST", "SUPSED"  (look only at first 3 characters)
+  std::vector<std::string> m_qualityList;
+  unsigned int             m_qualityMask;
 
 };
 #endif   
