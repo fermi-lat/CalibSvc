@@ -1,4 +1,4 @@
-//$Header: Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.h,v 1.1 2003/01/04 00:23:44 jrb Exp $
 #ifndef EVTCLOCK_H
 #define EVTCLOCK_H 1
 
@@ -38,6 +38,10 @@ class EvtClock : public Algorithm {
 
   /// Current event number
   long m_eventNumber;
+
+  /// Absolute time of first event (yyyy-mm-dd_hh:mm, trailing fields
+  /// optional)
+  std::string m_startTimeAsc;
 
   /// Absolute time of first event (seconds)
   long m_startTime;
