@@ -1,8 +1,10 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.5 2003/01/08 01:14:58 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.6 2003/01/10 01:01:54 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 package CalibSvc
 version v0r0
+
+apply_pattern packageShr
 
 use CalibData v0r*
 use calibUtil v0r*
@@ -14,7 +16,6 @@ use GaudiKernel v11r*
 use GaudiSvc    v7r*
 use GlastPolicy v4r*
 
-apply_pattern packageShr
 apply_pattern package_include
 apply_pattern package_headers
 ## apply_pattern package_linkopts
@@ -27,7 +28,7 @@ library CalibSvc *.cxx  CalibDataSvc/*.cxx      \
                         CalibXMLCnv/cnv/*.cxx   \
                         Dll/*.cxx ${CalibSvc_headers}
 
-apply_pattern packag_Cshlibflags
+apply_pattern package_Cshlibflags
 
 private
 macro WinInclude "" WIN32 "test/*.h test/*.txt"
