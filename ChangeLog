@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov 21 16:53:40 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Removed Files:
+	EvtClock.cxx EvtClock.h 
+Log Message:
+Move old  EvtClock algorithm into shareable, change name to CalibEvtClock
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 21 16:53:25 PST 2003
 CalibSvc/src/Dll
 
