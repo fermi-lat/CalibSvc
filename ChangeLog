@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep 24 15:40:23 PDT 2004
+CalibSvc/src/test
+
+Added Files:
+	UseAsym.cxx jobOptions.txt.asym 
+Log Message:
+Algorithm, job options to try out new CAL_Asym type
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep 24 15:39:45 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
