@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 14 17:22:58 PST 2003
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Change getValidInterval interface to something workable
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 14 17:22:43 PST 2003
 CalibSvc/CalibSvc
 
