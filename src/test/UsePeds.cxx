@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.6 2004/08/09 23:48:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.7 2004/10/07 19:49:12 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -187,10 +187,12 @@ void UsePeds::processNew(CalibData::CalCalibPed* pNew,
       log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
     }
     /*      Try another tower */
-    iTower++;
-    id = CalXtalId(iTower, iLayer, iXtal);
+    ////////    iTower++;
+    range = 1;
+    id = CalXtalId(iTower, iLayer, iXtal, face, range);
     
-    pRange = pNew->getRange(id, range, face);
+    pRange = pNew->getRange(id);
+    //    pRange = pNew->getRange(id, range, face);
     
     pPed = dynamic_cast<Ped * >(pRange);
 
