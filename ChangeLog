@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jul  9 09:07:47 PDT 2004
+CalibSvc
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Ignore more Windows stuff
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jul  9 09:02:18 PDT 2004
 CalibSvc/src
 
