@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.cxx,v 1.1 2004/07/27 05:51:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.cxx,v 1.2 2004/12/10 18:43:06 jrb Exp $
 #include "GaudiKernel/MsgStream.h"
 #include "RootCalBaseCnv.h"
 #include "calibRootData/Cal/CalDimension.h"
@@ -67,6 +67,9 @@ StatusCode RootCalBaseCnv::fillRoot(CalibData::CalibBase* pTDSObj,
   return StatusCode::SUCCESS;
 }
 
+/* TODO
+   Change implementation to invoke RootBaseCnv::readRootObj
+*/
  StatusCode RootCalBaseCnv::readRootObj(const std::string& branch, 
                                         TObject*& pCalib) {
   TTree* pTree = (TTree*)m_inFile->Get("Calib");
