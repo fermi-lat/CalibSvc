@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 10 14:25:30 PST 2003
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Replace occurrences of IID with InterfaceID to avoid collisions with
+Windows system include wstypes.h
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan 10 13:45:28 PST 2003
 CalibSvc/src/test
 
