@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb  7 16:39:01 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Omit application test_CalibSvc definition whn using pattern package_test
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb  7 10:35:39 PST 2003
 CalibSvc/doc
 
