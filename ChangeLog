@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:54:25 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UseGains.cxx jobOptions.txt 
+Added Files:
+	jobOptions-acd.txt jobOptions-intNonlin.txt 
+	jobOptions-lightAsym.txt jobOptions.txt.enter_time 
+	jobOptions.txt.gainsRoot jobOptions.txt.standard 
+Log Message:
+Add a bunch of files used to exercise different parts of CalibSvc 
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 26 22:53:08 PDT 2004
 CalibSvc/src/Dll
 
