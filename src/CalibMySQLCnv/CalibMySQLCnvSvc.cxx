@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.13 2003/02/26 01:28:45 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.14 2003/02/27 21:52:17 jrb Exp $
 #include <string>
 #include <cstdio>
 
@@ -28,6 +28,7 @@ CalibMySQLCnvSvc::CalibMySQLCnvSvc( const std::string& name, ISvcLocator* svc)
   : ConversionSvc (name, svc, MYSQL_StorageType)
   , m_meta(0)
 {
+  declareProperty("Host", m_host = "*");
 }
 
 CalibMySQLCnvSvc::~CalibMySQLCnvSvc(){ }
@@ -128,7 +129,7 @@ StatusCode CalibMySQLCnvSvc::initialize()
   // Conceivably, could start up a different conversion service, depending 
   // on job options parameters, which would look very much like this one
   // except for having a different way to access metadata.
-  m_meta = new calibUtil::Metadata();
+  m_meta = new calibUtil::Metadata(m_host);
 
   if (!m_meta) {
     log << MSG::ERROR << "Could not open connection to metadata dbs" << endreq;
