@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.8 2003/01/18 00:59:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.9 2003/02/12 00:37:59 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -168,7 +168,7 @@ StatusCode CalibDataSvc::initialize()   {
     }
 
     // Now do the same for any requested flavors
-    int ix;
+    unsigned int ix;
     for (ix = 0; ix < m_flavorList.size(); ix++) {
       fullpath = calibTypePath + "/" + m_flavorList[ix];
       args[0] = fullpath;
