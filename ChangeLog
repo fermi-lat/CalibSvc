@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 26 10:22:19 PST 2002
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibCLIDNode.cxx CalibCLIDNode.h CalibDataSvc.cxx 
+Log Message:
+Use CalibData::CalibModelSvc in CalibDataSvc initialization 
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 22 10:13:52 PST 2002
 CalibSvc/src/CalibMySQLCnv
 
