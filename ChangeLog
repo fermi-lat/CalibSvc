@@ -7,7 +7,8 @@ Modified Files:
 Added Files:
 	jobOptions.txt.digi jobOptions.txt.mc 
 Log Message:
-Sample job options files for time source = "digi" and "mc", resp.
+UseIntNonlin.cxx:  output all dac collections for debugging
+Add sample job options files for time source = "digi" and "mc".
 
     *
 ------------------------------------------------------------
