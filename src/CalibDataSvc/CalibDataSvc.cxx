@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.10 2004/01/31 01:53:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.11 2004/04/15 19:03:24 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -170,6 +170,9 @@ StatusCode CalibDataSvc::makeFlavorNodes(IAddressCreator*  calibCreator,
     unsigned int ix;
 
     for (ix = 0; ix < m_flavorList.size(); ix++) {
+      // Don't redo vanilla, if present in user list
+      if (m_flavorList[ix] == std::string("vanilla")) continue;
+
       fullpath = calibTypePath + "/" + m_flavorList[ix];
       args[0] = fullpath;
 
