@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul 27 16:12:06 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions-acd.txt jobOptions-intNonlin.txt 
+	jobOptions-lightAsym.txt jobOptions.txt 
+	jobOptions.txt.enter_time 
+Added Files:
+	jobOptions.txt.dataTime 
+Log Message:
+Keep a record of how to do this in CVS
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul 27 16:11:41 PDT 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
