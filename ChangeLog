@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 29 00:34:58 PST 2004
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootTkrBaseCnv.cxx RootTkrBaseCnv.h RootTkrTotCnv.cxx 
+Log Message:
+Bug fixes, clean-up for ToT ROOT-to-TDS conversion
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Dec 26 18:08:11 PST 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
