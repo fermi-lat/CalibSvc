@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 10 10:38:15 PST 2004
+CalibSvc/src/test
+
+Added Files:
+	jobOptions.txt.gainsWriteRoot 
+Log Message:
+Save job options file used to make sample CAL gains ROOT file
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 16 17:47:07 PST 2004
 CalibSvc/src/CalibMySQLCnv
 
