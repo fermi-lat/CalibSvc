@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 11 16:38:11 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	UseBadStrips.cxx 
+Log Message:
+Clean up
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 11 16:38:00 PST 2003
 CalibSvc/src/CalibDataSvc
 
