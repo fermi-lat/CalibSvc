@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.1 2002/12/14 00:09:52 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.2 2003/03/17 06:55:02 jrb Exp $
 #ifndef CalibXmlCnvSvc_h
 #define CalibXmlCnvSvc_h  1
 
@@ -8,7 +8,7 @@
 #include "GaudiKernel/ConversionSvc.h"
 #include "CalibSvc/ICalibXmlSvc.h"
 
-#include <xercesc/dom/DOM_Document.hpp>
+#include <xercesc/dom/DOMDocument.hpp>
 
 /// Forward and external declarations
 template <class TYPE> class SvcFactory;
@@ -70,7 +70,8 @@ class CalibXmlCnvSvc : public ConversionSvc, virtual public ICalibXmlSvc
                                    IOpaqueAddress*& refpAddress);
 
   // from ICalibXmlSvc interface
-  virtual DOM_Document parse(const char* filename);
+  virtual XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument* 
+  parse(const char* filename);
 
   
   /*  

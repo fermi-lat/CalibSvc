@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.4 2003/03/17 06:55:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.5 2004/01/31 01:53:56 jrb Exp $
 
 #include <string>
 #include "XmlTest1Cnv.h"
@@ -49,16 +49,16 @@ StatusCode XmlBaseCnv::i_processObj(DataObject*, // pObject,
  
 
 // Create our specific object
-StatusCode XmlTest1Cnv::i_createObj(const DOM_Element& element, 
+StatusCode XmlTest1Cnv::i_createObj(const DOMElement* element, 
                                     DataObject*& refpObject)
 {
   using xml::Dom;
 
   // Fetch quantities we need: name, value
-  DOM_Element child = Dom::findFirstChildByName(element, "data");
-  if (child == DOM_Element()) return StatusCode::FAILURE;
+  DOMElement* child = Dom::findFirstChildByName(element, "data");
+  if (child == 0) return StatusCode::FAILURE;
   child = Dom::findFirstChildByName(child, "leaf");
-  if (child == DOM_Element()) return StatusCode::FAILURE;
+  if (child == 0) return StatusCode::FAILURE;
 
   std::string name = Dom::getAttribute(child, "name");
 

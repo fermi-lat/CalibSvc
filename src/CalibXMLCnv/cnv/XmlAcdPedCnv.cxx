@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.6 2004/05/26 22:44:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlAcdPedCnv.cxx,v 1.1 2004/06/11 20:51:49 jrb Exp $
 
 #include <string>
 #include "XmlAcdPedCnv.h"
@@ -43,7 +43,7 @@ const CLID& XmlAcdPedCnv::classID() {
 namespace {
   /// Local utility which knows how to get the information out of a
   /// <acdPed> element and make a CalibData::AcdPed with it
-  CalibData::AcdPed* processRange(DOM_Element pedElt) {
+  CalibData::AcdPed* processRange(DOMElement* pedElt) {
     using xml::Dom;
 
     // Could check here to make sure it really is an <acdPed>
@@ -63,7 +63,7 @@ namespace {
 }
 
 // Create our specific object
-StatusCode XmlAcdPedCnv::i_createObj(const DOM_Element& docElt, 
+StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt, 
                                      DataObject*& refpObject)
 {
   using xml::Dom;
@@ -83,9 +83,9 @@ StatusCode XmlAcdPedCnv::i_createObj(const DOM_Element& docElt,
 
   setBaseInfo(pObj);
 
-  DOM_Element rangeElt = findFirstRange(docElt);
+  DOMElement* rangeElt = findFirstRange(docElt);
 
-  while (rangeElt != DOM_Element() ) {
+  while (rangeElt != 0 ) {
     AcdPed* pPed = processRange(rangeElt);
     pObj->putRange(m_nFace, m_nRow, m_nCol, m_nPmt, m_nRange, 
                    pPed);

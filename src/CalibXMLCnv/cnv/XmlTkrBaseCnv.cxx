@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.cxx,v 1.1 2004/06/11 20:51:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTkrBaseCnv.cxx,v 1.1 2004/08/09 17:49:29 jrb Exp $
 #include "GaudiKernel/MsgStream.h"
 #include "XmlTkrBaseCnv.h"
 #include "xml/Dom.h"
@@ -8,15 +8,15 @@
 XmlTkrBaseCnv::XmlTkrBaseCnv(ISvcLocator* svc, const CLID& clid) :
   XmlBaseCnv(svc, clid), m_nChannel(0) {}
 
-StatusCode XmlTkrBaseCnv::readDimension(const DOM_Element& docElt, 
+StatusCode XmlTkrBaseCnv::readDimension(const DOMElement* docElt, 
                                         unsigned& nRow, unsigned& nCol, 
                                         unsigned& nTray, unsigned& nChip)
 {
   using xml::Dom;
 
   MsgStream log(msgSvc(), "XmlTkrBaseCnv" );
-  DOM_Element dimElt = Dom::findFirstChildByName(docElt, "dimension");
-  if (dimElt == DOM_Element()) return StatusCode::FAILURE;
+  DOMElement* dimElt = Dom::findFirstChildByName(docElt, "dimension");
+  if (dimElt == 0) return StatusCode::FAILURE;
 
   try {
     nRow = Dom::getIntAttribute(dimElt, "nBayRow");

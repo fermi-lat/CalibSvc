@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibXmlSvc.h,v 1.1 2002/12/14 00:07:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibXmlSvc.h,v 1.2 2003/03/17 06:54:27 jrb Exp $
 
 #ifndef IXMLSvc_h 
 #define IXMLSvc_h
@@ -15,7 +15,11 @@
 
 */
 #include "GaudiKernel/IInterface.h"
-#include <xercesc/dom/DOM_Document.hpp>
+// #include <xercesc/dom/DOM_Document.hpp>
+#include <xercesc/util/XercesDefs.hpp>
+XERCES_CPP_NAMESPACE_BEGIN
+class DOMDocument;
+XERCES_CPP_NAMESPACE_END
 
 static const InterfaceID IID_ICalibXmlSvc("ICalibXmlSvc", 1, 0);
 
@@ -31,7 +35,8 @@ public:
    * @param fileName the name of the file to parse
    * @return the document issued from the parsing
    */
-  virtual DOM_Document parse(const char* filename) = 0;
+  virtual XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument* 
+  parse(const char* filename) = 0;
 
   // Do we also want a "reset" or "clearDocument" ?  Can in any case
   // do this internally when a new document is to be parsed so might not
