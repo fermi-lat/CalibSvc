@@ -1,6 +1,5 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.4 2002/12/14 00:09:22 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.5 2002/12/21 00:58:38 jrb Exp $
 #include <string>
-//#include <stdio.h>   // ???
 #include <cstdio>
 
 #include "CalibMySQLCnvSvc.h"
