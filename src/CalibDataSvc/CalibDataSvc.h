@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.6 2004/07/14 23:57:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.7 2004/07/29 19:22:58 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -170,7 +170,8 @@ public:
     TIMESOURCEnone = 0,
     TIMESOURCEdata,
     TIMESOURCEmc,
-    TIMESOURCEclock
+    TIMESOURCEclock,
+    TIMESOURCEdigi
   };
 
   TIMESOURCE m_timeSourceEnum;
@@ -178,8 +179,11 @@ public:
   /// Fetch time from real data, store in m_time
   StatusCode fetchDataTime();
 
-  /// Fetch time from mc data
+  /// Fetch time from mc data (no digis)
   StatusCode fetchMcTime();
+
+  /// Fetch time from simulated digis
+  StatusCode fetchDigiTime();
 
 
   /// Fetch time from fake clock, using parameters below
