@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 17:02:21 PDT 2004
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx 
+Log Message:
+Look for PROD calibrations first, then DEV (was PROD only)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 17:00:20 PDT 2004
 CalibSvc/cmt
 
