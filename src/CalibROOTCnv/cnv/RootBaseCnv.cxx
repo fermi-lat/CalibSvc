@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.4 2004/12/17 19:15:59 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.5 2004/12/27 02:08:11 jrb Exp $
 /**
             @file  RootBaseCnv.cxx
 
@@ -245,8 +245,8 @@ StatusCode RootBaseCnv::readRootObj(TTree* pTree,
                                     TObject*& pObj, unsigned ix){
   TBranch* pBranch=pTree->GetBranch(branch.c_str());
   pBranch->SetAddress(&pObj);
-  pBranch->GetEntry(ix);
-  return StatusCode::SUCCESS;
+  int nBytes = pBranch->GetEntry(ix);
+  return (nBytes > 0) ? StatusCode::SUCCESS : StatusCode::FAILURE;
  }
 
 bool RootBaseCnv::doClean() {
