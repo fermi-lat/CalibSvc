@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 17 11:16:01 PST 2004
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootBaseCnv.cxx RootBaseCnv.h RootCalBaseCnv.cxx 
+	RootCalGainCnv.cxx 
+Added Files:
+	RootTkrBaseCnv.cxx RootTkrBaseCnv.h RootTkrTotCnv.cxx 
+	RootTkrTotCnv.h 
+Log Message:
+1. Modify RootBaseCnv, RootCalBaseCnv in light of needs for Tkr ROOT files
+2. Add converter for ToT and a Tkr-specific base class
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r16, operation: add
 Package: CalibSvc
