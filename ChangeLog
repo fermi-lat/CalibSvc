@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  9 14:33:48 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h XmlTest1Cnv.cxx XmlTest1Cnv.h 
+Log Message:
+Don't declare the converter base class as a Gaudi converter;
+other random attempts to get the right things defined for the linker..
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  9 14:32:41 PST 2003
 CalibSvc/src/CalibMySQLCnv
 
