@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 28 15:40:49 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Make some consistency checks during conversion of CAL data from XML
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Feb 27 14:12:42 PST 2003
 CalibSvc/doc
 
