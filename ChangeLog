@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul 29 12:22:59 PDT 2004
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Rationalize time fetching.  Incident mechanism is now used for real (ldf)
+data and for fake event clock and will be used for mc data.
+Use of EvtClock algorithm for fake clock is deprecated
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jul 29 12:20:52 PDT 2004
 CalibSvc/src
 
