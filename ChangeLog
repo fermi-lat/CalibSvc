@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb  5 14:58:27 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add ROOT conversion service code to library
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb  5 14:49:00 PST 2003
 CalibSvc/src/CalibROOTCnv
 
