@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun  2 10:14:56 PDT 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Upgrade to use RootIo v8r0
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May  1 14:55:48 PDT 2003
 CalibSvc/doc
 
