@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.3 2002/11/22 18:13:52 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.4 2002/12/14 00:09:22 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -131,6 +131,8 @@ class CalibMySQLCnvSvc : public ConversionSvc,
 
   calibUtil::Metadata* getMeta();
 
+  virtual StatusCode getValidInterval(unsigned int& serNo,
+                                      ITime*& vStart, ITime*& vEnd);
  private:
 
   /// Handle for metadata access
@@ -151,6 +153,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   // Keep them separate for now to preserve possibility of putting
   // CalibDataSvc in a separate package.
   IInstrumentName*  m_instrSvc;
+
 };
 #endif   
 

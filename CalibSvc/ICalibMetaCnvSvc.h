@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibMetaCnvSvc.h,v 1.2 2002/11/19 19:58:07 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibMetaCnvSvc.h,v 1.3 2002/12/14 00:07:38 jrb Exp $
 #ifndef ICalibMetaCnvSvc_h
 #define ICalibMetaCnvSvc_h 1
 
@@ -94,6 +94,9 @@ class ICalibMetaCnvSvc : virtual public IInterface
 
   // Get handle for metadata access from calibUtil.
   virtual calibUtil::Metadata* getMeta() = 0;
+
+  virtual StatusCode getValidInterval(unsigned int& serNo, 
+                                      ITime*& vStart, ITime*& vEnd);
 
   // Might want to add additional methods which will return certain metadata
   // in a convenient form, given a serial number.  Would be used
