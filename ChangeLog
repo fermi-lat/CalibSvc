@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 13 16:09:52 PST 2002
+CalibSvc/src/CalibXMLCnv
+
+Added Files:
+	CalibXmlCnvSvc.cxx CalibXmlCnvSvc.h 
+Log Message:
+First draft of xml conversion service for calibration 
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 13 16:09:22 PST 2002
 CalibSvc/src/CalibMySQLCnv
 
