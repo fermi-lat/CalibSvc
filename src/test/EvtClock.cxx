@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.cxx,v 1.2 2003/01/14 23:26:06 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.cxx,v 1.3 2003/01/15 23:19:45 jrb Exp $
 #include <stdio.h>
 
 #include "EvtClock.h"
@@ -91,10 +91,13 @@ StatusCode EvtClock::execute( ) {
   facilities::Timestamp time = i_evtTime();
   log << MSG::INFO << "Event time: "
       << time.getString()
-      << " Julian day number "
-      << time.getJulian()
       << endreq; 
-  m_detDataSvc->setEventTime(CalibData::CalibTime(time));
+    //      << " Julian day number "
+    //      << time.getJulian()
+  CalibData::CalibTime ctime(time);
+  log << MSG::INFO << "Event time (hours) " << ctime.hours() << endreq;
+  //  m_detDataSvc->setEventTime(CalibData::CalibTime(time));
+  m_detDataSvc->setEventTime(ctime);
 
   return StatusCode::SUCCESS;
 }
