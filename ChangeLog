@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 25 12:12:58 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Private use of RootIo updated from v6r* to v7r*
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Mar 24 18:20:55 PST 2003
 CalibSvc/doc
 
