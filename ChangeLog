@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:50:20 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UsePeds.cxx 
+Added Files:
+	UseTkr.cxx jobOptions.txt.splits 
+Log Message:
+Add test algorithm and job options for TKR splits
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 10:49:50 PDT 2004
 CalibSvc/src/Dll
 
