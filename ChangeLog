@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 15 12:02:11 PDT 2004
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Describe new job option parameters to support fetching calibrations by 
+enter_time
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 17 10:22:14 PST 2004
 CalibSvc/doc
 
