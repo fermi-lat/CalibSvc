@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:48:28 PDT 2004
+CalibSvc/CalibSvc
+
+Added Files:
+	ICalibRootSvc.h 
+Log Message:
+New public interface.  Defines calib root storage type; write methods
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jul 21 11:17:29 PDT 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
