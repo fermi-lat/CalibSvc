@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.1 2002/12/21 00:59:14 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.2 2003/01/09 22:33:48 jrb Exp $
 
 #include <string>
 #include "XmlTest1Cnv.h"
@@ -61,7 +61,7 @@ StatusCode XmlTest1Cnv::i_createObj(const DOM_Element& element,
   // Fetch quantities we need: name, value
   DOM_Element child = Dom::findFirstChildByName(element, "data");
   if (child == DOM_Element()) return StatusCode::FAILURE;
-  child = Dom::findFirstChildByName(element, "leaf");
+  child = Dom::findFirstChildByName(child, "leaf");
   if (child == DOM_Element()) return StatusCode::FAILURE;
 
   std::string name = Dom::getAttribute(child, "name");
