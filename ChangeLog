@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 10 10:43:06 PST 2004
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootBaseCnv.cxx RootBaseCnv.h RootCalBaseCnv.cxx 
+	RootCalBaseCnv.h RootCalGainCnv.cxx 
+Log Message:
+Changes to base ROOT conversion classes needed to handle somewhat
+different arrangement needed for ToT ROOT files
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 10 10:38:15 PST 2004
 CalibSvc/src/test
 
