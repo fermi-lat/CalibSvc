@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.h,v 1.2 2004/12/10 18:43:06 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.h,v 1.1 2004/12/17 19:16:00 jrb Exp $
 #ifndef RootTkrBaseCnv_h
 #define RootTkrBaseCnv_h
 
@@ -70,6 +70,12 @@ protected:
   }
 
   StatusCode readTower(TTree* tree, unsigned bay, CalibData::TkrBase* pCol);
+
+  // Invoke factory method to make a uni.  Derived classes aren't friends
+  // of CalibData::TkrBase, so have to do it for them
+  CalibData::UniBase* makeUni(CalibData::TkrBase* col) {
+    return col->m_factory->makeUni();
+  }
 private:
   // Needs to be private since only RootTkrBaseCnv is a friend of TkrBase,
   // not derived classes
