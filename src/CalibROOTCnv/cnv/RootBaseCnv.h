@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.h,v 1.2 2004/07/27 23:11:41 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.h,v 1.3 2004/12/10 18:43:05 jrb Exp $
 #ifndef RootBaseCnv_h
 #define RootBaseCnv_h
 
@@ -80,6 +80,17 @@ public:
    */
   virtual StatusCode createRoot(const std::string& fname, 
                                 CalibData::CalibBase* pTDSObj);
+
+  /**
+     Read in object (by default the first) from specified branch. 
+  */
+  virtual StatusCode readRootObj(const std::string& treename,
+                                 const std::string& branch, TObject*& pCalib,
+                                 unsigned index=0);
+
+  virtual StatusCode readRootObj(TTree*  tree,
+                                 const std::string& branch, TObject*& pCalib,
+                                 unsigned index=0);
 
 protected:
   /** This creates the transient representation of an object from the
