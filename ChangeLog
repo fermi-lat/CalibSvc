@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Dec 26 18:08:11 PST 2004
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootBaseCnv.cxx RootTkrBaseCnv.cxx RootTkrTotCnv.cxx 
+Log Message:
+Bug fixes in ROOT file reading code
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Dec 26 16:18:20 PST 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
