@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.8 2004/08/02 22:10:47 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.9 2004/08/02 23:26:45 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -185,6 +185,10 @@ public:
   /// Fetch time from simulated digis
   StatusCode fetchDigiTime();
 
+  // Supersedes all of above.  For data, digi and mc always fetch time
+  // from the same place
+  /// Fetch time from Event
+  StatusCode fetchEventTime();
 
   /// Fetch time from fake clock, using parameters below
   StatusCode fetchFakeClockTime();
