@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov 21 16:53:51 PST 2003
+CalibSvc/src/util
+
+Added Files:
+	CalibEvtClock.cxx CalibEvtClock.h 
+Log Message:
+Move old  EvtClock algorithm into shareable, change name to CalibEvtClock
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 21 16:53:40 PST 2003
 CalibSvc/src/test
 
