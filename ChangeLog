@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jan 27 10:18:04 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Modify for use with GlastRelease
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Jan 26 21:01:22 PST 2003
 CalibSvc/doc
 
