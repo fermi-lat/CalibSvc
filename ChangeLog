@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 14 16:56:16 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Need to use LdfEvent to find timestamp
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 12 11:20:04 PDT 2004
 CalibSvc/doc
 
