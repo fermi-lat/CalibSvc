@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 31 13:25:27 PST 2005
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Added Files:
+	defaultOptions.txt 
+Log Message:
+First attempt at include file for standard calibration options (CalibSvc 
+only, not subsystem-specific options)
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Mar 30 15:18:19 PST 2005
 CalibSvc/src/test
 
