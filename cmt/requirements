@@ -1,8 +1,8 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.14 2003/02/08 00:44:16 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.15 2003/02/11 19:03:52 heather Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 package CalibSvc
-version v0r1p0
+version v0r1p1
 
 use CalibData v0r*
 use calibUtil v0r*
