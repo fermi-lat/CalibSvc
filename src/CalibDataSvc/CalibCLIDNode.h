@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibCLIDNode.h,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibCLIDNode.h,v 1.2 2002/11/22 18:13:38 jrb Exp $
 
 #ifndef CalibCLIDNode_H
 #define CalibCLIDNode_H
@@ -15,7 +15,7 @@
   of child nodes (which will contain actual calibration data set).
 
 @author Joanne Bogart
- $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibCLIDNode.h,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
+ $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibCLIDNode.h,v 1.2 2002/11/22 18:13:38 jrb Exp $
 
 */
 
@@ -32,7 +32,9 @@ public:
   // fact the static member could already be a problem.  Will code
   // linked into different shareables have different copies of
   // 
-  virtual const CLID& clID() const {return CalibCLIDNode::classID(); }
+  virtual const CLID& clID() const {
+    return CalibCLIDNode::classID();
+  }
   static const CLID& classID();
   
   inline CLID getChildClassID() const {return m_childClassID;}
@@ -41,6 +43,7 @@ public:
   
 private:
   CLID  m_childClassID;
+  static CLID  m_myClassID;
 };
 #endif
 
