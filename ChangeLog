@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  2 16:26:45 PDT 2004
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Minor clean-up
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  2 15:17:03 PDT 2004
 CalibSvc/src
 
