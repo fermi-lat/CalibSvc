@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseIntNonlin.cxx,v 1.1 2004/05/21 00:03:34 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseIntNonlin.cxx,v 1.1 2004/05/26 22:46:21 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -180,17 +180,18 @@ void UseIntNonlin::processNew(CalibData::CalCalibIntNonlin* pNew,
     log << MSG::INFO << "       error = " << pIntNonlin->getError() << endreq;
 
     /* Fetch dacs */
-    CalibData::DacCol* dacCol = pNew->getDacCol(range);
-    unsigned nD = (dacCol->getDacs())->size();
 
-    log << MSG::INFO << "For range = " << range << " retrieved " 
-        << nD << " dac values: " << endreq;
+    for (unsigned iRange = 0; iRange < 4; iRange++) {
+      CalibData::DacCol* dacCol = pNew->getDacCol(iRange);
+      unsigned nD = (dacCol->getDacs())->size();
+      log << MSG::INFO << "For range = " << iRange << " retrieved " 
+          << nD << " dac values: " << endreq;
 
-    for (unsigned iD = 0; iD < nD; iD++) {
-      log << MSG::INFO << (*dacCol->getDacs())[iD] << " ";
+      for (unsigned iD = 0; iD < nD; iD++) {
+        log << MSG::INFO << (*dacCol->getDacs())[iD] << " ";
+      }
+      log << endreq;
     }
-    log << endreq;
-    
     /*      Try another tower */
     iTower++;
     id = CalXtalId(iTower, iLayer, iXtal);
