@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.1.1.1 2002/11/14 21:30:12 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.2 2002/11/22 18:12:34 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 package CalibSvc
@@ -21,8 +21,10 @@ apply_pattern packageShr
 apply_pattern packag_Cshlibflags
 
 ## uncomment following when ready
-library CalibSvc *.cxx  CalibDataSvc/*.cxx \
-                        CalibMySQLCnv/*.cxx \
+library CalibSvc *.cxx  CalibDataSvc/*.cxx      \
+                        CalibMySQLCnv/*.cxx     \
+                        CalibXMLCnv/*.cxx       \
+                        CalibXMLCnv/cnv/*.cxx   \
                         Dll/*.cxx ${CalibSvc_headers}
 
 
