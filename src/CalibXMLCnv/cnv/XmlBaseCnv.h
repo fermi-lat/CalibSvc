@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.4 2003/01/10 01:03:13 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.5 2003/01/10 18:41:56 jrb Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -18,6 +18,7 @@ class ISvcLocator;
 class GenericAddress;
 class ICalibXmlSvc;
 class ICalibMetaCnvSvc;
+class ITime;
 
 namespace CalibData {
   class CalibTime;
@@ -100,8 +101,10 @@ protected:
   ICalibMetaCnvSvc* m_metaSvc;
 
   int m_serNo;
-  CalibData::CalibTime*  m_vstart;
-  CalibData::CalibTime*  m_vend;
+  ITime*  m_vstart;
+  ITime*  m_vend;
+  //  CalibData::CalibTime*  m_vstart;
+  //  CalibData::CalibTime*  m_vend;
 };
 
 #endif
