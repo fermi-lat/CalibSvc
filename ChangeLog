@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 19 12:04:55 PST 2002
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Zero-th draft of CalibMySQLCnvSvc 
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 19 12:04:03 PST 2002
 CalibSvc/src/CalibDataSvc
 
