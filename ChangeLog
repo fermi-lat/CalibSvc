@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Mar 16 22:54:27 PST 2003
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibXmlSvc.h 
+Log Message:
+Add prefix xercesc/ to path for Xerces includes for Xerces 1.7.0
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar 13 15:34:57 PST 2003
 CalibSvc/doc
 
