@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb  6 17:06:22 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+1. Define CalibSvcShr "by hand" since pattern packageShr doesn't seem to
+   to the trick
+2. Rename simpletest to test_CalibSvc to make it an official test program
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb  5 17:05:02 PST 2003
 CalibSvc/src/test
 
