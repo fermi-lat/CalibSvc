@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Sun Mar 16 22:55:34 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBadStripsCnv.h XmlBaseCnv.cxx XmlBaseCnv.h 
+	XmlCalGainCnv.cxx XmlCalGainCnv.h XmlCalPedCnv.cxx 
+	XmlCalPedCnv.h XmlTest1Cnv.cxx XmlTest1Cnv.h 
+Log Message:
+Add prefix xercesc/ to path for Xerces includes for Xerces 1.7.0
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Mar 16 22:55:02 PST 2003
 CalibSvc/src/CalibXMLCnv
 
