@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.5 2003/01/17 00:37:19 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.6 2003/01/23 16:21:37 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -8,7 +8,6 @@
 #include "GaudiKernel/SmartDataPtr.h"
 #include "CalibData/CalibTest1.h"
 #include "CalibData/CalibModel.h"
-
 
 /// Simple algorithm to test functioning of "the other" TDS
 class UseCalib : public Algorithm {
@@ -51,13 +50,8 @@ StatusCode UseCalib::initialize() {
   setProperties();
 
 
-  //  IDataProviderSvc* m_pCalibDataSvc;
   sc = service("CalibDataSvc", m_pCalibDataSvc, true);
 
-  // Query the IDataProviderSvc interface of the calib data service
-  /*  sc = calibSvc->queryInterface(IID_IDataProviderSvc, 
-                                (void**) &m_pCalibDataSvc);
-  */
   if ( !sc.isSuccess() ) {
     log << MSG::ERROR 
 	<< "Could not get IDataProviderSvc interface of CalibDataSvc" 
@@ -114,7 +108,7 @@ StatusCode UseCalib::execute( ) {
   }
   catch (...) {
     log << MSG::ERROR 
-        << "Dynamic cast to CalibTest1 after upate failed" << endreq;
+        << "Dynamic cast to CalibTest1 after update failed" << endreq;
     return StatusCode::FAILURE;
   }
   log << MSG::INFO 
@@ -122,8 +116,6 @@ StatusCode UseCalib::execute( ) {
       << " has value = " << test1Copy->getValue() << endreq;
   log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hours()
       << "  Vend: " << (test1Copy->validTill()).hours() << endreq;
-
-  //      << " has value name of "  << test1Copy->getValueName() 
 
   return StatusCode::SUCCESS;
 }
