@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 13 16:09:22 PST 2002
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Modified opaque address used to communicate with 2nd level conversion service
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 13 16:08:33 PST 2002
 CalibSvc/cmt
 
