@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  2 15:11:26 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UseIntNonlin.cxx 
+Added Files:
+	jobOptions.txt.digi jobOptions.txt.mc 
+Log Message:
+Sample job options files for time source = "digi" and "mc", resp.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  2 15:10:47 PDT 2004
 CalibSvc/src/CalibDataSvc
 
