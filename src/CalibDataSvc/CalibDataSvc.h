@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.2 2002/11/22 18:13:38 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -74,7 +74,7 @@ public:
   virtual const ITime& eventTime() const ;
 
   /// Set the new event time  
-  virtual void setEventTime( const ITime& time );
+  virtual void setEventTime(const ITime& time);
 
 public:
   //Implementation of IInstrumentName interface
@@ -114,7 +114,7 @@ public:
   bool             m_eventTimeDefined;
 
   /// Current event time
-  ITime*           m_eventTime;  // why ITIme* rather than just ITime?
+  ITime*           m_eventTime; 
 
   bool             m_instrumentDefined;
   std::string      m_instrumentName;
