@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.12 2003/03/17 06:55:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.13 2003/03/29 06:59:08 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -122,6 +122,11 @@ StatusCode XmlBaseCnv::createObj(IOpaqueAddress* addr,
         << "Unable to parse document " << par[0] << " aka " 
         << par0 << endreq;
     return StatusCode::FAILURE;
+  }
+  else {
+    log << MSG::INFO
+        << "successfully parsed document " << par[0] << " aka " 
+        << par0 << endreq;
   }
 
   // Could conceivably write some code here to handle generic
