@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.6 2003/01/23 16:21:37 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseBadStrips.cxx,v 1.1 2003/01/30 00:02:17 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -40,9 +40,9 @@ public:
                                           int badness);
 
   virtual CalibData::eVisitorRet badPlane(unsigned int row, unsigned int col, 
-                                 unsigned int tray, bool top,
-                                 int badness, 
-                                 const CalibData::StripCol& strips);
+                                          unsigned int tray, bool top,
+                                          int badness, bool allBad,
+                                          const CalibData::StripCol& strips);
 private:
   MsgStream* m_log;
   // Normally would have more here, but for testing purposes all
@@ -212,7 +212,7 @@ StatusCode UseBadStrips::execute( ) {
 void UseBadStrips::processNew(CalibData::BadStrips* pNew, 
                               const std::string& path) {
   MsgStream log(msgSvc(), name());
-  log << MSG::INFO << "Retrieved with path " << path 
+  log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
   log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
       << "  Vend: " << (pNew->validTill()).hours() << endreq;
@@ -235,24 +235,24 @@ StatusCode UseBadStrips::finalize( ) {
 
 CalibData::eVisitorRet BadVisitor::badTower(unsigned int row, unsigned int col,
                                             int badness) {
-  (*m_log) << MSG::INFO << "BadVisitor::badTower called with args "
-           << "row = " << row << "col = "<< col 
-           << "badness = " << badness << endreq;
+  (*m_log) << MSG::INFO << "BadVisitor::badTower called with args " << endreq
+           << "row = " << row << " col = "<< col 
+           << " badness = " << badness << endreq;
   return CalibData::CONT;
 }
 
 CalibData::eVisitorRet BadVisitor::badPlane(unsigned int row, 
                                             unsigned int col, 
                                             unsigned int tray, bool top,
-                                            int badness, 
+                                            int badness, bool allBad,
                                             const CalibData::StripCol& strips)
 {
-  (*m_log) << MSG::INFO << "BadVisitor::badPlane called with "
+  (*m_log) << MSG::INFO << "BadVisitor::badPlane called with " << endreq
            << "row = " << row << ", col = " << col << ", tray = "
            << tray << endreq;
 
   (*m_log) << MSG::INFO << "top = " << top << ", badness = " 
-           << badness << endreq;
+           << badness << " allBad = " << allBad << endreq;
   (*m_log) << MSG::INFO << "Strip collection contains " << strips.size()
            << " strips. " << endreq;
   return CalibData::CONT;
