@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.31 2003/06/02 17:14:56 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.32 2003/06/02 17:18:43 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 package CalibSvc
@@ -29,7 +29,7 @@ apply_pattern package_Cshlibflags
 private
 macro WinInclude "" WIN32 "test/*.h test/*.txt"
 use GlastSvc v9r*
-use RootIo   v8r*
+use RootIo   v9r*
 
 
 public
