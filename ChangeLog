@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Aug 10 09:27:27 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Upgrade to newer LdfEvent
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 16:53:33 PDT 2004
 CalibSvc/doc
 
