@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.15 2003/05/01 21:54:08 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.16 2004/04/15 19:03:42 jrb Exp $
 #include <string>
 #include <cstdio>
 
@@ -171,7 +171,8 @@ StatusCode CalibMySQLCnvSvc::initialize()
     return MSG::ERROR;
   }
   // Probably should get this value from job options. 
-  m_calibLevelMask = calibUtil::Metadata::LEVELProd;
+  m_calibLevelMask = calibUtil::Metadata::LEVELProd + 
+    calibUtil::Metadata::LEVELDev;
 
   log << MSG::INFO << "Specific initialization completed" << endreq;
   return sc;
