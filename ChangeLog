@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb 26 17:03:58 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Added Files:
+	UsePeds.cxx 
+Log Message:
+Test algorithm to access CAL pedestals
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 26 17:03:36 PST 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
