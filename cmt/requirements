@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.85 2005/02/25 23:51:03 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.86 2005/02/26 00:00:46 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -14,7 +14,8 @@ apply_pattern component_library library=CalibSvc
 
 # the runtime public interface to this package must expose sharables from 
 # calibUtil, CalibData, calibRootData and astro
-use calibUtil v1r* -no_auto_imports
+## use calibUtil v1r* -no_auto_imports
+use calibUtil v1r*
 use CalibData v0r* 
 use calibRootData v1r* -no_auto_imports
 use astro         v1r* -no_auto_imports
