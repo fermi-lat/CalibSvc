@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h,v 1.1 2002/12/14 00:10:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h,v 1.2 2002/12/21 00:59:14 jrb Exp $
 #ifndef CalibData_XmlTest1Cnv_h
 #define CalibData_XmlTest1Cnv_h
 
@@ -11,6 +11,8 @@
 */
 #include "XmlBaseCnv.h"
 #include <dom/DOM_Element.hpp>
+
+template <class TYPE> class CnvFactory;
 
 class XmlTest1Cnv : public XmlBaseCnv {
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.1 2002/12/14 00:10:51 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.1 2002/12/21 00:59:14 jrb Exp $
 
 #include <string>
 #include "XmlTest1Cnv.h"
@@ -26,7 +26,7 @@
 #include "CalibData/CalibModel.h"
 
 static CnvFactory<XmlTest1Cnv> s_factory;
-const  ICnvFactory& XmlTest1Cnv = s_factory;
+const  ICnvFactory& XmlTest1CnvFactory = s_factory;
 
 
 
