@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 10 16:12:22 PST 2004
+CalibSvc/src/CalibXMLCnv
+
+Modified Files:
+	CalibXmlCnvSvc.cxx CalibXmlCnvSvc.h 
+Log Message:
+Changes for Xerces 2.6.0
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 10 16:12:08 PST 2004
 CalibSvc/cmt
 
