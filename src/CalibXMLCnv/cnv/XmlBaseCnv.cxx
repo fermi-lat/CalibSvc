@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.23 2004/08/02 20:31:06 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.24 2004/09/23 20:49:08 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -302,7 +302,7 @@ XmlBaseCnv::processValSigs(DOM_Element elt, std::string valName,
   unsigned n = vals.size();
   std::vector<CalibData::ValSig>* pValSigs = 
     new std::vector<CalibData::ValSig>(n);
-  for (unsigned i = 0; i++; i < n) {
+  for (unsigned i = 0; i < n; i++) {
     (*pValSigs)[i].m_val = vals[i];
     (*pValSigs)[i].m_sig = sigs[i];
   }
