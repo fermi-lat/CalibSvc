@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 21 15:48:05 PDT 2004
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Use DbName job options parameter when present
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 21 15:47:24 PDT 2004
 CalibSvc/src
 
