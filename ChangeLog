@@ -1,0 +1,49 @@
+------------------------------------------------------------
+User: jrb  Thu Nov 14 13:30:13 PST 2002
+CalibSvc
+
+Log Message:
+First import
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v0r0
+		
+N CalibSvc/.cvsignore
+I CalibSvc/cmt/Makefile
+N CalibSvc/cmt/requirements
+N CalibSvc/cmt/.cvsignore
+I CalibSvc/cmt/setup.csh
+I CalibSvc/cmt/setup.sh
+I CalibSvc/cmt/cleanup.csh
+I CalibSvc/cmt/cleanup.sh
+N CalibSvc/src/mainpage.h
+N CalibSvc/src/Dll/CalibSvc_dll.cxx
+N CalibSvc/src/Dll/CalibSvc_load.cxx
+N CalibSvc/src/test/jobOptions.txt
+N CalibSvc/src/CalibDataSvc/CalibCLIDNode.cxx
+N CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx
+N CalibSvc/src/CalibDataSvc/CalibCLIDNode.h
+N CalibSvc/src/CalibDataSvc/CalibDataSvc.h
+N CalibSvc/src/CalibMySQLCnv/CalibMySQLCnv.cxx
+N CalibSvc/src/CalibMySQLCnv/CalibMySQLCvsSvc.cxx
+N CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx
+I CalibSvc/src/CalibMySQLCnv/CalibMySQLCvsSvc.cxx~
+N CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h
+I CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h~
+I CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx~
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/CalibCnvSvc.cxx
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/MetadataCnv.cxx
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/CalibCnvSvc.h
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/MetadataCnv.h
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/julian.h
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/mainpage.h
+N CalibSvc/src/CalibMySQLCnv/from-CalibCnv/test/jobOptions.txt
+N CalibSvc/doc/release.notes
+N CalibSvc/CalibSvc/IInstrumentName.h
+N CalibSvc/CalibSvc/ICalibMetaCnvSvc.h
+
+No conflicts created by this import
+
+    *
