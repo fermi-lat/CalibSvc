@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan  3 16:22:32 PST 2003
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx 
+Log Message:
+Trivial clean-up
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan  3 16:21:58 PST 2003
 CalibSvc/src/CalibDataSvc
 
