@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:49:59 PDT 2004
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx 
+Log Message:
+A couple small changes for conversion of ROOT files
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 26 22:49:20 PDT 2004
 CalibSvc/cmt
 
