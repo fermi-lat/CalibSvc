@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.3 2003/01/04 00:21:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.4 2003/02/12 00:37:59 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -27,6 +27,8 @@ class StatusCode;
     @author J. Bogart
     @date   15 Oct. 2002   
 */
+class IAddressCreator;
+class MsgStream;
 
 class CalibDataSvc  : public DataSvc,
                       virtual public IDetDataSvc,
@@ -35,7 +37,7 @@ class CalibDataSvc  : public DataSvc,
 {    
 
   friend class SvcFactory<CalibDataSvc>;
-  
+
 public:
   
   // Overloaded DataSvc methods
@@ -95,6 +97,9 @@ public:
   /// Inform that a new incident has occured
   virtual void handle( const Incident& );
 
+  /// For use of CalibMySQLCnvSvc, to set "use event time mode"
+  virtual void setUseEventTime(bool useEventTime) {
+    m_useEventTime = useEventTime;}
  private:
   //properties
   /// Calibration Data Persistency Storage type
@@ -118,6 +123,16 @@ public:
   bool             m_instrumentDefined;
   std::string      m_instrumentName;
 
+  /** Redundant job option to indicate whether or not to check for valid
+      event time when fetching calibrations.  There already is a similar thing
+      for CalibMySQLCnvSvc, but no easy way for one service to tell the 
+      other about it.
+  */
+  bool             m_useEventTime;
+
+  /// Private utility, called from initialize()
+  StatusCode makeFlavorNodes(IAddressCreator*  calibCreator, 
+                             MsgStream* log );
 };
 
 #endif //  CalibDataSvc_h
