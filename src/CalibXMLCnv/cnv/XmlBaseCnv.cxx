@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.18 2004/04/15 19:04:03 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.19 2004/05/21 00:02:49 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -19,6 +19,9 @@
 // A little ugly to include this here.  It's needed for 
 // CAL-specific utilities findNextRange, findFirstRange
 #include "idents/CalXtalId.h"
+
+// Similarly this is needed for calibrations involving dac settings
+#include "CalibData/DacCol.h"
 
 #include "facilities/Util.h"
 
@@ -349,14 +352,10 @@ DOM_Element XmlBaseCnv::findFirstRange(const DOM_Element& docElt) {
 
     // All child elements of a tower are layer elements
     elt = Dom::getFirstChildElement(elt);
-    //  att = Dom::getAttribute(elt, "iLayer");
-    //  m_nLayer = atoi(att.c_str());
     m_nLayer = Dom::getIntAttribute(elt, "iLayer");
 
     // All child elements of layers are xtal elements
     elt = Dom::getFirstChildElement(elt);
-    //    att = Dom::getAttribute(elt, "iXtal");
-    //    m_nXtal = atoi(att.c_str());
     m_nXtal = Dom::getIntAttribute(elt, "iXtal");
   }
   catch (xml::DomException ex) {
@@ -430,8 +429,6 @@ DOM_Element XmlBaseCnv::findNextRange(const DOM_Element& rangeElt) {
   elt = Dom::getSiblingElement(elt);         // next layer
 
   if (elt != DOM_Element()) {
-    //    std::string att = Dom::getAttribute(elt, "iLayer");
-    //    m_nLayer = atoi(att.c_str());
     try {
       m_nLayer = Dom::getIntAttribute(elt, "iLayer");
     }
@@ -444,8 +441,6 @@ DOM_Element XmlBaseCnv::findNextRange(const DOM_Element& rangeElt) {
 
     // All child elements of layers are xtal elements
     elt = Dom::getFirstChildElement(elt);
-    //    att = Dom::getAttribute(elt, "iXtal");
-    //    m_nXtal = atoi(att.c_str());
 
     try {
       m_nXtal = Dom::getIntAttribute(elt, "iXtal");
@@ -483,14 +478,10 @@ DOM_Element XmlBaseCnv::findNextRange(const DOM_Element& rangeElt) {
 
     // All child elements of a tower are layer elements
     elt = Dom::getFirstChildElement(elt);
-    //  att = Dom::getAttribute(elt, "iLayer");
-    //  m_nLayer = atoi(att.c_str());
     m_nLayer = Dom::getIntAttribute(elt, "iLayer");
 
     // All child elements of layers are xtal elements
     elt = Dom::getFirstChildElement(elt);
-    //    att = Dom::getAttribute(elt, "iXtal");
-    //    m_nXtal = atoi(att.c_str());
     m_nXtal = Dom::getIntAttribute(elt, "iXtal");
   }
   catch (xml::DomException ex) {
@@ -500,23 +491,6 @@ DOM_Element XmlBaseCnv::findNextRange(const DOM_Element& rangeElt) {
   }
 
 
-  /*
-  std::string att = Dom::getAttribute(elt, "iRow");
-  m_nRow = atoi(att.c_str());
-
-  att = Dom::getAttribute(elt, "iCol");
-  m_nCol = atoi(att.c_str());
-
-  // All child elements of a tower are layer elements
-  elt = Dom::getFirstChildElement(elt);
-  att = Dom::getAttribute(elt, "iLayer");
-  m_nLayer = atoi(att.c_str());
-
-  // All child elements of layers are xtal elements
-  elt = Dom::getFirstChildElement(elt);
-  att = Dom::getAttribute(elt, "iXtal");
-  m_nXtal = atoi(att.c_str());
-  */
   // All child elements of xtal are face elements
   elt = Dom::getFirstChildElement(elt);
   m_nFace = findFace(elt);
@@ -525,4 +499,35 @@ DOM_Element XmlBaseCnv::findNextRange(const DOM_Element& rangeElt) {
   m_nRange = findRangeAtt(elt);
 
   return elt;
+}
+
+DOM_Element XmlBaseCnv::findFirstDacCol(const DOM_Element& docElt) {
+  return  xml::Dom::findFirstChildByName(docElt, "dac");
+}
+
+DOM_Element XmlBaseCnv::findNextDacCol(const DOM_Element& dacElt) {
+  return xml::Dom::getSiblingElement(dacElt);
+}
+
+CalibData::DacCol* XmlBaseCnv::processDacCol(DOM_Element dacColElt,
+                                             unsigned* range) {
+
+  using xml::Dom;
+  using idents::CalXtalId;
+
+  std::string att = Dom::getAttribute(dacColElt, "range");
+
+  if (att.compare(std::string("LEX8")) == 0) *range = CalXtalId::LEX8;
+  if (att.compare(std::string("LEX1")) == 0) *range = CalXtalId::LEX1;
+  if (att.compare(std::string("HEX8")) == 0) *range = CalXtalId::HEX8;
+  if (att.compare(std::string("HEX1")) == 0) *range = CalXtalId::HEX1; 
+
+  //  *range = Dom::getIntAttribute(dacColElt, "range");
+  std::vector<int> vals;
+
+  Dom::getIntsAttribute(dacColElt, "values", vals);
+
+  CalibData::DacCol* pDacCol = new CalibData::DacCol(&vals);
+  return pDacCol;
+
 }

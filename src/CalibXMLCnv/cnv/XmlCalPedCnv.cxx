@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.cxx,v 1.4 2004/01/31 01:53:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.cxx,v 1.5 2004/02/17 18:14:41 jrb Exp $
 
 #include <string>
 #include "XmlCalPedCnv.h"
@@ -59,7 +59,6 @@ namespace {
     try {
       avg = xml::Dom::getDoubleAttribute(pedElt, "avg");
       sig = xml::Dom::getDoubleAttribute(pedElt, "sig");
-      cos = xml::Dom::getDoubleAttribute(pedElt, "cos");
     }
     catch (xml::DomException ex) {
       std::cerr << "From CalibSvc::XmlCalPedCnv::processRange" << std::endl;
@@ -67,6 +66,19 @@ namespace {
       throw ex;
     }
 
+    // backward compatibility
+    try {
+      cos = xml::Dom::getDoubleAttribute(pedElt, "cos");
+    }
+    catch (xml::NullNode nullEx) {
+      cos=2.0;
+    }
+    catch (xml::DomException ex) {
+        std::cerr << "From CalibSvc::XmlCalPedCnv::processRange" << std::endl;
+        std::cerr << ex.getMsg() << std::endl;
+        throw ex;
+        //      }
+    }
     return new CalibData::Ped(avg, sig, cos);
   }
 }
