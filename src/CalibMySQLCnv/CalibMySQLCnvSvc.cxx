@@ -1,8 +1,9 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.18 2004/06/21 22:48:04 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.19 2004/07/14 23:58:38 jrb Exp $
 #include <string>
 #include <cstdio>
 
 #include "CalibMySQLCnvSvc.h"
+#include "CalibSvc/ICalibRootSvc.h"   // for def. of CALIBROOT_StorageType
 #include "calibUtil/Metadata.h"
 
 #include "CalibData/CalibBase.h"
@@ -705,7 +706,7 @@ StatusCode  CalibMySQLCnvSvc::decodeDescription(unsigned int description,
     type = XML_StorageType;
   }
   else if (description == calibUtil::Metadata::FMTRoot) {
-    type = ROOT_StorageType;
+    type = CALIBROOT_StorageType;
   }
   else {       // unsupported
     log << MSG::ERROR << "unsupported storage type " << description << endreq;
