@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 30 17:53:56 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBadStripsCnv.cxx XmlBaseCnv.cxx XmlCalGainCnv.cxx 
+	XmlCalLightAttCnv.cxx XmlCalMuSlopeCnv.cxx XmlCalPedCnv.cxx 
+	XmlTest1Cnv.cxx 
+Log Message:
+Replace Xerces calls, atoi, etc. with xml::Dom method calls
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan 30 17:53:43 PST 2004
 CalibSvc/src/CalibDataSvc
 
