@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 29 16:02:17 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	UseCalib.cxx jobOptions.txt 
+Added Files:
+	UseBadStrips.cxx 
+Log Message:
+UseCalib.cxx, jobOptions.txt: New algorithm for test program to access 
+                              BadStrips calib. data.
+UseCalib.cxx : Don't need so many messages
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 29 10:32:50 PST 2003
 CalibSvc/src/Dll
 
