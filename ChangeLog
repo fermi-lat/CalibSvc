@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: jrb  Wed May 26 15:44:11 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h XmlCalGainCnv.cxx XmlCalPedCnv.cxx 
+Added Files:
+	XmlCalIntNonlinCnv.cxx XmlCalIntNonlinCnv.h 
+Log Message:
+XmlBaseCnv.cxx,XmlbaseCnv.h,XmlCalIntNonlinCnv.cxx,XmlCalIntNonlinCnv.h:
+support for integral nonlinearity calibration
+
+XmlCalPedCnv.cxx:  support for old-style peds files, with no "cos" attribute
+
+XmlCalGainCnv.cxx: get rid of commented-out clutter
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 17:03:34 PDT 2004
 CalibSvc/src/test
 
