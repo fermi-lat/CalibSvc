@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.4 2003/01/16 20:23:36 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.5 2003/01/17 00:37:19 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -95,10 +95,8 @@ StatusCode UseCalib::execute( ) {
   m_pCalibDataSvc->retrieveObject(fullPath, pObject);
 
   CalibData::CalibTest1* test1Copy = 0;
-  try {
-    test1Copy = dynamic_cast<CalibData::CalibTest1 *> (pObject);
-  }
-  catch (...) {
+  test1Copy = dynamic_cast<CalibData::CalibTest1 *> (pObject);
+  if (!test1Copy) {
     log << MSG::ERROR << "Dynamic cast to CalibTest1 failed" << endreq;
     return StatusCode::FAILURE;
   }
