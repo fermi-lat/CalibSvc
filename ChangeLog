@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 31 13:28:23 PST 2005
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt.dataTime jobOptions.txt.mc 
+Added Files:
+	UseScale.cxx jobOptions.txt.recon jobOptions.txt.scale 
+Log Message:
+UseScale.cxx: algorithm to test charge scale calibration
+jobOptions.txt.scale:  job options to test charge scale calibration
+jobOptions.txt.recon: job options to test ability to get timestamp
+                      from recon data
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar 31 13:27:04 PST 2005
 CalibSvc/src/Dll
 
