@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseIntNonlin.cxx,v 1.3 2004/08/09 23:48:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAsym.cxx,v 1.1 2004/09/24 22:40:23 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -88,7 +88,7 @@ StatusCode UseAsym::execute( ) {
 
   MsgStream log(msgSvc(), name());
 
-  std::string fullPath = "/Calib/CAL_Asym/vanilla";
+  std::string fullPath = "/Calib/CAL_Asym/test";
   DataObject *pObject;
   
 
