@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 15 10:40:31 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UsePeds.cxx 
+Log Message:
+Modify to try out new idents::CalXtalId constructor, modified getRange (in
+CalibData package)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Oct  7 13:15:49 PDT 2004
 CalibSvc/doc
 
