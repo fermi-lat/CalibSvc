@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.5 2004/01/31 01:53:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.cxx,v 1.1 2004/05/21 00:02:49 jrb Exp $
 
 #include <string>
 #include "XmlCalLightAsymCnv.h"
@@ -28,7 +28,7 @@ const  ICnvFactory& XmlCalLightAsymCnvFactory = s_factory;
 
 
 XmlCalLightAsymCnv::XmlCalLightAsymCnv( ISvcLocator* svc) :
-  XmlBaseCnv(svc, CLID_Calib_CAL_LightAsym) { 
+  XmlCalBaseCnv(svc, CLID_Calib_CAL_LightAsym) { 
 }
 
 

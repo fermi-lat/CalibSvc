@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.5 2004/01/31 01:53:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.1 2004/05/26 22:44:11 jrb Exp $
 
 #include <string>
 #include "XmlCalIntNonlinCnv.h"
@@ -32,7 +32,7 @@ const  ICnvFactory& XmlCalIntNonlinCnvFactory = s_factory;
 
 
 XmlCalIntNonlinCnv::XmlCalIntNonlinCnv( ISvcLocator* svc) :
-  XmlBaseCnv(svc, CLID_Calib_CAL_IntNonlin) { 
+  XmlCalBaseCnv(svc, CLID_Calib_CAL_IntNonlin) { 
 }
 
 

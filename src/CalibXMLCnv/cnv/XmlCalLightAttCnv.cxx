@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx,v 1.1 2004/01/07 23:37:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx,v 1.2 2004/01/31 01:53:56 jrb Exp $
 
 #include <string>
 #include "XmlCalLightAttCnv.h"
@@ -28,7 +28,7 @@ const  ICnvFactory& XmlCalLightAttCnvFactory = s_factory;
 
 
 XmlCalLightAttCnv::XmlCalLightAttCnv( ISvcLocator* svc) :
-  XmlBaseCnv(svc, CLID_Calib_CAL_LightAtt) { 
+  XmlCalBaseCnv(svc, CLID_Calib_CAL_LightAtt) { 
 }
 
 

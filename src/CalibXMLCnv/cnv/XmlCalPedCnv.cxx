@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.cxx,v 1.5 2004/02/17 18:14:41 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.cxx,v 1.6 2004/05/26 22:44:11 jrb Exp $
 
 #include <string>
 #include "XmlCalPedCnv.h"
@@ -28,7 +28,7 @@ const  ICnvFactory& XmlCalPedCnvFactory = s_factory;
 
 
 XmlCalPedCnv::XmlCalPedCnv( ISvcLocator* svc) :
-  XmlBaseCnv(svc, CLID_Calib_CAL_Ped) { 
+  XmlCalBaseCnv(svc, CLID_Calib_CAL_Ped) { 
 }
 
 

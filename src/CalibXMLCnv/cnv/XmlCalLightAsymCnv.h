@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.h,v 1.2 2003/03/17 06:55:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.h,v 1.1 2004/05/21 00:02:49 jrb Exp $
 #ifndef CalibSvc_XmlCalLightAsymCnv_h
 #define CalibSvc_XmlCalLightAsymCnv_h
 
@@ -8,12 +8,12 @@
 
   @author J. Bogart
 */
-#include "XmlBaseCnv.h"
+#include "XmlCalBaseCnv.h"
 #include <xercesc/dom/DOM_Element.hpp>
 
 template <class TYPE> class CnvFactory;
 
-class XmlCalLightAsymCnv : public XmlBaseCnv {
+class XmlCalLightAsymCnv : public XmlCalBaseCnv {
 
   /// Friend needed for instantiation
   friend class CnvFactory<XmlCalLightAsymCnv>;
