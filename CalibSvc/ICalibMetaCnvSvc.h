@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibMetaCnvSvc.h,v 1.5 2003/01/09 22:32:13 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibMetaCnvSvc.h,v 1.6 2003/01/15 01:22:42 jrb Exp $
 #ifndef ICalibMetaCnvSvc_h
 #define ICalibMetaCnvSvc_h 1
 
@@ -59,8 +59,7 @@ class ICalibMetaCnvSvc : virtual public IInterface
   /// The string storage type is discovered at runtime in the MySQL metadata
   /// database.
  virtual StatusCode createCalib(DataObject*& refpObject,
-                                const std::string& calibType,
-                                const std::string& flavor,
+                                const std::string& fullpath,
                                 const ITime&       time,
                                 const std::string& instrumentName,
                                 const CLID&        classID,
@@ -71,26 +70,12 @@ class ICalibMetaCnvSvc : virtual public IInterface
   /// but may register TDS addresses for its children if needed (e.g. Catalog).
   /// The string storage type is discovered at runtime in the MySQL metadata
   /// database.
-  virtual StatusCode updateCalib(DataObject*         pObject,
-                                 const std::string& calibType,
-                                 const std::string& flavor,
+  virtual StatusCode updateCalib(DataObject*        pObject,
+                                 const std::string& fullpath,
                                  const ITime&       time,
                                  const std::string& instrumentName,
                                  const CLID&        classID,
                                  IRegistry*         entry=0) = 0;
-
-  
-   /*
-   Will have a version of decodeDescription, at least, in CalibMetaCnvSvc,
-   but so far see no reason why it needs to be public.  
-   Not yet sure whether even getMeta() needs to be public.
-
-  virtual StatusCode decodeDescription(const std::string&  description,
-                                       unsigned char&      type) = 0;
-  virtual StatusCode encodeDescription(const unsigned char& type,
-                                       std::string&         description ) = 0;
-  */
-
 
   // Get handle for metadata access from calibUtil.
   virtual calibUtil::Metadata* getMeta() = 0;
