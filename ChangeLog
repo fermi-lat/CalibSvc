@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 16:48:55 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	UseAcd.cxx UseBadStrips.cxx UseGains.cxx UseIntNonlin.cxx 
+	UseLightAsym.cxx UsePeds.cxx UseTkr.cxx 
+Log Message:
+Minor clean-up
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 11:11:21 PDT 2004
 CalibSvc/doc
 
