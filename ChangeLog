@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 17:03:34 PDT 2004
+CalibSvc/src/test
+
+Added Files:
+	UseLightAsym.cxx 
+Log Message:
+Support for CAL light asymmetry calibrations (test algorithm)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 17:03:14 PDT 2004
 CalibSvc/src/Dll
 
