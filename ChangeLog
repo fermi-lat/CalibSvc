@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 17:03:14 PDT 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Support for CAL light asymmetry calibrations (load new converter)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 17:02:49 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
