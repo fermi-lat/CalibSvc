@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.24 2004/09/23 20:49:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.25 2004/09/24 22:39:45 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -94,6 +94,9 @@ StatusCode XmlBaseCnv::createObj(IOpaqueAddress* addr,
   const std::string* par = addr->par();
 
   std::string par0 = par[0];
+
+  // Ignore trailing white space.
+  facilities::Util::trimTrailing(&par0);
 
   // Just in case there are environment variables in the file specification
   //  int nSub = 
