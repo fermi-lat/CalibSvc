@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 21 15:47:24 PDT 2004
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Document new job options parameter DbName
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:55:53 PDT 2004
 CalibSvc/doc
 
