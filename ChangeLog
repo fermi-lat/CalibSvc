@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:51:49 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlAcdBaseCnv.cxx XmlAcdGainCnv.cxx XmlAcdGainCnv.h 
+	XmlAcdPedCnv.cxx XmlAcdPedCnv.h XmlCalBaseCnv.cxx 
+	XmlCalBaseCnv.h 
+Log Message:
+1. New files to support conversion of acd ped and gain calibrations
+2. Move some Cal-specific stuff from XmlBaseCnv to new class XmlCalBaseCnv
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:49:32 PDT 2004
 CalibSvc/src/test
 
