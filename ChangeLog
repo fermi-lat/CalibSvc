@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 23 13:49:08 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h XmlCalBaseCnv.cxx XmlCalBaseCnv.h 
+	XmlCalIntNonlinCnv.cxx 
+Added Files:
+	XmlCalAsym.cxx XmlCalMevPerDac.cxx XmlCalTholdCI.cxx 
+	XmlCalTholdMuon.cxx 
+Log Message:
+XmlBaseCnv, XmlCalBaseCnv: basic services for new CalibData utility classes
+                           Xpos, ValSig
+XmlCalAsym, XmalCalMevPerDac, XmlCalTholdCI, XmlCalTholdMuon: converters
+                           for corresponding new CAL calibration types
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug 26 11:54:35 PDT 2004
 CalibSvc/doc
 
