@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 21 17:39:52 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlCalGainCnv.cxx XmlCalMuSlopeCnv.cxx 
+Log Message:
+Handle new fields:  sigma for Gain and error for MuSlope
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 21 12:17:40 PST 2003
 CalibSvc/doc
 
