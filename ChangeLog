@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 17 10:14:41 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlCalPedCnv.cxx 
+Log Message:
+Support new cosAngle field for Cal. pedestals calibration object
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan 30 23:26:24 PST 2004
 CalibSvc/doc
 
