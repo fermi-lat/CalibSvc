@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.3 2003/03/25 02:19:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.4 2004/01/31 01:53:56 jrb Exp $
 
 #include <string>
 #include "XmlCalMuSlopeCnv.h"
@@ -28,7 +28,7 @@ const  ICnvFactory& XmlCalMuSlopeCnvFactory = s_factory;
 
 
 XmlCalMuSlopeCnv::XmlCalMuSlopeCnv( ISvcLocator* svc) :
-  XmlBaseCnv(svc, CLID_Calib_CAL_MuSlope) { 
+  XmlCalBaseCnv(svc, CLID_Calib_CAL_MuSlope) { 
 }
 
 

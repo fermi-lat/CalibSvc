@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.h,v 1.2 2003/03/17 06:55:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.h,v 1.1 2003/03/21 00:05:52 jrb Exp $
 #ifndef CalibSvc_XmlCalMuSlopeCnv_h
 #define CalibSvc_XmlCalMuSlopeCnv_h
 
@@ -8,12 +8,12 @@
 
   @author J. Bogart
 */
-#include "XmlBaseCnv.h"
+#include "XmlCalBaseCnv.h"
 #include <xercesc/dom/DOM_Element.hpp>
 
 template <class TYPE> class CnvFactory;
 
-class XmlCalMuSlopeCnv : public XmlBaseCnv {
+class XmlCalMuSlopeCnv : public XmlCalBaseCnv {
 
   /// Friend needed for instantiation
   friend class CnvFactory<XmlCalMuSlopeCnv>;
