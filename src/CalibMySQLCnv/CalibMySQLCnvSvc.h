@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.12 2004/06/21 22:48:04 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.13 2004/11/17 01:47:07 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -114,8 +114,12 @@ class CalibMySQLCnvSvc : public ConversionSvc,
                                  const CLID&        classID,
                                  IRegistry*         entry=0);
   
+  /// Decode calibUtil enum to enumerated Gaudi storage type
+  //  virtual StatusCode decodeDescription(unsigned int   description,
+  //                                       unsigned char&       type);
+
   /// Decode the string storage type to enumerated storage type
-  virtual StatusCode decodeDescription(unsigned int   description,
+  virtual StatusCode decodeDescription(const std::string&   description,
                                        unsigned char&       type);
 
   virtual calibUtil::Metadata* getMeta();
