@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  9 14:32:14 PST 2003
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibMetaCnvSvc.h 
+Log Message:
+Be sure that all functions which should be pure virtual are..
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan  7 17:16:29 PST 2003
 CalibSvc/src/test
 
