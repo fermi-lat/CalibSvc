@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 20 16:58:28 PST 2002
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibMetaCnvSvc.h 
+Log Message:
+New getValidInterval service
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 13 16:15:13 PST 2002
 CalibSvc/src/Dll
 
