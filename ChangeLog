@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov  3 15:33:36 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Trim trailing white space, if any, from calibration filename
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct 15 11:01:28 PDT 2004
 CalibSvc/doc
 
