@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.54 2004/07/15 06:23:57 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.55 2004/07/15 16:49:58 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -10,6 +10,7 @@ author Joanne Bogart <jrb@slac.stanford.edu>
 
 use CalibData v0r*
 use calibUtil v0r*
+use calibRootData v1r*
 
 use GaudiInterface * IExternal
 
@@ -25,8 +26,9 @@ apply_pattern package_headers
 library CalibSvc *.cxx  CalibDataSvc/*.cxx      \
                         CalibMySQLCnv/*.cxx     \
                         CalibXMLCnv/*.cxx       \
-                        CalibROOTCnv/*.cxx      \
                         CalibXMLCnv/cnv/*.cxx   \
+                        CalibROOTCnv/*.cxx      \
+                        CalibROOTCnv/cnv/*.cxx  \
                         util/*.cxx              \
                         Dll/*.cxx ${CalibSvc_headers}
 
