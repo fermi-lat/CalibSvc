@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May  1 14:54:20 PDT 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+New job options parameter for MySQL host
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May  1 14:54:08 PDT 2003
 CalibSvc/src/CalibMySQLCnv
 
