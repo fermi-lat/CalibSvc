@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.5 2002/12/21 00:58:38 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.6 2003/01/09 22:32:41 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -40,7 +40,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   
   // Reimplemented from IInterface
 
-  virtual StatusCode queryInterface( const IID& riid, 
+  virtual StatusCode queryInterface( const InterfaceID& riid, 
 				     void** ppvInterface );  
 
  public:

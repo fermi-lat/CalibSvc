@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.5 2002/12/21 00:58:38 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.6 2003/01/04 00:22:32 jrb Exp $
 #include <string>
 #include <cstdio>
 
@@ -153,7 +153,7 @@ StatusCode CalibMySQLCnvSvc::finalize()
 }
 
 
-StatusCode CalibMySQLCnvSvc::queryInterface(const IID& riid, 
+StatusCode CalibMySQLCnvSvc::queryInterface(const InterfaceID& riid, 
                                             void** ppvInterface)
 {
   if ( IID_ICalibMetaCnvSvc == riid )  {
