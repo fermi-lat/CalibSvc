@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Feb 27 13:52:17 PST 2003
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx 
+Log Message:
+Eliminate unnecessary update of validity information.  It's handled
+by update method of calibration objects
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 26 17:03:58 PST 2003
 CalibSvc/src/test
 
