@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan  7 17:16:29 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Added Files:
+	UseCalib.cxx digi.root recon.root 
+Log Message:
+jobOptions.txt:  probably still not right, but closer
+UseCalib:  algorithm to test access to calibration data
+root files:  for use with test program
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan  7 17:15:18 PST 2003
 CalibSvc/src
 
