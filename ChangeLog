@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:53:11 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlAcdBaseCnv.h 
+Log Message:
+base class for converters of Acd calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:51:49 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
