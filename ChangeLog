@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan  7 15:37:12 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlCalLightAttCnv.cxx XmlCalLightAttCnv.h 
+Log Message:
+(For Pol) Converter for CAL light attenuation calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 12 09:51:12 PST 2003
 CalibSvc/doc
 
