@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Mar 24 18:19:58 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlCalMuSlopeCnv.cxx 
+Log Message:
+Bug fix: put range data in the correct place
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Mar 24 18:10:00 PST 2003
 CalibSvc/doc
 
