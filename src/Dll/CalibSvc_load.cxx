@@ -3,7 +3,7 @@
 * @brief This is needed for forcing the linker to load all components
 * of the library.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/Dll/CalibSvc_load.cxx,v 1.9 2004/01/07 23:37:30 jrb Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/Dll/CalibSvc_load.cxx,v 1.10 2004/05/21 00:03:14 jrb Exp $
 */
 
 #include "GaudiKernel/DeclareFactoryEntries.h"
@@ -25,6 +25,7 @@ DECLARE_FACTORY_ENTRIES(CalibSvc) {
   DECLARE_CONVERTER(XmlCalMuSlopeCnv);
   DECLARE_CONVERTER(XmlCalLightAttCnv);
   DECLARE_CONVERTER(XmlCalLightAsymCnv);
+  DECLARE_CONVERTER(XmlCalIntNonlinCnv);
 
 
   // Following doesn't exist yet.
