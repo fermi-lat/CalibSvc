@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 23 08:21:38 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	UseCalib.cxx 
+Log Message:
+Replace inappropriate try..catch with check for null pointer
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 22 13:18:31 PST 2003
 CalibSvc/src/CalibMySQLCnv
 
