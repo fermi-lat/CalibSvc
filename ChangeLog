@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan  7 15:37:30 PST 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Load converter for CAL light attenuation calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan  7 15:37:12 PST 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
