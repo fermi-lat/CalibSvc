@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct  4 11:33:32 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Make use of astro public with no_auto_imports.  Has (we hope) effect of only 
+exporting what needs to be exported.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep 24 15:40:23 PDT 2004
 CalibSvc/src/test
 
