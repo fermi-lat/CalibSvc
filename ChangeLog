@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 15 12:03:24 PDT 2004
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Support fetching calibrations by enter_time.  Also some clean-up; should
+be invisible.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 15 12:02:11 PDT 2004
 CalibSvc/src
 
