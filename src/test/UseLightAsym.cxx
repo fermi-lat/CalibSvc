@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.3 2004/02/17 18:15:13 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseLightAsym.cxx,v 1.1 2004/05/21 00:03:34 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -14,8 +14,6 @@
    @file UseLightAsym.cxx
    Simple algorithm to test functioning of "the other" TDS, Cal light asym data
 */
-
-
 
   /** 
    @class UseLightAsym
@@ -87,11 +85,6 @@ StatusCode UseLightAsym::execute( ) {
 
   MsgStream log(msgSvc(), name());
 
-  //  SmartDataPtr<CalibData::CalibTest1> test1(m_pCalibDataSvc,
-  //                                        CalibData::Test_Gen);
-  //  CalibData::CalibTest1* test1 = 
-  //    SmartDataPtr<CalibData::CalibTest1>(m_pCalibDataSvc, CalibData::Test_Gen);
-  
   std::string fullPath = "/Calib/CAL_LightAsym/test";
   DataObject *pObject;
   
