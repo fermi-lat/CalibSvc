@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 16 12:23:36 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	EvtClock.cxx UseCalib.cxx jobOptions.txt 
+Log Message:
+Set up to debug update as well as initial fetch of calibration data
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 16 12:22:47 PST 2003
 CalibSvc/src/CalibMySQLCnv
 
