@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h,v 1.4 2003/01/29 18:32:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h,v 1.5 2003/03/17 06:55:34 jrb Exp $
 #ifndef CalibSvc_XmlTest1Cnv_h
 #define CalibSvc_XmlTest1Cnv_h
 
@@ -10,7 +10,6 @@
   @author J. Bogart
 */
 #include "XmlBaseCnv.h"
-#include <xercesc/dom/DOM_Element.hpp>
 
 template <class TYPE> class CnvFactory;
 
@@ -27,7 +26,7 @@ protected:
 
   virtual ~XmlTest1Cnv() {}       // most likely nothing to do 
 
-  virtual StatusCode i_createObj(const DOM_Element& element,
+  virtual StatusCode i_createObj(const DOMElement* element,
                                  DataObject*& refpObject);
 
   

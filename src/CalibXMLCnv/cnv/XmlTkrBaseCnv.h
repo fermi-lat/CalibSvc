@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.h,v 1.1 2004/06/11 20:51:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTkrBaseCnv.h,v 1.1 2004/08/09 17:49:29 jrb Exp $
 #ifndef CalibData_XmlTkrBaseCnv_h
 #define CalibData_XmlTkrBaseCnv_h
 
@@ -27,12 +27,12 @@ public:
   /// Convenience routine used by most CAL calibration types, which
   /// have a <dimension> element describing how the remainder of the
   /// data is laid out.
-  StatusCode readDimension(const DOM_Element& docElt, 
+  StatusCode readDimension(const DOMElement* docElt, 
                            unsigned& nRow, unsigned& nCol, 
                            unsigned& nTray,
                            unsigned& nChip);
 
-  unsigned countChannels(const DOM_Element& docElt, std::string eltName);
+  unsigned countChannels(const DOMElement* docElt, std::string eltName);
   // Another one to find first range element
   //  DOM_Element findFirstRange(const DOM_Element& docElt);
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.4 2004/01/31 01:53:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.5 2004/06/11 20:48:35 jrb Exp $
 
 #include <string>
 #include "XmlCalMuSlopeCnv.h"
@@ -51,7 +51,7 @@ StatusCode XmlBaseCnv::i_processObj(DataObject*, // pObject,
 namespace {
   /// Local utility which knows how to get the information out of a
   /// <calGain> element and make a CalibData::Gain with it
-  CalibData::MuSlope* processRange(DOM_Element slopeElt) {
+  CalibData::MuSlope* processRange(DOMElement* slopeElt) {
     using xml::Dom;
 
     // Could check here to make sure it really is a <calMuSlope>
@@ -79,7 +79,7 @@ namespace {
 }
 
 // Create our specific object
-StatusCode XmlCalMuSlopeCnv::i_createObj(const DOM_Element& docElt, 
+StatusCode XmlCalMuSlopeCnv::i_createObj(const DOMElement* docElt, 
                                          DataObject*& refpObject)
 {
   using xml::Dom;
@@ -99,9 +99,9 @@ StatusCode XmlCalMuSlopeCnv::i_createObj(const DOM_Element& docElt,
 
   setBaseInfo(pObj);
 
-  DOM_Element rangeElt = findFirstRange(docElt);
+  DOMElement* rangeElt = findFirstRange(docElt);
 
-  while (rangeElt != DOM_Element() ) {
+  while (rangeElt != 0 ) {
     MuSlope* pMuSlope = processRange(rangeElt);
     pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, m_nFace, 
                    pMuSlope);

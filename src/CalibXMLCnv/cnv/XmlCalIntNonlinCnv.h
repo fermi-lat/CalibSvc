@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.h,v 1.1 2004/05/26 22:44:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.h,v 1.2 2004/06/11 20:48:35 jrb Exp $
 #ifndef CalibSvc_XmlCalIntNonlinCnv_h
 #define CalibSvc_XmlCalIntNonlinCnv_h
 
@@ -9,7 +9,6 @@
   @author J. Bogart
 */
 #include "XmlCalBaseCnv.h"
-#include <xercesc/dom/DOM_Element.hpp>
 
 template <class TYPE> class CnvFactory;
 
@@ -26,7 +25,7 @@ protected:
 
   virtual ~XmlCalIntNonlinCnv() {}       // most likely nothing to do 
 
-  virtual StatusCode i_createObj(const DOM_Element& element,
+  virtual StatusCode i_createObj(const DOMElement* element,
                                  DataObject*& refpObject);
 
 };

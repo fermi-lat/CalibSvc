@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.1 2002/12/14 00:09:52 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.2 2003/01/14 23:23:36 jrb Exp $
 
 // one or both of following includes may not be necessary..
 // depends on whether we keep and use private members
@@ -165,6 +165,7 @@ StatusCode CalibXmlCnvSvc::createAddress(unsigned char svc_type,
 
 
 
-DOM_Document CalibXmlCnvSvc::parse(const char* filename) {
+XERCES_CPP_NAMESPACE_QUALIFIER DOMDocument* 
+CalibXmlCnvSvc::parse(const char* filename) {
   return m_parser->parse(filename);
 }
