@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 25 15:51:03 PST 2005
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Need private use of MYSQLEXT so that test program knows to load mysql library
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r17p0em1, operation: add
 Package: CalibSvc
