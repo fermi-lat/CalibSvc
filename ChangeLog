@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  9 10:49:50 PDT 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Add converter for XML format tracker splits calibration 
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Aug  9 10:49:29 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
