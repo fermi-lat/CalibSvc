@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.1 2003/02/27 01:03:58 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.2 2003/03/29 07:00:51 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -166,6 +166,7 @@ void UsePeds::processNew(CalibData::CalCalibPed* pNew,
     
     log << MSG::INFO << "Averaged ped = " << pPed->getAvr() << endreq;
     log << MSG::INFO << "       sigma = " << pPed->getSig() << endreq;
+    log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
 
     /*      Try another tower */
     iTower++;
@@ -181,6 +182,7 @@ void UsePeds::processNew(CalibData::CalCalibPed* pNew,
     
     log << MSG::INFO << "Averaged ped = " << pPed->getAvr() << endreq;
     log << MSG::INFO << "       sigma = " << pPed->getSig() << endreq;
+    log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
 
   }
 }
