@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.cxx,v 1.2 2004/12/10 18:43:06 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.cxx,v 1.1 2004/12/17 19:16:00 jrb Exp $
 #include "GaudiKernel/MsgStream.h"
 #include "RootTkrBaseCnv.h"
 
@@ -68,7 +68,8 @@ StatusCode RootTkrBaseCnv::readTower(TTree* pTree, unsigned iTow,
                                      CalibData::TkrBase* pCol) {
   CalibData::TkrBase::TkrTower* tdsTow = pCol->makeTower(iTow);
 
-  calibRootData::TkrTower* rootTow = 0;
+  //  calibRootData::TkrTower* rootTow = 0;
+  calibRootData::TkrTower* rootTow = new calibRootData::TkrTower;
   TObject* pTObj = rootTow;
   StatusCode ret = readRootObj(pTree, 
                                std::string("calibRootData::TkrTower"), 
