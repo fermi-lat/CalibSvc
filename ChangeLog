@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 13 16:07:38 PST 2002
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibMetaCnvSvc.h 
+Added Files:
+	ICalibXmlSvc.h 
+Log Message:
+1. Minor mods to meta cnv svc interface.
+2. Add abstract interface for xml services
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec 10 15:09:10 PST 2002
 CalibSvc/src/CalibXMLCnv/cnv
 
