@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.2 2003/03/22 01:39:52 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx,v 1.3 2003/03/25 02:19:58 jrb Exp $
 
 #include <string>
 #include "XmlCalMuSlopeCnv.h"
@@ -55,12 +55,25 @@ namespace {
     using xml::Dom;
 
     // Could check here to make sure it really is a <calMuSlope>
+    float slope, error;
 
+    try {
+      slope = xml::Dom::getDoubleAttribute(slopeElt, "slope");
+      error = xml::Dom::getDoubleAttribute(slopeElt, "error");
+    }
+    catch (xml::DomException ex) {
+      std::cerr << "From CalibSvc::XmlCalMuySlopeCnv::processRange" 
+                << std::endl;
+      std::cerr << ex.getMsg() << std::endl;
+      throw ex;
+    }
+
+    /*
     std::string att = Dom::getAttribute(slopeElt, "slope");
     float slope = atof(att.c_str());
     att = Dom::getAttribute(slopeElt, "error");
     float error = atof(att.c_str());
-
+    */
     return new CalibData::MuSlope(slope, error);
   }
 }

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.3 2003/03/22 01:39:52 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.4 2003/03/25 02:06:31 jrb Exp $
 
 #include <string>
 #include "XmlCalGainCnv.h"
@@ -55,11 +55,22 @@ namespace {
     using xml::Dom;
 
     // Could check here to make sure it really is a <calGain>
-
+    /*
     std::string att = Dom::getAttribute(gainElt, "avg");
     float gain = atof(att.c_str());
     att = Dom::getAttribute(gainElt, "sig");
     float sig = atof(att.c_str());
+    */
+    float gain, sig;
+    try {
+      gain = xml::Dom::getDoubleAttribute(gainElt, "avg");
+      sig = xml::Dom::getDoubleAttribute(gainElt, "sig");
+    }
+    catch (xml::DomException ex) {
+      std::cerr << "From CalibSvc::XmlCalGainCnv::processRange" << std::endl;
+      std::cerr << ex.getMsg() << std::endl;
+      throw ex;
+    }
 
     return new CalibData::Gain(gain, sig);
   }

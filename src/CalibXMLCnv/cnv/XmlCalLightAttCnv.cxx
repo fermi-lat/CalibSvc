@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx,v 1.4 2003/03/25 02:06:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx,v 1.1 2004/01/07 23:37:12 jrb Exp $
 
 #include <string>
 #include "XmlCalLightAttCnv.h"
@@ -55,12 +55,24 @@ namespace {
     using xml::Dom;
 
     // Could check here to make sure it really is a <calLightAtt>
+    float light_att, norm;
 
+    try {
+      light_att = xml::Dom::getDoubleAttribute(lightAttElt, "att");
+      norm = xml::Dom::getDoubleAttribute(lightAttElt, "norm");
+    }
+    catch (xml::DomException ex) {
+      std::cerr << "From CalibSvc::XmlCalPedCnv::processRange" << std::endl;
+      std::cerr << ex.getMsg() << std::endl;
+      throw ex;
+    }
+
+    /*
     std::string att = Dom::getAttribute(lightAttElt, "att");
     float light_att = atof(att.c_str());
     att = Dom::getAttribute(lightAttElt, "norm");
     float norm = atof(att.c_str());
-
+    */
     return new CalibData::LightAtt(light_att, norm);
   }
 }
