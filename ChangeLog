@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Aug 12 00:04:55 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+now increment version of LdfEvent
+    *
+------------------------------------------------------------
 User: heather  Wed Aug 11 23:44:33 PDT 2004
 CalibSvc/doc
 
