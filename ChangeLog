@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  9 17:03:14 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.h 
+Log Message:
+Get rid of unnecessary (and harmful) declaration of objType()
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  9 17:01:55 PST 2003
 CalibSvc/cmt
 
