@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 16 16:37:19 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	UseCalib.cxx 
+Log Message:
+Temp work-around for Windows inability to find external string definitions in separate dll.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 16 16:09:57 PST 2003
 CalibSvc/cmt
 
