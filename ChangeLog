@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun 21 15:49:16 PDT 2004
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Document DbName job options parameter (optional; not used by 
+standard run of test_CalibSvc.exe)
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 21 15:48:05 PDT 2004
 CalibSvc/src/CalibMySQLCnv
 
