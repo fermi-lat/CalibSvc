@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 15 12:04:03 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h 
+Log Message:
+Get rid of some compile-time warnings
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 15 12:03:42 PDT 2004
 CalibSvc/src/CalibMySQLCnv
 
