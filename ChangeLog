@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb 26 17:03:36 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlCalPedCnv.cxx 
+Log Message:
+Bug fixes; probably not done yet
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 25 17:28:45 PST 2003
 CalibSvc/src/CalibMySQLCnv
 
