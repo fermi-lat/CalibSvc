@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.h,v 1.1 2004/06/11 20:51:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.h,v 1.1 2004/07/27 05:51:35 jrb Exp $
 #ifndef RootCalBaseCnv_h
 #define RootCalBaseCnv_h
 
@@ -52,19 +52,9 @@ public:
   // Might need another one reading from Root class into protected members
 
   /*
-    Not sure yet what the analogous thing ought to be..likely don't
-    need it at all since ROOT persistent form comes fully labeled
-    with CalXtalId
-  /// Another one to find first range element
-  DOM_Element findFirstRange(const DOM_Element& docElt);
-
-  /// Still another one to navigate XML file and find next set of range data
-  DOM_Element findNextRange(const DOM_Element& rangeElt);
-  */
-
-  // Declared as pure virtual in base.  Only implement in "leaf" classes
-  /*  virtual StatusCode createRoot(const std::string& fname, 
-                                CalibData::CalibBase* pTDSObj)
+    Not sure yet what the analogous thing to findFirstRange, findNextRange
+    ought to be..likely don't need it at all since ROOT persistent form 
+    comes fully labeled with CalXtalId
   */
 
 protected:
@@ -79,7 +69,12 @@ protected:
   virtual StatusCode fillRoot(CalibData::CalibBase* pTDSObj, 
                               TObject* pRootObj);
 
- 
+  /**
+     Read in object from specified branch. Don't need tree name; it's
+     always Calib
+  */
+  virtual StatusCode readRootObj(const std::string& branch, TObject*& pCalib);
+
   /// Keep dimension info here
   unsigned m_nRow;
   unsigned m_nCol;
