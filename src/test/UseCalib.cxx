@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.6 2003/01/23 16:21:37 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.7 2003/01/30 00:02:17 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -74,41 +74,28 @@ StatusCode UseCalib::execute( ) {
 
   MsgStream log(msgSvc(), name());
 
-  //  SmartDataPtr<CalibData::CalibTest1> test1(m_pCalibDataSvc,
-  //                                        CalibData::Test_Gen);
-  //  CalibData::CalibTest1* test1 = 
-  //    SmartDataPtr<CalibData::CalibTest1>(m_pCalibDataSvc, CalibData::Test_Gen);
-  
-  
-  //  std::string fullPath = CalibData::Test_1 + "/vanilla";
   // Cheat for now since Windows is having trouble finding definition
   // of Calibdata::Test_t
   std::string fullPath = "/Calib/Test_1/vanilla";
-  DataObject *pObject;
 
-  m_pCalibDataSvc->retrieveObject(fullPath, pObject);
+  SmartDataPtr<CalibData::CalibTest1> test1Copy(m_pCalibDataSvc, fullPath);
 
-  CalibData::CalibTest1* test1Copy = 0;
-  test1Copy = dynamic_cast<CalibData::CalibTest1 *> (pObject);
   if (!test1Copy) {
-    log << MSG::ERROR << "Dynamic cast to CalibTest1 failed" << endreq;
+    log << MSG::ERROR << "Failed access to CalibTest1 via smart ptr" << endreq;
     return StatusCode::FAILURE;
   }
+
   log << MSG::INFO 
       << "Test_1 obj, serial #" <<  test1Copy->getSerNo() 
       << "  value = " << test1Copy->getValue() << endreq;
   log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hours()
       << "  Vend: " << (test1Copy->validTill()).hours() << endreq;
 
-  m_pCalibDataSvc->updateObject(pObject);
+  m_pCalibDataSvc->updateObject((CalibData::CalibTest1 *)test1Copy);
 
-  test1Copy = 0;
-  try {
-    test1Copy = dynamic_cast<CalibData::CalibTest1 *> (pObject);
-  }
-  catch (...) {
+  if (!test1Copy) {
     log << MSG::ERROR 
-        << "Dynamic cast to CalibTest1 after update failed" << endreq;
+        << "Failed access to CalibTest1 via smart ptr" << endreq;
     return StatusCode::FAILURE;
   }
   log << MSG::INFO 
@@ -120,13 +107,11 @@ StatusCode UseCalib::execute( ) {
   return StatusCode::SUCCESS;
 }
 
-
-
 StatusCode UseCalib::finalize( ) {
 
   MsgStream log(msgSvc(), name());
   log << MSG::INFO 
-      << "------------- FINALIZE!! -------------------------------------------"
+      << "        UseCalib FINALIZE!! "
       << endreq;
   
   return StatusCode::SUCCESS;
