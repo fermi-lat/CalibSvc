@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 13 16:15:13 PST 2002
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Declare xml conversion service and base converter. 
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 13 16:12:18 PST 2002
 CalibSvc/src/Dll
 
