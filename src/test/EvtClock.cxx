@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.cxx,v 1.1 2003/01/04 00:23:44 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.cxx,v 1.2 2003/01/14 23:26:06 jrb Exp $
 #include <stdio.h>
 
 #include "EvtClock.h"
@@ -82,10 +82,6 @@ StatusCode EvtClock::initialize() {
 StatusCode EvtClock::execute( ) {
 
   MsgStream log(msgSvc(), name());
-  log << MSG::INFO 
-      << "------------- NEW EVENT! -------------------------------------------"
-      << endreq;
-  log << MSG::INFO << "Execute()" << endreq;
 
   // Increment the event counter
   m_eventNumber++;
@@ -116,8 +112,6 @@ StatusCode EvtClock::finalize( ) {
   return StatusCode::SUCCESS;
 }
 
-
-//longlong EvtClock::i_evtTime( ) {
 facilities::Timestamp EvtClock::i_evtTime( ) {
 
   return facilities::Timestamp(m_startTime + 
