@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 10 10:41:56 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.h 
+Log Message:
+Get rid of commented-out junk
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan 10 10:41:37 PST 2003
 CalibSvc/src/CalibDataSvc
 
