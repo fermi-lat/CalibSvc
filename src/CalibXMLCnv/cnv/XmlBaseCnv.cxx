@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.16 2004/01/31 00:29:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.17 2004/01/31 01:53:56 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -41,6 +41,7 @@ namespace {
     if (att.compare(std::string("HEX1")) == 0) return CalXtalId::HEX1; 
     // anything else is illegal.  Should be caught by parser, but
     // maybe should also throw exception here.
+    return 0;
   }
 
   unsigned findFace(const DOM_Element& faceElt) {
