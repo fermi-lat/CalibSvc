@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.2 2003/01/30 22:36:26 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.3 2003/07/11 19:45:51 jrb Exp $
 
 #include <string>
 #include "XmlBadStripsCnv.h"
@@ -105,7 +105,7 @@ StatusCode XmlBadStripsCnv::i_createObj(const DOM_Element& element,
   // Find child tower elements 
   
   // const 
-  StatusCode sc = StatusCode::FAILURE;
+  StatusCode sc = StatusCode::SUCCESS;   // it's OK to have no bad towers
   DOM_Element child = Dom::findFirstChildByName(element, "tower");
   while (child != DOM_Element()) {
     sc = processTower(child, pBad);
