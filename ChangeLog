@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu May 20 17:02:49 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h 
+Added Files:
+	XmlCalLightAsymCnv.cxx XmlCalLightAsymCnv.h 
+Log Message:
+Support for CAL light asymmetry calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 20 17:02:21 PDT 2004
 CalibSvc/src/CalibMySQLCnv
 
