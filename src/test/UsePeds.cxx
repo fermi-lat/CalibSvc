@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.5 2004/08/09 17:50:19 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.6 2004/08/09 23:48:55 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -177,10 +177,15 @@ void UsePeds::processNew(CalibData::CalCalibPed* pNew,
     log << MSG::INFO << "    range = " << range 
         << " face = " << face << endreq;
     
-    log << MSG::INFO << "Averaged ped = " << pPed->getAvr() << endreq;
-    log << MSG::INFO << "       sigma = " << pPed->getSig() << endreq;
-    log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
-
+    if (!pPed) {
+      log << MSG::INFO << "No calibration data found for this channel" 
+          << endreq;
+    }
+    else {
+      log << MSG::INFO << "Averaged ped = " << pPed->getAvr() << endreq;
+      log << MSG::INFO << "       sigma = " << pPed->getSig() << endreq;
+      log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
+    }
     /*      Try another tower */
     iTower++;
     id = CalXtalId(iTower, iLayer, iXtal);
@@ -188,15 +193,21 @@ void UsePeds::processNew(CalibData::CalCalibPed* pNew,
     pRange = pNew->getRange(id, range, face);
     
     pPed = dynamic_cast<Ped * >(pRange);
-    log << MSG::INFO << "For tower = " << iTower << " layer = " << iLayer
-        << " xtal = " << iXtal << endreq;
-    log << MSG::INFO << "    range = " << range 
-        << " face = " << face << endreq;
-    
-    log << MSG::INFO << "Averaged ped = " << pPed->getAvr() << endreq;
-    log << MSG::INFO << "       sigma = " << pPed->getSig() << endreq;
-    log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
 
+    if (!pPed) {
+      log << MSG::INFO << "No calibration data found for this channel" 
+          << endreq;
+    }
+    else {
+      log << MSG::INFO << "For tower = " << iTower << " layer = " << iLayer
+          << " xtal = " << iXtal << endreq;
+      log << MSG::INFO << "    range = " << range 
+          << " face = " << face << endreq;
+      
+      log << MSG::INFO << "Averaged ped = " << pPed->getAvr() << endreq;
+      log << MSG::INFO << "       sigma = " << pPed->getSig() << endreq;
+      log << MSG::INFO << "  cos angle = " << pPed->getCosAngle() << endreq;
+    }
   }
 }
 

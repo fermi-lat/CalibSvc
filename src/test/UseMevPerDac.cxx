@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAsym.cxx,v 1.1 2004/09/24 22:40:23 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseMevPerDac.cxx,v 1.1 2004/10/06 00:18:44 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -154,8 +154,8 @@ void UseMevPerDac::processNew(CalibData::CalMevPerDacCol* pNew,
     short iTower = 0;
     short iLayer = 0;
     short iXtal = 2;
-    //    unsigned range = 2;
-    unsigned range = idents::CalXtalId::HEX8;
+    //   range not applicable to this calibration type
+    unsigned range = 0;
     unsigned face = 0;
     CalXtalId id(iTower, iLayer, iXtal);
     
@@ -165,6 +165,11 @@ void UseMevPerDac::processNew(CalibData::CalMevPerDacCol* pNew,
     log << MSG::INFO << "For tower = " << iTower << " layer = " << iLayer
         << " xtal = " << iXtal << endreq;
 
+    if (!pMevPerDac) {
+      log << MSG::INFO << "no calibration data found for this channel" 
+          << endreq;
+      return;
+    }
     const std::vector<float>* positions = pNew->getXpos()->getVals();
     unsigned nVal = positions->size();
 
