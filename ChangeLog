@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 11 23:44:33 PDT 2004
+CalibSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+fix for rootcint mess
+    *
+------------------------------------------------------------
 User: heather  Wed Aug 11 23:42:58 PDT 2004
 CalibSvc/cmt
 
