@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibMetaCnvSvc.h,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibMetaCnvSvc.h,v 1.2 2002/11/19 19:58:07 jrb Exp $
 #ifndef ICalibMetaCnvSvc_h
 #define ICalibMetaCnvSvc_h 1
 
@@ -95,12 +95,12 @@ class ICalibMetaCnvSvc : virtual public IInterface
   // Get handle for metadata access from calibUtil.
   virtual calibUtil::Metadata* getMeta() = 0;
 
-  // Might want to add a method which will return certain metadata
+  // Might want to add additional methods which will return certain metadata
   // in a convenient form, given a serial number.  Would be used
   // by the bulk data conversion services to get some standard set
   // of information which would go in every calib data object --
   // except a "bad channel" list composed from dead + hot doesn't
-  // correspond to any single metadata row.
+  // correspond to any single metadata row.  
 };
 
 #endif
