@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.9 2003/01/27 18:18:04 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.10 2003/02/05 22:58:27 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 package CalibSvc
@@ -33,5 +33,12 @@ use RootIo   v6r*
 
 public
 set JOBOPTIONS "${CALIBSVCROOT}/src/test/jobOptions.txt"
-application simpletest ${GlastMain} test/*.cxx $(WinInclude)
+
+## Following definition of CalibSvcShr *should* be handled by the line 
+##   apply pattern packageShr 
+## above, but it isn't !
+set CalibSvcShr "${CALIBSVCROOT}/${CALIBSVCCONFIG}/libCalibSvc"
+application test_CalibSvc $(TestGlastMain) test/*.cxx $(WinInclude)
+
+apply_pattern package_test
 
