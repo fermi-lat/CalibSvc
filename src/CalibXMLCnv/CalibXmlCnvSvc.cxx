@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.2 2003/01/14 23:23:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.3 2004/11/11 00:12:21 jrb Exp $
 
 // one or both of following includes may not be necessary..
 // depends on whether we keep and use private members
@@ -14,7 +14,7 @@
 #include "GaudiKernel/IDataProviderSvc.h"
 #include "GaudiKernel/GenericAddress.h"
 #include "CalibXmlCnvSvc.h"
-#include "xml/XmlParser.h"
+#include "xmlBase/XmlParser.h"
 
 // Make instances only via static factory class
 static SvcFactory<CalibXmlCnvSvc> calibXmlCnvSvc_factory;
@@ -111,7 +111,7 @@ StatusCode CalibXmlCnvSvc::initialize() {
   // end of second pasted piece
 
 
-  m_parser = new xml::XmlParser();
+  m_parser = new xmlBase::XmlParser();
 
   if (m_parser == 0) {
     log << MSG::FATAL << "Unable to create XML parser instance \n"
