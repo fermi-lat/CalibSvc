@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 31 13:26:25 PST 2005
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+For all sorts of data, fetch event time from event header 
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar 31 13:25:27 PST 2005
 CalibSvc/src
 
