@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan  7 17:14:59 PST 2003
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Probably still not quite right, but closer
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan  3 16:33:39 PST 2003
 CalibSvc/src/CalibDataSvc
 
