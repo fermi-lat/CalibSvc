@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:51:35 PDT 2004
+CalibSvc/src/CalibROOTCnv/cnv
+
+Added Files:
+	RootBaseCnv.cxx RootBaseCnv.h RootCalBaseCnv.cxx 
+	RootCalBaseCnv.h RootCalGainCnv.cxx RootCalGainCnv.h 
+Log Message:
+Converters needed for Cal gains calibration.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 26 22:50:44 PDT 2004
 CalibSvc/src/CalibROOTCnv
 
