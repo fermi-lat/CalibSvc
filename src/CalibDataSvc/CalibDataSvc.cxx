@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.4 2002/11/26 18:22:19 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.5 2003/01/04 00:21:58 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -58,7 +58,9 @@ CalibDataSvc::CalibDataSvc(const std::string& name,ISvcLocator* svc) :
   m_rootCLID = CLID_DataObject;  
   m_eventTimeDefined = false;
   m_eventTime = 0;
-  m_instrumentName = std::string("");
+  declareProperty("CalibInstrumentName", m_instrumentName = "LAT" );
+  m_instrumentDefined = true;
+  //  m_instrumentName = std::string("");
 }
 
 /// Standard Destructor
