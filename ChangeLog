@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb 25 17:28:45 PST 2003
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx 
+Log Message:
+For compatibility with new CalibBase::update interface
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Feb 25 16:15:40 PST 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
