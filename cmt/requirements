@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.57 2004/07/27 23:13:35 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.58 2004/08/02 23:30:51 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -11,7 +11,7 @@ author Joanne Bogart <jrb@slac.stanford.edu>
 use CalibData v0r*
 use calibUtil v0r*
 use calibRootData v1r*
-
+use astro       v1r*
 use GaudiInterface * IExternal
 
 apply_pattern component_library library=CalibSvc
