@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct  6 17:07:01 PDT 2004
+CalibSvc/src/test
+
+Added Files:
+	UseTholdMuon.cxx jobOptions.txt.tholdMuon 
+Log Message:
+Test program and job options to test conversion of CAL_TholdMuon calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Oct  5 17:18:45 PDT 2004
 CalibSvc/src/test
 
