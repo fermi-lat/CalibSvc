@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan  3 16:33:39 PST 2003
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+Use jobOptions parameter to fake instrument
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan  3 16:23:44 PST 2003
 CalibSvc/src/test
 
