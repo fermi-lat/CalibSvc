@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul  8 09:42:24 PDT 2004
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+Benignly ignore extra (unnecessary) mention of "vanilla" in user flavor list
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun 21 16:08:11 PDT 2004
 CalibSvc/doc
 
