@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 28 23:00:51 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	UsePeds.cxx jobOptions.txt 
+Added Files:
+	UseGains.cxx 
+Log Message:
+UsePeds.cxx:     look at data for more than just tower 0
+jobOptions.txt:  ask for extra across-the-board flavor:  "ideal"
+UseGains.cxx:    add test algorithm for gains to repository
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 28 22:59:08 PST 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
