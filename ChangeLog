@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:48:35 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlBaseCnv.h XmlCalGainCnv.cxx XmlCalGainCnv.h 
+	XmlCalIntNonlinCnv.cxx XmlCalIntNonlinCnv.h 
+	XmlCalLightAsymCnv.cxx XmlCalLightAsymCnv.h 
+	XmlCalLightAttCnv.cxx XmlCalLightAttCnv.h XmlCalMuSlopeCnv.cxx 
+	XmlCalMuSlopeCnv.h XmlCalPedCnv.cxx XmlCalPedCnv.h 
+Log Message:
+Support for Acd calibrations, involving some refactoring of Cal stuff
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 26 15:53:09 PDT 2004
 CalibSvc/doc
 
