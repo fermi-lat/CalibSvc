@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb  5 17:05:02 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Put job options parameters in file explicitly to better document..
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb  5 14:58:52 PST 2003
 CalibSvc/src/CalibROOTCnv
 
