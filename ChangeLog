@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 26 11:20:56 PST 2002
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Attempt to give some clue of how this is supposed to work
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 26 10:22:19 PST 2002
 CalibSvc/src/CalibDataSvc
 
