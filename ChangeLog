@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jul 11 12:46:26 PDT 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Swap testing back to bad strips TDS classes to exercise recent mods
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jul 11 12:45:51 PDT 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
