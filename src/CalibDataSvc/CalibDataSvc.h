@@ -1,4 +1,4 @@
-// $Header: DetDataSvc.h,v 1.1.1.3 2002/01/25 20:13:50 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -7,7 +7,7 @@
 #include "GaudiKernel/IDetDataSvc.h"
 #include "GaudiKernel/IIncidentListener.h"
 
-#include "CalibDataSvc/IInstrumentName.h"
+#include "CalibSvc/IInstrumentName.h"
 
 // Forward declarations
 class ITime;

@@ -1,7 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.2 2002/11/19 20:04:03 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
+#include "CalibCLIDNode.h"
+#include "CalibData/CalibModel.h"
 #include "GaudiKernel/IAddressCreator.h"
 #include "GaudiKernel/IConversionSvc.h"
 #include "GaudiKernel/IOpaqueAddress.h"
@@ -110,7 +112,7 @@ StatusCode CalibDataSvc::initialize()   {
 
   
   //   Make the root for the TDDS data
-  DataObject rootObj = new DataObject();
+  DataObject* rootObj = new DataObject();
   sc = setRoot(m_rootName, rootObj);
   if (!sc.isSuccess() ) {
     log << MSG::ERROR << "Unable to set calib data store root." << endreq;
@@ -125,7 +127,7 @@ StatusCode CalibDataSvc::initialize()   {
   // namespace
   CalibData::PairIt  pairIt;
   for (pairIt = CalibData::pairs.begin(); pairIt++; 
-       pairIt != CalibData::pairs.end(); ) {
+       pairIt != CalibData::pairs.end() ) {
     
     CalibCLIDNode* node = new CalibCLIDNode(pairIt->second);
 
@@ -161,7 +163,7 @@ StatusCode CalibDataSvc::initialize()   {
                                      args,
                                      iargs,
                                      pAddress);  //result stored here
-    if (!sc.issuccess()) {
+    if (!sc.isSuccess()) {
       log << MSG::ERROR << "Unable to create Calib address" 
           << endreq;
     }
@@ -170,7 +172,7 @@ StatusCode CalibDataSvc::initialize()   {
     // node for which an object was registered above.
     calibTypePath += "/vanilla";
     sc = registerAddress(calibTypePath, pAddress);
-    if (!sc.issuccess()) {
+    if (!sc.isSuccess()) {
       log << MSG::ERROR << "Unable to register Calib address" 
           << endreq;
     }
@@ -189,7 +191,6 @@ StatusCode CalibDataSvc::initialize()   {
   //
   // what about additional flavors of standard calibration types 
   // specified by job options?
-  }
 
   return StatusCode::SUCCESS;
 }
@@ -273,8 +274,8 @@ const std::string& CalibDataSvc::getInstrumentName() const {
   return m_instrumentName;
 }
 
-void setInstrumentName(const std::string& name) {
-  m_InstrumentName = name;
+void CalibDataSvc::setInstrumentName(const std::string& name) {
+  m_instrumentName = name;
 }
 
 
