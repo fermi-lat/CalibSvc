@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan  3 16:21:58 PST 2003
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Use CalibData::CalibTime class for timestamps
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan  3 16:21:33 PST 2003
 CalibSvc/cmt
 
