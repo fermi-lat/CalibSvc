@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.cxx,v 1.1 2004/06/11 20:51:49 jrb Exp $
 #include "GaudiKernel/MsgStream.h"
 #include "XmlCalBaseCnv.h"
 #include "xml/Dom.h"
@@ -52,7 +52,8 @@ StatusCode XmlCalBaseCnv::readDimension(const DOM_Element& docElt,
                                         unsigned& nLayer,
                                         unsigned& nXtal, unsigned& nFace,
                                         unsigned& nRange,
-                                        unsigned* nDacCol) {
+                                        unsigned* nDacCol,
+                                        unsigned* nXpos) {
   using xml::Dom;
 
   MsgStream log(msgSvc(), "XmlCalBaseCnv" );
@@ -67,6 +68,7 @@ StatusCode XmlCalBaseCnv::readDimension(const DOM_Element& docElt,
     nFace = Dom::getIntAttribute(dimElt, "nFace");
     nRange = Dom::getIntAttribute(dimElt, "nRange");
     if (nDacCol) *nDacCol = Dom::getIntAttribute(dimElt, "nDacCol");
+    if (nDacCol) *nXpos = Dom::getIntAttribute(dimElt, "nXpos");
   }
   catch (xml::DomException ex) {
     std::cerr << "From CalibSvc::XmlCalBaseCnv::readDimension" << std::endl;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.11 2004/05/26 22:44:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.h,v 1.1 2004/06/11 20:51:49 jrb Exp $
 #ifndef CalibData_XmlCalBaseCnv_h
 #define CalibData_XmlCalBaseCnv_h
 
@@ -47,7 +47,8 @@ public:
                            unsigned& nLayer,
                            unsigned& nXtal, unsigned& nFace,
                            unsigned& nRange,
-                           unsigned* nDacCol=0);
+                           unsigned* nDacCol=0,
+                           unsigned* nXpos=0);
 
   /// Another one to find first range element
   DOM_Element findFirstRange(const DOM_Element& docElt);

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.1 2004/05/26 22:44:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.2 2004/06/11 20:48:35 jrb Exp $
 
 #include <string>
 #include "XmlCalIntNonlinCnv.h"
@@ -46,7 +46,7 @@ const CLID& XmlCalIntNonlinCnv::classID() {
 
 namespace {
   /// Local utility which knows how to get the information out of a
-  /// <calLightAsym> element and make a CalibData::LightAsym with it
+  /// <calLightAsym> element and make a CalibData::IntNonlin with it
   CalibData::IntNonlin* processRange(DOM_Element intNonlinElt) {
     using xml::Dom;
 
