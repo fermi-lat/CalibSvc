@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec 17 11:16:56 PST 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Declare ToT converter
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec 17 11:16:01 PST 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
