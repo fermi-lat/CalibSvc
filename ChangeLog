@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 17 16:59:11 PST 2003
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Slight changes consistent with modified opaque address use; 
+clean up comments and some MSG::DEBUGs
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan 17 16:59:01 PST 2003
 CalibSvc/src/CalibDataSvc
 
