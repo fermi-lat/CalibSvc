@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jul  9 15:15:32 PDT 2004
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+1. Get rid of -no_auto_imports.
+2. Eliminate definition of obsolete, unused macro WinInclude.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jul  9 09:07:47 PDT 2004
 CalibSvc
 
