@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h,v 1.2 2002/12/21 00:59:14 jrb Exp $
-#ifndef CalibData_XmlTest1Cnv_h
-#define CalibData_XmlTest1Cnv_h
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h,v 1.3 2003/01/09 22:33:48 jrb Exp $
+#ifndef CalibSvc_XmlTest1Cnv_h
+#define CalibSvc_XmlTest1Cnv_h
 
 /** @class XmlTest1  
 
