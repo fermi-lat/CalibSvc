@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.cxx,v 1.1 2003/02/25 06:48:20 jrb Exp $
 
 #include <string>
 #include "XmlCalPedCnv.h"
@@ -94,7 +94,7 @@ StatusCode XmlCalPedCnv::i_createObj(const DOM_Element& docElt,
 
   while (rangeElt != DOM_Element() ) {
     Ped* ped = processRange(rangeElt);
-    pObj->putRange(nRow, nCol, nLayer, nXtal, nRange, nFace, ped);
+    pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, m_nFace, ped);
     rangeElt = findNextRange(rangeElt);
   }
 
