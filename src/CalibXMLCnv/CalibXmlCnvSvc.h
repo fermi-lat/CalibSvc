@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.2 2003/03/17 06:55:02 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.3 2004/11/11 00:12:21 jrb Exp $
 #ifndef CalibXmlCnvSvc_h
 #define CalibXmlCnvSvc_h  1
 
@@ -15,7 +15,7 @@ template <class TYPE> class SvcFactory;
 
 class IDetDataSvc;
 class IOpaqueAddress;
-namespace xml {
+namespace xmlBase {
   class XmlParser;
 }
 
@@ -131,7 +131,7 @@ class CalibXmlCnvSvc : public ConversionSvc, virtual public ICalibXmlSvc
   /// Handle to the IDetDataSvc interface of the CalibDataSvc
   IDetDataSvc*         m_detDataSvc;
 
-  xml::XmlParser*       m_parser;
+  xmlBase::XmlParser*       m_parser;
 };
 #endif   
 
