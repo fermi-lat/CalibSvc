@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.1.1.1 2002/11/14 21:30:13 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -61,7 +61,6 @@ CalibDataSvc::~CalibDataSvc()  {
   setDataLoader(0);
   clearStore();
 }
-
 
 // Service initialization
 StatusCode CalibDataSvc::initialize()   {
