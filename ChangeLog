@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  2 13:31:06 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Bug fix -- find all dac collections properly
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jul 29 12:23:38 PDT 2004
 CalibSvc/src/test
 
