@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 14 16:57:48 PDT 2004
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Changes to allow calibration fetched to be determined by event time in
+/Event/Time 
+Clean-up of support of non-event time based fetch
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jul 14 16:56:16 PDT 2004
 CalibSvc/cmt
 
