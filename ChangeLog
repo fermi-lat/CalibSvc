@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 26 22:52:15 PDT 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+modified a comment
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jul 26 22:51:35 PDT 2004
 CalibSvc/src/CalibROOTCnv/cnv
 
