@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.1 2003/01/29 18:32:15 jrb Exp $
 
 #include <string>
 #include "XmlBadStripsCnv.h"
@@ -184,7 +184,7 @@ StatusCode XmlBadStripsCnv::processUni(const DOM_Element& uniElt,
   }
 
   // finally,
-  pBad->addBadPlane(row, col, tray, top, howBad, strips);
+  pBad->addBadPlane(row, col, tray, top, howBad, allBad, strips);
  
   return StatusCode::SUCCESS;
 }
@@ -202,6 +202,7 @@ StatusCode XmlBadStripsCnv::addStrips(const DOM_Element& uniElt,
     strToNum(xmlList, strips);
     child = Dom::getSiblingElement(child);
   }
+  else child = Dom::findFirstChildByName(uniElt, "stripSpan");
 
   while (child != DOM_Element()) {
     std::string firstStr = Dom::getAttribute(child, "first");
