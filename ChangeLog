@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May 26 15:45:02 PDT 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Add declaration of converter for integral nonlinearity calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 26 15:44:11 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
