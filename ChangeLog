@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul 29 12:20:52 PDT 2004
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Document new joboptions for use of fake event clock.  Use of old
+EvtClock algorithm is now deprecated
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul 27 16:15:20 PDT 2004
 CalibSvc/doc
 
