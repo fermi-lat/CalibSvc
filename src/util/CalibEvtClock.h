@@ -1,6 +1,6 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.h,v 1.1 2003/01/04 00:23:44 jrb Exp $
-#ifndef EVTCLOCK_H
-#define EVTCLOCK_H 1
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/EvtClock.h,v 1.2 2003/01/14 23:26:06 jrb Exp $
+#ifndef CALIBEVTCLOCK_H
+#define CALIBEVTCLOCK_H 1
 
 #include "facilities/Timestamp.h"
 
@@ -10,18 +10,18 @@
 // Forward declarations
 class IDetDataSvc;
 
-/** @class EvtClock EvtClock.h
+/** @class CalibEvtClock CalibEvtClock.h
 
     Simple algorithm to set fake event times on the detector data service.
 
     @author Joanne Bogart, adapted from similar class of Andrea Valassi 
 */
 
-class EvtClock : public Algorithm {
+class CalibEvtClock : public Algorithm {
 
  public:
 
-  EvtClock( const std::string& name, ISvcLocator* pSvcLocator ); 
+  CalibEvtClock( const std::string& name, ISvcLocator* pSvcLocator ); 
   
   // Algorithm standard methods
   StatusCode initialize();
@@ -54,4 +54,5 @@ class EvtClock : public Algorithm {
   
 };
 
-#endif    // EVTCLOCK_H
+#endif    // CALIBEVTCLOCK_H
+
