@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 20 16:05:52 PST 2003
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlCalMuSlopeCnv.cxx XmlCalMuSlopeCnv.h 
+Log Message:
+Converter for new Calorimeter calibration type (mu slope)
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Mar 17 09:48:57 PST 2003
 CalibSvc/doc
 
