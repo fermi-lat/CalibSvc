@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.2 2002/11/19 20:04:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.3 2002/11/22 18:13:52 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -127,6 +127,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   //  not the case
   //  StatusCode encodeDescription     ( const unsigned char& type,
   //			     std::string&         description);
+
 
   calibUtil::Metadata* getMeta();
 
