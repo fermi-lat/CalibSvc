@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jun  2 10:15:26 PDT 2003
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Make use of new RootIoSvc
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jun  2 10:14:56 PDT 2003
 CalibSvc/cmt
 
