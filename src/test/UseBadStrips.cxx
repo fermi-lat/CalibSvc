@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseBadStrips.cxx,v 1.1 2003/01/30 00:02:17 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseBadStrips.cxx,v 1.2 2003/01/30 22:36:38 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -30,26 +30,27 @@
    Minimal class derived from CalibData::BadStripsVisitor to
    check out BadStrips visitor interface.
 */
-class BadVisitor : public CalibData::BadStripsVisitor {
-public:
-  BadVisitor(MsgStream* log=0) : m_log(log) {}
-
-  void setLog(MsgStream* log) {m_log = log;}
-
-  virtual CalibData::eVisitorRet badTower(unsigned int row, unsigned int col,
-                                          int badness);
-
-  virtual CalibData::eVisitorRet badPlane(unsigned int row, unsigned int col, 
-                                          unsigned int tray, bool top,
-                                          int badness, bool allBad,
-                                          const CalibData::StripCol& strips);
-private:
-  MsgStream* m_log;
-  // Normally would have more here, but for testing purposes all
-  // we do is print out stuff from BadStrips as we encounter it
-};
-
-/** 
+namespace {
+  class BadVisitor : public CalibData::BadStripsVisitor {
+  public:
+    BadVisitor(MsgStream* log=0) : m_log(log) {}
+    
+    void setLog(MsgStream* log) {m_log = log;}
+    
+    virtual CalibData::eVisitorRet badTower(unsigned int row, unsigned int col,
+                                            int badness);
+    
+    virtual CalibData::eVisitorRet badPlane(unsigned int row, unsigned int col, 
+                                            unsigned int tray, bool top,
+                                            int badness, bool allBad,
+                                            const CalibData::StripCol& strips);
+  private:
+    MsgStream* m_log;
+    // Normally would have more here, but for testing purposes all
+    // we do is print out stuff from BadStrips as we encounter it
+  };
+}
+  /** 
    @class UseBadStrips
 
    Algorithm exemplifying retrieval and use of calibration bad strips
@@ -190,10 +191,8 @@ StatusCode UseBadStrips::execute( ) {
   m_pCalibDataSvc->updateObject(pHotObject);
 
   pHot = 0;
-  try {
-    pHot = dynamic_cast<CalibData::BadStrips *> (pHotObject);
-  }
-  catch (...) {
+  pHot = dynamic_cast<CalibData::BadStrips *> (pHotObject);
+  if (!pHot) {
     log << MSG::ERROR 
         << "Dynamic cast to BadStrips after update failed" << endreq;
     return StatusCode::FAILURE;
