@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.11 2003/01/18 00:59:11 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.12 2003/01/22 21:18:31 jrb Exp $
 #include <string>
 #include <cstdio>
 
@@ -629,7 +629,7 @@ StatusCode CalibMySQLCnvSvc::updateCalib( DataObject*        pObject,
   // Deep copy the new calib into the old DataObject.  To copy the *whole*
   // object, not just the CalibBase part, classes derived from CalibBase
   // must override update method.
-  pBase->update(*pNewBase);  
+  pBase->update(*pNewBase, &log);  
   delete pNewBase;
 
   // Set validity of updated object
