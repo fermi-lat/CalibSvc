@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed May 26 15:46:21 PDT 2004
+CalibSvc/src/test
+
+Added Files:
+	UseIntNonlin.cxx 
+Log Message:
+Algorithm which may be invoked by test_CalibSvc to verify that integral
+nonlinearity calibration files can be handled properly
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May 26 15:45:02 PDT 2004
 CalibSvc/src/Dll
 
