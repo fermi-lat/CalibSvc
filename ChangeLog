@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Oct  5 17:18:45 PDT 2004
+CalibSvc/src/test
+
+Added Files:
+	UseMevPerDac.cxx jobOptions.txt.mevPerDac 
+Log Message:
+Machinery for testing conversion of CAL_MevPerDac calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct  4 11:38:41 PDT 2004
 CalibSvc/doc
 
