@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.15 2004/08/02 22:10:47 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.16 2004/08/02 23:26:45 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -19,6 +19,7 @@
 #include "LdfEvent/LdfTime.h"
 #include "Event/TopLevel/MCEvent.h"
 #include "Event/TopLevel/Event.h"
+#include "astro/JulianDate.h"
 
 #include "CalibData/CalibModelSvc.h"
 
@@ -512,7 +513,11 @@ StatusCode CalibDataSvc::fetchMcTime() {
 
   MsgStream log(msgSvc(), name());
 
-  static const facilities::Timestamp missionStart("2001-1-1 00:00");
+  //  static const facilities::Timestamp missionStart("2001-1-1 00:00");
+  static const astro::JulianDate 
+    julianStart = astro::JulianDate::missionStart();
+  static const facilities::Timestamp missionStart(julianStart);
+
   static const unsigned missionSec = (unsigned) missionStart.getClibTime();
   static const int missionNano = missionStart.getNano();
 
