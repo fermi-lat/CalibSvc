@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 15 15:19:45 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	EvtClock.cxx UseCalib.cxx 
+Log Message:
+UseCalib: Handle data object pointers properly
+both: misc. clean-up, better diagnostic output
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 15 15:18:39 PST 2003
 CalibSvc/src/CalibXMLCnv/cnv
 
