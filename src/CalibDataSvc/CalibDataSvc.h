@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.7 2004/07/29 19:22:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.8 2004/08/02 22:10:47 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -196,7 +196,7 @@ public:
   /// Absolute time of first event (seconds)
   long m_startTime;
 
-  /// Absolute time spacing between events
+  /// Absolute time spacing between events (milliseconds)
   long m_delayTime;
   
 };
