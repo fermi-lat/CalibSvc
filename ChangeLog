@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Nov 14 13:35:53 PST 2002
+CalibSvc/src/CalibMySQLCnv/from-CalibCnv/test
+
+Removed Files:
+	jobOptions.txt 
+Log Message:
+Remove files accidentally included in CalibSvc
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Nov 14 13:35:30 PST 2002
 CalibSvc/src/CalibMySQLCnv/from-CalibCnv
 
