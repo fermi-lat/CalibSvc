@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov 22 10:13:52 PST 2002
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Removed Files:
+	CalibMySQLCnv.cxx CalibMySQLCvsSvc.cxx 
+Log Message:
+First attempt compiles.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov 22 10:13:39 PST 2002
 CalibSvc/src/CalibDataSvc
 
