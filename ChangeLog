@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 13:49:07 PDT 2004
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Add converters for Acd calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 13:48:35 PDT 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
