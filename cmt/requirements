@@ -1,10 +1,10 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.38 2003/11/18 01:18:17 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.39 2003/11/22 00:51:40 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
-version v0r2p14
+version v0r3
 
 author Joanne Bogart <jrb@slac.stanford.edu>
 
