@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 29 10:30:46 PST 2003
+CalibSvc
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Add rh7* (binary) directories to list of things to ignore
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jan 27 10:18:04 PST 2003
 CalibSvc/cmt
 
