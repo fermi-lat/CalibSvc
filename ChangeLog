@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: jrb  Tue Nov 16 17:47:07 PST 2004
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+New jobOptions parameter CalibMySQLCnvSvc.qualityList allowing user to
+specify acceptable quality levels (production, dev, test, superseded)
+for calibrations.  Defaults to {"PROD", "DEV"}, the old behavior (look
+first for "PROD"; if not found, look for "DEV").
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Nov 16 17:47:07 PST 2004
 CalibSvc/src
 
 Modified Files:
