@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 25 15:52:07 PST 2005
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootBaseCnv.cxx RootTkrTotCnv.cxx 
+Log Message:
+Minor clean-up
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb 25 15:51:58 PST 2005
 CalibSvc/src/CalibMySQLCnv
 
