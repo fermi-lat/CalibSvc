@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 30 16:29:31 PST 2004
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+Allow for range-independent calibration data
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  8 10:30:59 PST 2004
 CalibSvc/src/CalibXMLCnv/cnv
 
