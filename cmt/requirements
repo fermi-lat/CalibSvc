@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.67 2004/08/12 16:47:57 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.68 2004/08/13 21:49:15 burnett Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -31,7 +31,7 @@ use ROOT   * IExternal
 use XMLEXT * IExternal 
 use GlastSvc v9r* -no_auto_imports
 use RootIo v* -no_auto_imports
-use LdfEvent v1* -no_auto_imports
+use LdfEvent v2r* -no_auto_imports
 
 
 apply_pattern package_include
