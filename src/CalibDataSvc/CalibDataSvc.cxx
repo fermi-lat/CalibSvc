@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.5 2003/01/04 00:21:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.6 2003/01/04 00:33:39 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -137,8 +137,7 @@ StatusCode CalibDataSvc::initialize()   {
   CalibData::CalibModelSvc svc;
   const std::vector<CalibData::CalibModelSvc::CalibPair>& pairs = 
     svc.getPairs();
-  for (pairIt = pairs.begin(); pairIt++; 
-       pairIt != pairs.end() ) {
+  for (pairIt = pairs.begin(); pairIt != pairs.end(); pairIt++ ) {
     
     CalibCLIDNode* node = new CalibCLIDNode(pairIt->second);
 
@@ -227,6 +226,8 @@ StatusCode CalibDataSvc::queryInterface(const IID& riid,
   // If interfaces are not directly available, try out a base class
   if ( IID_IDetDataSvc.versionMatch(riid) ) {
     *ppvInterface = (IDetDataSvc*)this;
+  } else if (IID_IInstrumentName.versionMatch(riid) ) {
+    *ppvInterface = (IInstrumentName*) this;
   } else if ( IID_IIncidentListener.versionMatch(riid) ) {
     *ppvInterface = (IIncidentListener*)this;
   } else {
