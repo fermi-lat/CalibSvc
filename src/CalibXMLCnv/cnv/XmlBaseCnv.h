@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.9 2004/04/15 19:04:03 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.10 2004/05/21 00:02:49 jrb Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -23,6 +23,7 @@ class ITime;
 namespace CalibData {
   class CalibTime;
   class CalibBase;
+  class DacCol;
 }
 
 class  XmlBaseCnv : public Converter {
@@ -113,6 +114,14 @@ protected:
 
   /// Still another one to navigate XML file and find next set of range data
   DOM_Element findNextRange(const DOM_Element& rangeElt);
+
+  /// Another one to find first dac collection element
+  DOM_Element findFirstDacCol(const DOM_Element& docElt);
+
+  /// Still another one to navigate XML file and find next dac collection
+  DOM_Element findNextDacCol(const DOM_Element& rangeElt);
+
+  CalibData::DacCol* processDacCol(DOM_Element dacColElt, unsigned* range);
 
   /// Another convenience for derived classes: sets information belonging
   /// to the calibration base class, namely validity interval and serial
