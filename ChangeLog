@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 14 15:23:36 PST 2003
+CalibSvc/src/CalibXMLCnv
+
+Modified Files:
+	CalibXmlCnvSvc.cxx 
+Log Message:
+Add some stuff to initialize() to get ourselves known to Persistency
+service as a conversion service (may not be necessary)
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 14 15:22:24 PST 2003
 CalibSvc/src/CalibMySQLCnv
 
