@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Sun Dec 26 16:18:20 PST 2004
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootTkrBaseCnv.h RootTkrTotCnv.cxx 
+Log Message:
+Add service method makeUni to Tkr base converter since only it is
+friend of  CalibData:TkrBase 
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r17, operation: add
 Package: CalibSvc
