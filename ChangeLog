@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Feb  4 13:29:21 PST 2003
+CalibSvc/src/test
+
+Modified Files:
+	UseCalib.cxx 
+Log Message:
+Modify example client to use Gaudi SmartDataPtr
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 30 14:36:39 PST 2003
 CalibSvc/src/test
 
