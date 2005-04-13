@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: jrb  Wed Apr 13 16:49:08 PDT 2005
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt jobOptions.txt.asym jobOptions.txt.digi 
+	jobOptions.txt.enter_time jobOptions.txt.gainsRoot 
+	jobOptions.txt.gainsWriteRoot jobOptions.txt.mevPerDac 
+	jobOptions.txt.scale jobOptions.txt.splits 
+	jobOptions.txt.standard jobOptions.txt.tholdCI 
+	jobOptions.txt.tholdMuon jobOptions.txt.tot 
+Added Files:
+	jobOptions.txt.2root jobOptions.txt.noSuch 
+Log Message:
+Add a couple new job options files for certain tests;
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Apr 13 16:48:37 PDT 2005
 CalibSvc/cmt
 
