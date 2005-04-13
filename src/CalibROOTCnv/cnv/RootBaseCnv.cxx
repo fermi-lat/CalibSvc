@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.5 2004/12/27 02:08:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.6 2005/02/25 23:52:07 jrb Exp $
 /**
             @file  RootBaseCnv.cxx
 
@@ -38,7 +38,7 @@ RootBaseCnv::~RootBaseCnv() {
   // release TFile, TTree if they need releasing.  With normal 
   // termination they should already have been released.
 
-  doClean();
+  //  doClean();
 
 }
 
