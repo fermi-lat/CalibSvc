@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.13 2004/11/17 01:47:07 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.14 2005/02/25 23:51:58 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -173,6 +173,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   /// "PROD", "DEV", "TEST", "SUPSED"  (look only at first 3 characters)
   std::vector<std::string> m_qualityList;
   unsigned int             m_qualityMask;
+  bool                     m_crash;   // If true, failure is fatal
 
 };
 #endif   
