@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Apr 12 22:04:38 PDT 2005
+CalibSvc/src/CalibMySQLCnv
+
+Modified Files:
+	CalibMySQLCnvSvc.cxx CalibMySQLCnvSvc.h 
+Log Message:
+Depending on value of job options parameter CrashOnError, exit or continue
+after failure to find or load requested calibration
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Apr 12 22:03:06 PDT 2005
 CalibSvc/src
 
