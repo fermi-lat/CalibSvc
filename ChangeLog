@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Tue Apr 12 23:12:59 PDT 2005
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v0r19p2
+    *
+------------------------------------------------------------
 User: jrb  Tue Apr 12 23:12:34 PDT 2005
 CalibSvc/src/CalibROOTCnv/cnv
 
