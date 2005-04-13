@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Apr 13 16:48:37 PDT 2005
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use rootTestData package explicitly (needed for test programs)
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Apr 13 16:06:54 PDT 2005
 CalibSvc/src/CalibROOTCnv/cnv
 
