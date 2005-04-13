@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Apr 13 16:06:54 PDT 2005
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootCalGainCnv.cxx 
+Log Message:
+Upgrade for commonRootData namespace
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r19p2, operation: add
 Package: CalibSvc
