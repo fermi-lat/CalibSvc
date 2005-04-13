@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.cxx,v 1.3 2004/12/10 18:43:06 jrb Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.cxx,v 1.4 2004/12/17 19:15:59 jrb Exp $
 
 #include <string>
 #include "RootCalGainCnv.h"
@@ -118,8 +118,8 @@ StatusCode RootCalGainCnv::fillRoot(CalibData::CalibBase* pTDSObj,
                     dynamic_cast<CalibData::Gain*>(pData);
                   // had better not fail!
                   if (!pGain) continue;
-                  CalXtalId id(m_nCol*iRow+iCol, iLayer, iXtal, iFace,
-                               iRange);
+                  commonRootData::CalXtalId 
+                    id(m_nCol*iRow+iCol, iLayer, iXtal, iFace, iRange);
                   pRootGain->addChannel(id, pGain->getGain(),
                                         pGain->getSig());
                 }
@@ -178,7 +178,7 @@ StatusCode RootCalGainCnv::i_createObj(const std::string& fname,
   for (unsigned i = 0; i < nGains; i++) {
     CalibData::Gain* pGain = 
       new CalibData::Gain(rootGains[i].getGain(), rootGains[i].getSig());
-    CalXtalId id = rootGains[i].getId();
+    commonRootData::CalXtalId id = rootGains[i].getId();
     idents::CalXtalId identsId(id.getTower(), id.getLayer(), id.getColumn());
     pObj->putRange(identsId, id.getRange(), id.getFace(), pGain);
   }
