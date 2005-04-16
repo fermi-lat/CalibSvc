@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Apr 15 17:56:04 PDT 2005
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootCalGainCnv.cxx 
+Log Message:
+Undo changes for commonRootData namespace.  We're not doing this any 
+time soon
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r20, operation: add
 Package: CalibSvc
