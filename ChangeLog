@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 18 10:46:01 PDT 2005
+CalibSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+back out commonRootData namespace
+    *
+------------------------------------------------------------
 User: jrb  Sun Apr 17 09:17:03 PDT 2005
 CalibSvc/src/CalibDataSvc
 
