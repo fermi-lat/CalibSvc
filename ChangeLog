@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 18 10:46:19 PDT 2005
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+back out commonRootData namespace
+    *
+------------------------------------------------------------
 User: heather  Mon Apr 18 10:46:01 PDT 2005
 CalibSvc/doc
 
