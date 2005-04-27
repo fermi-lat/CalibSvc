@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.22 2005/02/25 23:51:58 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.23 2005/04/13 05:04:38 jrb Exp $
 #include <string>
 #include <cstdio>
 #include <stdexcept>
@@ -511,7 +511,7 @@ StatusCode CalibMySQLCnvSvc::createCalib(DataObject*&       refpObject,
     //    if (m_crash) throw std::runtime_error("Could not acces MySQL dbs");
     if (m_crash) {
       log << msgLevel << std::endl << "Exiting... " << std::endl << endreq;
-      exit(0);
+      exit(3);
     }
     return StatusCode::FAILURE;
   }
@@ -521,7 +521,7 @@ StatusCode CalibMySQLCnvSvc::createCalib(DataObject*&       refpObject,
         << cType << ", " << flavor << ")" << endreq;
     if (m_crash) {
       log << msgLevel << std::endl << "Exiting... " << std::endl << endreq;
-      exit(0);
+      exit(3);
     }
 
     return StatusCode::FAILURE;
@@ -557,7 +557,7 @@ StatusCode CalibMySQLCnvSvc::createCalib(DataObject*&       refpObject,
 	<< "Persistency service could not create a new address" << endreq;
     if (m_crash) {
       log << msgLevel << std::endl << "Exiting... " << std::endl << endreq;
-      exit(0);
+      exit(3);
     }
      return sc;
   }  
@@ -574,7 +574,7 @@ StatusCode CalibMySQLCnvSvc::createCalib(DataObject*&       refpObject,
 	<< "Persistency service could not create a new object" << endreq;
     if (m_crash) {
       log << msgLevel << std::endl << "Exiting... " << std::endl << endreq;
-      exit(0);
+      exit(3);
     }
     return sc;
   }
