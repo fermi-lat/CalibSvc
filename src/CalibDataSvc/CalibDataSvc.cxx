@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.19 2005/03/31 21:26:25 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.20 2005/04/17 16:17:03 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -650,7 +650,7 @@ StatusCode CalibDataSvc::fetchFakeClockTime() {
               << ex.complaint << std::endl;
     std::cerr << "Exiting..." << std::endl;
     std::cerr.flush();
-    exit(0);
+    exit(1);
   }
 
   if ((m_nEvent < 100) || (m_nEvent == ((m_nEvent/100) * 100) ) ) {
