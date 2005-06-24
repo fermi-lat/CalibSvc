@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jun 23 20:21:26 PDT 2005
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Pick up correct Event
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r21p3, operation: add
 Package: CalibSvc
