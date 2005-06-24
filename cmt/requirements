@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.96 2005/04/27 19:37:44 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.97 2005/05/02 23:57:05 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -39,7 +39,7 @@ use MYSQLEXT * IExternal v*
 use GlastSvc v9r* -no_auto_imports
 use RootIo v* -no_auto_imports
 use LdfEvent v2r* -no_auto_imports
-use Event v10r* -no_auto_imports
+use Event v11r* -no_auto_imports
 use rootTestData v* -no_auto_imports
 
 
