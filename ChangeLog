@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul  6 18:08:13 PDT 2005
+CalibSvc/src/test
+
+Modified Files:
+	UseScale.cxx UseTot.cxx 
+Log Message:
+Modify test algs. for TKR root calib. files to invoke hw serial # access func.
+
+    *
+------------------------------------------------------------
 User: usher  Thu Jun 23 20:21:26 PDT 2005
 CalibSvc/cmt
 
