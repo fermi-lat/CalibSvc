@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTot.cxx,v 1.1 2004/12/29 08:35:56 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseScale.cxx,v 1.1 2005/03/31 21:28:23 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -164,15 +164,17 @@ void UseScale::processNew(CalibData::TkrScaleCol* pNew,
     unsigned towerX = 0;
     unsigned towerY = 0;
     TkrId id(towerX, towerY, tray, top);
-    
+    if ((tray == 0) && (top)) {
+      const std::string* hwserial = pNew->getHwserial(towerY, towerX);
+
+      log << MSG::INFO << "hw serial for tower x = " << towerX
+          << " and tower y = " << towerY << " is " << *hwserial << std::endl;
+    }
     for (unsigned iStrip = 5; iStrip < 1000; iStrip += 65) {
 
       CalibData::TkrScaleObj info(pNew->getStripInfo(id, iStrip));
       outputStrip(towerX, towerY, tray, top, info, log);
 
-
-      //outputStrip(towerX, towerY, tray, top, pNew->getStripInfo(id, iStrip), 
-      //          log);
     }
     if (top) tray++;
     else if (tray == 18) done = true;
