@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTot.cxx,v 1.1 2004/12/29 08:35:56 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTot.cxx,v 1.2 2005/03/30 23:18:19 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -162,7 +162,13 @@ void UseTot::processNew(CalibData::TkrTotCol* pNew,
     //    unsigned tray = 3;
     //    bool top = true;
     TkrId id(towerX, towerY, tray, top);
-    
+        if ((tray == 0) && (top)) {
+      const std::string* hwserial = pNew->getHwserial(towerY, towerX);
+
+      log << MSG::INFO << "hw serial for tower x = " << towerX
+          << " and tower y = " << towerY << " is " << *hwserial << std::endl;
+    }
+
     unsigned iStrip = 27;
 
     const CalibData::TkrTotStrip* pInfo = pNew->getStripInfo(id, iStrip);
