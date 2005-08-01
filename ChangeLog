@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  1 16:42:16 PDT 2005
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlCalIntNonlinCnv.cxx 
+Log Message:
+Put support for per-channel dacs for IntNonlin calib. on main branch as well
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r21p3em1, operation: add
 Package: CalibSvc
