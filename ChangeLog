@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Sun Jul 31 21:21:59 PDT 2005
+CalibSvc/src/test
+
+Modified Files:
+      Tag: v0r21p3-em-branch
+	UseIntNonlin.cxx 
+Log Message:
+Handle "smoothed dac" part of IntNonlin calibration, if present
+
+    *
+------------------------------------------------------------
+User: jrb  Sun Jul 31 21:21:59 PDT 2005
 CalibSvc/src/CalibXMLCnv/cnv
 
 Modified Files:
