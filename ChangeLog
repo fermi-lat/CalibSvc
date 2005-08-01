@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Aug  1 16:30:10 PDT 2005
+CalibSvc/cmt
+
+Modified Files:
+      Tag: v0r21p3-em-branch
+	requirements 
+Log Message:
+Ready to tag v0r21p3em1
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r21p3em0, operation: add
 Package: CalibSvc
