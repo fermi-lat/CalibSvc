@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.4 2004/11/11 00:12:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.5 2005/01/03 19:32:38 jrb Exp $
 
 #include <string>
 #include "XmlCalIntNonlinCnv.h"
@@ -54,8 +54,11 @@ namespace {
 
     float err;
     std::vector<float> vals;
+    std::vector<float> sdacs;
+    unsigned nSdacs = 0;
     try {
       xmlBase::Dom::getFloatsAttribute(intNonlinElt, "values", vals);
+      nSdacs =  xmlBase::Dom::getFloatsAttribute(intNonlinElt, "sdacs", sdacs);
       err = xmlBase::Dom::getDoubleAttribute(intNonlinElt, "error");
     }
     catch (xmlBase::DomException ex) {
@@ -63,8 +66,8 @@ namespace {
       std::cerr << ex.getMsg() << std::endl;
       throw ex;
     }
-
-    return new CalibData::IntNonlin(&vals, err);
+    if (nSdacs > 0) return new CalibData::IntNonlin(&vals, err, &sdacs);
+    else return new CalibData::IntNonlin(&vals, err, 0);
   }
 }
 
