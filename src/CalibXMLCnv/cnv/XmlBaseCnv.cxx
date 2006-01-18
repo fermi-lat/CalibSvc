@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.27 2004/11/11 00:12:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.28 2005/01/03 19:32:38 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -112,6 +112,10 @@ StatusCode XmlBaseCnv::createObj(IOpaqueAddress* addr,
     log << MSG::FATAL 
         << "Unable to parse document " << par[0] << " aka " 
         << par0 << endreq;
+    // if (m_crash)  {   don't have an m_crash
+    log << MSG::FATAL << std::endl << "Exiting... " << std::endl << endreq;
+    exit(1);
+    // }
     return StatusCode::FAILURE;
   }
   else {

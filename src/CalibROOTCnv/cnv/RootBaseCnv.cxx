@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.6 2005/02/25 23:52:07 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.7 2005/04/13 06:12:34 jrb Exp $
 /**
             @file  RootBaseCnv.cxx
 
@@ -126,6 +126,11 @@ StatusCode RootBaseCnv::openRead(const std::string& fname) {
         << "could not be opened for reading " << endreq;
     delete m_inFile;
     m_inFile = 0;
+    // if (m_crash)  {   don't have an m_crash
+    log << MSG::FATAL << std::endl << "Exiting... " << std::endl << endreq;
+    exit(1);
+    // }
+
     return StatusCode::FAILURE;
   }
   else {
