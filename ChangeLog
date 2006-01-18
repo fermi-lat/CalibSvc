@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jan 18 15:12:24 PST 2006
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx 
+Log Message:
+exit with fatal error if requested calibration file can't be read
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jan 18 15:12:23 PST 2006
 CalibSvc/src/CalibROOTCnv/cnv
 
