@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Feb 13 15:02:28 PST 2006
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+      Tag: GR-v7r3p20-newext
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r21p7, operation: add
 Package: CalibSvc
