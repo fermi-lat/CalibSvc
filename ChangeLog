@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 24 15:46:31 PST 2006
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Get rid of unused routine which accesses LdfEvent stuff directly; get rid of 
+version dependence on LdfEvent package
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Feb 24 15:46:30 PST 2006
 CalibSvc/cmt
 
