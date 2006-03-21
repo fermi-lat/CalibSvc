@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.h,v 1.3 2004/12/10 18:43:05 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.h,v 1.4.6.1 2006/02/13 23:02:30 usher Exp $
 #ifndef RootBaseCnv_h
 #define RootBaseCnv_h
 
@@ -91,6 +91,9 @@ public:
   virtual StatusCode readRootObj(TTree*  tree,
                                  const std::string& branch, TObject*& pCalib,
                                  unsigned index=0);
+
+  /// Retrieve the class type of the data store the converter uses.
+  virtual long repSvcType() const {return Converter::i_repSvcType();}
 
 protected:
   /** This creates the transient representation of an object from the

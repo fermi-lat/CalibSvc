@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.21 2005/05/02 23:56:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.22 2006/02/24 23:46:31 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -270,7 +270,7 @@ StatusCode CalibDataSvc::finalize()
   return DataSvc::finalize();
 }
 
-StatusCode CalibDataSvc::queryInterface(const IID& riid, void** ppvInterface)
+StatusCode CalibDataSvc::queryInterface(const InterfaceID& riid, void** ppvInterface)
 {
   // With the highest priority return the specific interfaces
   // If interfaces are not directly available, try out a base class

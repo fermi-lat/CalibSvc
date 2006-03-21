@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.3 2004/11/11 00:12:21 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.4 2005/01/03 19:32:22 jrb Exp $
 
 // one or both of following includes may not be necessary..
 // depends on whether we keep and use private members
@@ -29,7 +29,7 @@ CalibXmlCnvSvc::CalibXmlCnvSvc(const std::string& name,
   // xml files.
 }
 
-StatusCode CalibXmlCnvSvc::queryInterface(const IID& riid,
+StatusCode CalibXmlCnvSvc::queryInterface(const InterfaceID& riid,
                                           void** ppvInterface) {
   if (IID_ICalibXmlSvc.versionMatch(riid))  {
     *ppvInterface = (ICalibXmlSvc*)this;
