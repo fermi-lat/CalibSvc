@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.h,v 1.1 2003/02/05 22:49:00 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.h,v 1.2 2004/07/27 05:50:44 jrb Exp $
 #ifndef CalibRootCnvSvc_h
 #define CalibRootCnvSvc_h  1
 
@@ -51,7 +51,7 @@ class CalibRootCnvSvc : public ConversionSvc, virtual public ICalibRootSvc
   
   // Reimplemented from IInterface
 
-  virtual StatusCode queryInterface( const IID& riid, 
+  virtual StatusCode queryInterface( const InterfaceID& riid, 
 				     void** ppvInterface);  
 
   // Reimplemented from ICalibRootSvc

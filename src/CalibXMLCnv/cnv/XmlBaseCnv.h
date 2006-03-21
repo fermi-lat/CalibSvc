@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.13 2004/09/23 20:49:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.14.6.1 2006/02/13 23:02:32 usher Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -105,6 +105,9 @@ protected:
   // for example.  If so, might as well provide the service in
   // the base converter.
   virtual StatusCode readHeader(const DOMElement*);
+
+  /// Retrieve the class type of the data store the converter uses.
+  virtual long repSvcType() const {return Converter::i_repSvcType();}
 
 
   /// Find first range element.  Derived classes which need it

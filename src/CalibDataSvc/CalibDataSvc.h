@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.10 2005/03/31 21:26:25 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.11 2006/02/24 23:46:31 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -69,7 +69,7 @@ public:
   // Reimplemented from IInterface
 
   /// Query the interface of the service
-  virtual StatusCode queryInterface( const IID& riid, 
+  virtual StatusCode queryInterface( const InterfaceID& riid, 
 				     void** ppvInterface );  
 
 public:

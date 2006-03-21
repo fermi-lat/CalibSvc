@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.2 2003/02/05 22:58:52 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.3 2004/07/27 05:50:44 jrb Exp $
 
 #include "GaudiKernel/IDetDataSvc.h"
 #include "GaudiKernel/IConversionSvc.h"
@@ -27,7 +27,7 @@ CalibRootCnvSvc::CalibRootCnvSvc(const std::string& name,
   // xml files.
 }
 
-StatusCode CalibRootCnvSvc::queryInterface(const IID& riid,
+StatusCode CalibRootCnvSvc::queryInterface(const InterfaceID& riid,
                                           void** ppvInterface) {
   /* Uncomment if choose to derive from abstract root conv. interface */
   if (IID_ICalibRootSvc.versionMatch(riid))  {
