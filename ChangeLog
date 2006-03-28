@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: cohen  Tue Mar 28 13:34:14 PST 2006
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+remove EventSelector
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r22, operation: add
 Package: CalibSvc
