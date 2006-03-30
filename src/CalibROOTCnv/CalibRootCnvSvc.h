@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.h,v 1.3 2006/03/21 01:41:08 usher Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.h,v 1.4 2006/03/30 00:05:20 jrb Exp $
 #ifndef CalibRootCnvSvc_h
 #define CalibRootCnvSvc_h  1
 
@@ -78,7 +78,7 @@ class CalibRootCnvSvc : public ConversionSvc, virtual public ICalibRootSvc
    * @param refpAddress the new address created
    * @return a StatusCode giving the status of the address creation
    */
-  virtual StatusCode createAddress(unsigned long svc_type,
+  virtual StatusCode createAddress(long svc_type,
                                    const CLID& clid,
                                    const std::string* par, 
                                    const unsigned long* ip,
