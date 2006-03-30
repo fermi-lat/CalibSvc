@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.22 2006/02/24 23:46:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.23 2006/03/21 01:41:07 usher Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -48,6 +48,7 @@ CalibDataSvc::CalibDataSvc(const std::string& name,ISvcLocator* svc) :
 
   m_eventTimeDefined = false;
   m_eventTime = 0;
+  m_nEvent = 0;
   declareProperty("CalibInstrumentName", m_instrumentName = "LAT" );
 
   // choices could be "data", "clock", "mc", "none", "digi"
@@ -481,6 +482,7 @@ StatusCode  CalibDataSvc::updateTime() {
     }
     case TIMESOURCEmc: {
       sc = fetchMcTime();
+      //      sc = fetchEventTime();
       break;
     }
     case TIMESOURCEclock: {

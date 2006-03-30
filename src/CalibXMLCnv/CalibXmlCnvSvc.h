@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.4 2005/01/03 19:32:22 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.5 2006/03/21 01:41:08 usher Exp $
 #ifndef CalibXmlCnvSvc_h
 #define CalibXmlCnvSvc_h  1
 
@@ -63,7 +63,7 @@ class CalibXmlCnvSvc : public ConversionSvc, virtual public ICalibXmlSvc
    * @param refpAddress the new address created
    * @return a StatusCode giving the status of the address creation
    */
-  virtual StatusCode createAddress(unsigned char svc_type,
+  virtual StatusCode createAddress(unsigned long svc_type,
                                    const CLID& clid,
                                    const std::string* par, 
                                    const unsigned long* ip,

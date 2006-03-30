@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibXmlSvc.h,v 1.2 2003/03/17 06:54:27 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/CalibSvc/ICalibRootSvc.h,v 1.1 2004/07/27 05:48:28 jrb Exp $
 
 #ifndef ICalibRootSvc_h 
 #define ICalibRootSvc_h
@@ -17,7 +17,7 @@
 // Persistency service will get confused.  Instead give an alias
 // to one we can be pretty sure is unused for GLAST
 
-unsigned const char CALIBROOT_StorageType  = CDF_StorageType;
+unsigned const long CALIBROOT_StorageType  = CDF_StorageType;
 
 
 static const InterfaceID IID_ICalibRootSvc("ICalibRootSvc", 1, 0);
