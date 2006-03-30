@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.11 2006/02/24 23:46:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.12 2006/03/21 01:41:07 usher Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -110,7 +110,7 @@ public:
  private:
   //properties
   /// Calibration Data Persistency Storage type
-  int              m_calibStorageType;
+  long int              m_calibStorageType;
 
   /// Name of the root node of the calib store
   std::string      m_calibRootName;

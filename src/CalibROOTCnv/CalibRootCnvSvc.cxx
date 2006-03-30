@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.3 2004/07/27 05:50:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.4 2006/03/21 01:41:08 usher Exp $
 
 #include "GaudiKernel/IDetDataSvc.h"
 #include "GaudiKernel/IConversionSvc.h"
@@ -114,7 +114,7 @@ StatusCode CalibRootCnvSvc::finalize() {
   return ConversionSvc::finalize();
 }
 
-StatusCode CalibRootCnvSvc::createAddress(unsigned char svc_type,
+StatusCode CalibRootCnvSvc::createAddress(unsigned long svc_type,
                                           const CLID& clid,
                                           const std::string* par, 
                                           const unsigned long* ip,
