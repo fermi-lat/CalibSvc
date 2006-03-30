@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.5 2006/03/21 01:41:08 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.6 2006/03/30 00:05:21 jrb Exp $
 
 // one or both of following includes may not be necessary..
 // depends on whether we keep and use private members
@@ -129,7 +129,7 @@ StatusCode CalibXmlCnvSvc::finalize() {
   return ConversionSvc::finalize();
 }
 
-StatusCode CalibXmlCnvSvc::createAddress(unsigned long svc_type,
+StatusCode CalibXmlCnvSvc::createAddress(long svc_type,
                                          const CLID& clid,
                                          const std::string* par, 
                                          const unsigned long* ip,
