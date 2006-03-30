@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Mar 29 17:11:46 PST 2006
+CalibSvc/src/CalibROOTCnv
+
+Modified Files:
+	CalibRootCnvSvc.cxx CalibRootCnvSvc.h 
+Log Message:
+For change to storage type arg. "unsigned long" won't do; must be "long"
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Mar 29 17:11:33 PST 2006
 CalibSvc/src/CalibMySQLCnv
 
