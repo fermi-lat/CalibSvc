@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sun Apr  9 22:46:02 PDT 2006
+CalibSvc/src/test
+
+Modified Files:
+	UseAcd.cxx jobOptions-acd.txt 
+Log Message:
+Support for Acd calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Apr  9 22:46:01 PDT 2006
 CalibSvc/src/CalibXMLCnv/cnv
 
