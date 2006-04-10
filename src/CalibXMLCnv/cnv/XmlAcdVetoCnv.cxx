@@ -1,7 +1,6 @@
 // $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlAcdPedCnv.cxx,v 1.3 2005/01/03 19:32:38 jrb Exp $
 
 #include <string>
-//#include "XmlAcdPedCnv.h"
 
 #include "GaudiKernel/CnvFactory.h"
 #include "GaudiKernel/IOpaqueAddress.h"
@@ -15,7 +14,7 @@
 #include "CalibSvc/ICalibXmlSvc.h"
 #include "CalibSvc/ICalibMetaCnvSvc.h"
 
-#include "CalibData/Acd/AcdCalibPed.h"
+#include "CalibData/Acd/AcdCalibVeto.h"
 #include "CalibData/CalibTime.h"
 #include "xmlBase/Dom.h"
 
@@ -24,87 +23,84 @@
 
 
 
-/** @class XmlAcdPedCnv
+/** @class XmlAcdVetoCnv
 
-  Converter from xml to TCDS ACD pedestals class
+  Converter from xml to TCDS ACD veto threshold class
 
   @author J. Bogart
 */
 #include "XmlAcdBaseCnv.h"
 
-class XmlAcdPedCnv;
+class XmlAcdVetoCnv;
 
 // template <class TYPE> class CnvFactory;
-static CnvFactory<XmlAcdPedCnv> s_factory;
-const  ICnvFactory& XmlAcdPedCnvFactory = s_factory;
+static CnvFactory<XmlAcdVetoCnv> s_factory;
+const  ICnvFactory& XmlAcdVetoCnvFactory = s_factory;
 
-class XmlAcdPedCnv : public XmlAcdBaseCnv {
+class XmlAcdVetoCnv : public XmlAcdBaseCnv {
 
   /// Friend needed for instantiation
-  friend class CnvFactory<XmlAcdPedCnv>;
+  friend class CnvFactory<XmlAcdVetoCnv>;
 public:
   const CLID& objType() const;
   static const CLID& classID();
 protected:
 
-  XmlAcdPedCnv(ISvcLocator* svcs);
+  XmlAcdVetoCnv(ISvcLocator* svcs);
 
-  virtual ~XmlAcdPedCnv() {}       // most likely nothing to do 
+  virtual ~XmlAcdVetoCnv() {}       // most likely nothing to do 
 
   virtual StatusCode i_createObj(const DOMElement* element,
                                  DataObject*& refpObject);
 
 };
 
-
-//
-
-XmlAcdPedCnv::XmlAcdPedCnv( ISvcLocator* svc) :
-  XmlAcdBaseCnv(svc, CLID_Calib_ACD_Ped) { 
+XmlAcdVetoCnv::XmlAcdVetoCnv( ISvcLocator* svc) :
+  XmlAcdBaseCnv(svc, CLID_Calib_ACD_ThreshVeto) { 
 }
 
 
-const CLID& XmlAcdPedCnv::objType() const {
-  return CLID_Calib_ACD_Ped;
+const CLID& XmlAcdVetoCnv::objType() const {
+  return CLID_Calib_ACD_ThreshVeto;
 }
 
-const CLID& XmlAcdPedCnv::classID() {
-  return CLID_Calib_ACD_Ped;
+const CLID& XmlAcdVetoCnv::classID() {
+  return CLID_Calib_ACD_ThreshVeto;
 }
 
 namespace {
   /// Local utility which knows how to get the information out of a
-  /// <acdPed> element and make a CalibData::AcdPed with it
-  CalibData::AcdPed* processPmt(DOMElement* pmtElt) {
+  /// <acdVeto> element and make a CalibData::AcdVeto with it
+  CalibData::AcdVeto* processPmt(DOMElement* pmtElt) {
     using xmlBase::Dom;
 
     // Element we're interested in is child of <pmt>
-    DOMElement* pedElt = xmlBase::Dom::getFirstChildElement(pmtElt);
+    DOMElement* vetoElt = xmlBase::Dom::getFirstChildElement(pmtElt);
 
-    // Could check here to make sure it really is an <acdPed>
-    float mean, width;
+    // Could check here to make sure it really is an <acdVeto>
+    float veto, width;
     unsigned   status;
     try {
-      mean = xmlBase::Dom::getDoubleAttribute(pedElt, "mean");
-      width = xmlBase::Dom::getDoubleAttribute(pedElt, "width");
-      status = xmlBase::Dom::getIntAttribute(pedElt, "status");
+      veto = xmlBase::Dom::getDoubleAttribute(vetoElt, "veto");
+      width = xmlBase::Dom::getDoubleAttribute(vetoElt, "width");
+      status = xmlBase::Dom::getIntAttribute(vetoElt, "status");
     }
     catch (xmlBase::DomException ex) {
-      std::cerr << "From CalibSvc::XmlAcdPedCnv::processPmt" << std::endl;
+      std::cerr << "From CalibSvc::XmlAcdVetoCnv::processPmt" << std::endl;
       std::cerr << ex.getMsg() << std::endl;
       throw ex;
     }
 
-    return new CalibData::AcdPed(mean, width, status);
+    return new CalibData::AcdVeto(veto, width, status);
   }
 }
 
 // Create our specific object
-StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt, 
+StatusCode XmlAcdVetoCnv::i_createObj(const DOMElement* docElt, 
                                      DataObject*& refpObject)
 {
   using xmlBase::Dom;
-  using CalibData::AcdPed;
+  using CalibData::AcdVeto;
 
   unsigned nFace, nRow, nCol, nPmt, nDet, nNA;
   // need dimensions to call the constructor
@@ -113,8 +109,8 @@ StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt,
   if (status == StatusCode::FAILURE) return status;
   
   // refpObject
-  CalibData::AcdCalibPed* pObj = 
-    new CalibData::AcdCalibPed(nFace, nRow, nCol, nNA, nPmt);
+  CalibData::AcdCalibVeto* pObj = 
+    new CalibData::AcdCalibVeto(nFace, nRow, nCol, nNA, nPmt);
   refpObject = pObj;
   if (!pObj) return StatusCode::FAILURE;
 
@@ -123,8 +119,8 @@ StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt,
   DOMElement* pmtElt = findFirstPmt(docElt);
 
   while (pmtElt != 0 ) {
-    AcdPed* pPed = processPmt(pmtElt);
-    pObj->putPmt(m_id, m_nPmt, pPed);
+    AcdVeto* pVeto = processPmt(pmtElt);
+    pObj->putPmt(m_id, m_nPmt, pVeto);
     pmtElt = findNextPmt(pmtElt);
   }
 

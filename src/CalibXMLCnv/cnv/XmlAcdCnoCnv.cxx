@@ -1,7 +1,6 @@
 // $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlAcdPedCnv.cxx,v 1.3 2005/01/03 19:32:38 jrb Exp $
 
 #include <string>
-//#include "XmlAcdPedCnv.h"
 
 #include "GaudiKernel/CnvFactory.h"
 #include "GaudiKernel/IOpaqueAddress.h"
@@ -15,7 +14,7 @@
 #include "CalibSvc/ICalibXmlSvc.h"
 #include "CalibSvc/ICalibMetaCnvSvc.h"
 
-#include "CalibData/Acd/AcdCalibPed.h"
+#include "CalibData/Acd/AcdCalibCno.h"
 #include "CalibData/CalibTime.h"
 #include "xmlBase/Dom.h"
 
@@ -24,87 +23,84 @@
 
 
 
-/** @class XmlAcdPedCnv
+/** @class XmlAcdCnoCnv
 
-  Converter from xml to TCDS ACD pedestals class
+  Converter from xml to TCDS ACD cno threshold class
 
   @author J. Bogart
 */
 #include "XmlAcdBaseCnv.h"
 
-class XmlAcdPedCnv;
+class XmlAcdCnoCnv;
 
 // template <class TYPE> class CnvFactory;
-static CnvFactory<XmlAcdPedCnv> s_factory;
-const  ICnvFactory& XmlAcdPedCnvFactory = s_factory;
+static CnvFactory<XmlAcdCnoCnv> s_factory;
+const  ICnvFactory& XmlAcdCnoCnvFactory = s_factory;
 
-class XmlAcdPedCnv : public XmlAcdBaseCnv {
+class XmlAcdCnoCnv : public XmlAcdBaseCnv {
 
   /// Friend needed for instantiation
-  friend class CnvFactory<XmlAcdPedCnv>;
+  friend class CnvFactory<XmlAcdCnoCnv>;
 public:
   const CLID& objType() const;
   static const CLID& classID();
 protected:
 
-  XmlAcdPedCnv(ISvcLocator* svcs);
+  XmlAcdCnoCnv(ISvcLocator* svcs);
 
-  virtual ~XmlAcdPedCnv() {}       // most likely nothing to do 
+  virtual ~XmlAcdCnoCnv() {}       // most likely nothing to do 
 
   virtual StatusCode i_createObj(const DOMElement* element,
                                  DataObject*& refpObject);
 
 };
 
-
-//
-
-XmlAcdPedCnv::XmlAcdPedCnv( ISvcLocator* svc) :
-  XmlAcdBaseCnv(svc, CLID_Calib_ACD_Ped) { 
+XmlAcdCnoCnv::XmlAcdCnoCnv( ISvcLocator* svc) :
+  XmlAcdBaseCnv(svc, CLID_Calib_ACD_ThreshHigh) { 
 }
 
 
-const CLID& XmlAcdPedCnv::objType() const {
-  return CLID_Calib_ACD_Ped;
+const CLID& XmlAcdCnoCnv::objType() const {
+  return CLID_Calib_ACD_ThreshHigh;
 }
 
-const CLID& XmlAcdPedCnv::classID() {
-  return CLID_Calib_ACD_Ped;
+const CLID& XmlAcdCnoCnv::classID() {
+  return CLID_Calib_ACD_ThreshHigh;
 }
 
 namespace {
   /// Local utility which knows how to get the information out of a
-  /// <acdPed> element and make a CalibData::AcdPed with it
-  CalibData::AcdPed* processPmt(DOMElement* pmtElt) {
+  /// <acdCno> element and make a CalibData::AcdCno with it
+  CalibData::AcdCno* processPmt(DOMElement* pmtElt) {
     using xmlBase::Dom;
 
     // Element we're interested in is child of <pmt>
-    DOMElement* pedElt = xmlBase::Dom::getFirstChildElement(pmtElt);
+    DOMElement* cnoElt = xmlBase::Dom::getFirstChildElement(pmtElt);
 
-    // Could check here to make sure it really is an <acdPed>
-    float mean, width;
+    // Could check here to make sure it really is an <acdCno>
+    float cno, width;
     unsigned   status;
     try {
-      mean = xmlBase::Dom::getDoubleAttribute(pedElt, "mean");
-      width = xmlBase::Dom::getDoubleAttribute(pedElt, "width");
-      status = xmlBase::Dom::getIntAttribute(pedElt, "status");
+      cno = xmlBase::Dom::getDoubleAttribute(cnoElt, "cno");
+      width = xmlBase::Dom::getDoubleAttribute(cnoElt, "width");
+      status = xmlBase::Dom::getIntAttribute(cnoElt, "status");
     }
     catch (xmlBase::DomException ex) {
-      std::cerr << "From CalibSvc::XmlAcdPedCnv::processPmt" << std::endl;
+      std::cerr << "From CalibSvc::XmlAcdCnoCnv::processPmt" << std::endl;
       std::cerr << ex.getMsg() << std::endl;
       throw ex;
     }
 
-    return new CalibData::AcdPed(mean, width, status);
+    return new CalibData::AcdCno(cno, width, status);
   }
 }
 
 // Create our specific object
-StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt, 
+StatusCode XmlAcdCnoCnv::i_createObj(const DOMElement* docElt, 
                                      DataObject*& refpObject)
 {
   using xmlBase::Dom;
-  using CalibData::AcdPed;
+  using CalibData::AcdCno;
 
   unsigned nFace, nRow, nCol, nPmt, nDet, nNA;
   // need dimensions to call the constructor
@@ -113,8 +109,8 @@ StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt,
   if (status == StatusCode::FAILURE) return status;
   
   // refpObject
-  CalibData::AcdCalibPed* pObj = 
-    new CalibData::AcdCalibPed(nFace, nRow, nCol, nNA, nPmt);
+  CalibData::AcdCalibCno* pObj = 
+    new CalibData::AcdCalibCno(nFace, nRow, nCol, nNA, nPmt);
   refpObject = pObj;
   if (!pObj) return StatusCode::FAILURE;
 
@@ -123,8 +119,8 @@ StatusCode XmlAcdPedCnv::i_createObj(const DOMElement* docElt,
   DOMElement* pmtElt = findFirstPmt(docElt);
 
   while (pmtElt != 0 ) {
-    AcdPed* pPed = processPmt(pmtElt);
-    pObj->putPmt(m_id, m_nPmt, pPed);
+    AcdCno* pCno = processPmt(pmtElt);
+    pObj->putPmt(m_id, m_nPmt, pCno);
     pmtElt = findNextPmt(pmtElt);
   }
 
