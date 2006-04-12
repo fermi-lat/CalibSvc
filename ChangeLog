@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Apr 12 09:18:30 PDT 2006
+CalibSvc/src/test
+
+Modified Files:
+	UseTkr.cxx 
+Log Message:
+Fix row and col arguments for TkrId (harmless for tower 0, but still wrong)
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Apr  9 22:46:02 PDT 2006
 CalibSvc/src/test
 
