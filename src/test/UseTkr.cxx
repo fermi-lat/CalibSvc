@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTkr.cxx,v 1.1 2004/08/09 17:50:19 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTkr.cxx,v 1.2 2004/08/09 23:48:55 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -168,8 +168,8 @@ void UseTkr::processNew(CalibData::TkrSplitsCalib* pNew,
     unsigned iTray = 1;
 
 
-    TkrId idTop(iRow, iCol, iTray, true);
-    TkrId idBot(iRow, iCol, iTray, false);
+    TkrId idTop(iCol, iRow, iTray, true);
+    TkrId idBot(iCol, iRow, iTray, false);
     
     CalibData::RangeBase* pTop = pNew->getChannel(idTop);
     CalibData::RangeBase* pBot = pNew->getChannel(idBot);
