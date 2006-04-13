@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 13 10:30:24 PDT 2006
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+      Tag: EM-v6r070329p2
+	XmlAcdBaseCnv.cxx XmlAcdBaseCnv.h XmlAcdGainCnv.cxx 
+	XmlAcdPedCnv.cxx 
+Added Files:
+      Tag: EM-v6r070329p2
+	XmlAcdCnoCnv.cxx XmlAcdVetoCnv.cxx 
+Removed Files:
+      Tag: EM-v6r070329p2
+	XmlAcdGainCnv.h XmlAcdPedCnv.h 
+Log Message:
+Merge changes for Acd calibration into branch for EM
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r24, operation: add
 Package: CalibSvc
