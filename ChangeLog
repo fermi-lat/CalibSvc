@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr 13 10:30:25 PDT 2006
+CalibSvc/src/test
+
+Modified Files:
+      Tag: EM-v6r070329p2
+	UseAcd.cxx jobOptions-acd.txt 
+Log Message:
+Merge changes for Acd calibration into branch for EM
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 13 10:30:24 PDT 2006
 CalibSvc/src/CalibXMLCnv/cnv
 
