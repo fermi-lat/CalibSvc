@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Apr 14 10:26:48 PDT 2006
+CalibSvc/cmt
+
+Modified Files:
+      Tag: EM-v6r070329p2
+	requirements 
+Log Message:
+Prepare for tag along branch for ACD calibration support
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 13 10:30:25 PDT 2006
 CalibSvc/src/test
 
