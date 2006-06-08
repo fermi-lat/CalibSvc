@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.4 2004/12/29 08:34:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.5 2005/02/25 23:52:07 jrb Exp $
 
 #include <string>
 #include <ios>
@@ -92,8 +92,13 @@ StatusCode RootTkrTotCnv::readUnis(TTree* tree, int iTow,
 
   for (unsigned ix = 0; ix < nEntries; ix++) {  // process a unilayer
 
-    calibRootData::TotUnilayer* rootUni = new calibRootData::TotUnilayer();
-    TObject* pObj = rootUni;
+    calibRootData::TotUnilayer* rootUni = 0;
+    //  Because readRootObj expects a ref. to a pointer (not just a pointer)
+    //  the thing being pointed to must be of the correct type - TObject -
+    //  or the compiler will complain.  However, in this frame we need
+    // the pointer to be of type TotUnilayer*.  Declaration below, which
+    // just makes pObj an alias for RootUni, seems to do the right thing
+    TObject*& pObj = rootUni;
 
     StatusCode ret = 
       readRootObj(tree, "calibRootData::TotUnilayer", pObj, ix);
@@ -154,7 +159,7 @@ StatusCode RootTkrTotCnv::readUnis(TTree* tree, int iTow,
         bool ok = dest->putStrip(tdsStrip);
       }
     }    
-    delete rootUni;  // is this required or forbidden?
+    delete rootUni;
     rootUni = 0;
   }    // end unilayer
   return StatusCode::SUCCESS;
