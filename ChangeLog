@@ -1,4 +1,25 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun  8 15:05:44 PDT 2006
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions-intNonlin.txt jobOptions-lightAsym.txt 
+	jobOptions.txt.2root jobOptions.txt.asym 
+	jobOptions.txt.dataTime jobOptions.txt.digi 
+	jobOptions.txt.enter_time jobOptions.txt.gainsRoot 
+	jobOptions.txt.gainsWriteRoot jobOptions.txt.mc 
+	jobOptions.txt.mevPerDac jobOptions.txt.noSuch 
+	jobOptions.txt.recon jobOptions.txt.scale 
+	jobOptions.txt.splits jobOptions.txt.standard 
+	jobOptions.txt.strips jobOptions.txt.tholdCI 
+	jobOptions.txt.tholdMuon jobOptions.txt.tot 
+Log Message:
+Get rid of references to GlastEventSelector/EventSelector where still
+present in test job options
+files
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r21p8em0, operation: add
 Package: CalibSvc
