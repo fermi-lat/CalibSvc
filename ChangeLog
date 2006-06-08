@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun  8 16:53:41 PDT 2006
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootTkrTotCnv.cxx 
+Log Message:
+Additional small change to use ROOT in more standard manner, perhaps help
+address memory leak
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r24p1, operation: add
 Package: CalibSvc
