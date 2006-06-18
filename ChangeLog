@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Sat Jun 17 18:53:53 PDT 2006
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v0r24p3
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 16 15:07:38 PDT 2006
 CalibSvc/src/CalibROOTCnv/cnv
 
