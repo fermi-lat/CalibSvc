@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 30 12:44:29 PDT 2006
+CalibSvc/src/test
+
+Modified Files:
+	UseAnc.cxx 
+Log Message:
+Fix literal in output message
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 30 12:21:45 PDT 2006
 CalibSvc/src/test
 
