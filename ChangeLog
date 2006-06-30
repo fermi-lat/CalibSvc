@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 30 12:21:45 PDT 2006
+CalibSvc/src/test
+
+Added Files:
+	UseAnc.cxx jobOptions.txt.anc 
+Log Message:
+Test program for ancillary detector calibrations
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 30 12:21:27 PDT 2006
 CalibSvc/src/CalibXMLCnv/cnv
 
