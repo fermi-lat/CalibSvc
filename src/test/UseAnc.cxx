@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAcd.cxx,v 1.3 2006/04/10 05:46:01 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAnc.cxx,v 1.1 2006/06/30 19:21:45 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -121,7 +121,8 @@ StatusCode UseAnc::execute( ) {
   int newSerNoQdc = pQdcPeds->getSerNo();
   if ((newSerNoTagger != m_serTaggerPed) ||
       (newSerNoQdc != m_serQdcPed) )  {
-    log << MSG::INFO << "Processing new gains, peds after retrieveObject" 
+    log << MSG::INFO 
+        << "Processing new tagger and qdc peds after retrieveObject" 
         << endreq;
     m_serTaggerPed = newSerNoTagger;
     m_serQdcPed = newSerNoQdc;
