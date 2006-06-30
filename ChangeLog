@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 30 12:21:27 PDT 2006
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlAncBaseCnv.cxx XmlAncBaseCnv.h XmlAncQdcPedCnv.cxx 
+	XmlAncTaggerGainCnv.cxx XmlAncTaggerPedCnv.cxx 
+Log Message:
+Support for ancillary detector calibrations
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r24p3, operation: add
 Package: CalibSvc
