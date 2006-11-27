@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov 27 11:06:44 PST 2006
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Get ready for patch tag (for some reason MRvcmt rtag function didn't do it
+for me)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r25p2, operation: add
 Package: CalibSvc
