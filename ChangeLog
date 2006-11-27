@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov 27 11:01:41 PST 2006
+CalibSvc/src
+
+Modified Files:
+	defaultOptions.txt mainpage.h 
+Log Message:
+defaultOptions.txt: Get rid of explanatory comments
+mainpage.h: Add more explanatory text on job options; update to-do list
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r25p1, operation: add
 Package: CalibSvc
