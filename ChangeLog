@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Nov 27 11:06:49 PST 2006
+CalibSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Get ready for patch tag (for some reason MRvcmt rtag function didn't do it
+for me)
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Nov 27 11:06:44 PST 2006
 CalibSvc/cmt
 
