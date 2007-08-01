@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: markusa  Wed Aug  1 09:39:09 PDT 2007
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added XML parser for SAA boundary calibration object. 
+Added test program for this calibration and its jobOptions file.
+
+
+
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r25p3, operation: add
 Package: CalibSvc
