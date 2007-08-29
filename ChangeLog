@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Aug 29 12:27:21 PDT 2007
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Don't ask for specific version of CalibData
+
+    *
+------------------------------------------------------------
 User: markusa  Wed Aug  1 09:39:09 PDT 2007
 CalibSvc/src/test
 
