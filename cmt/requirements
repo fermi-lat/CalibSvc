@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.114 2006/11/27 19:06:44 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.115 2007/08/01 16:39:09 markusa Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -16,7 +16,7 @@ apply_pattern component_library library=CalibSvc
 # calibUtil, CalibData, calibRootData and astro
 ## use calibUtil v1r* -no_auto_imports
 use calibUtil v1r*
-use CalibData v0r17 
+use CalibData v0r*
 use calibRootData v1r* -no_auto_imports
 use astro         v2r* -no_auto_imports
 
