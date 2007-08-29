@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.12 2006/03/21 01:41:07 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.13 2006/03/30 00:05:17 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -147,6 +147,7 @@ public:
       other about it.
   */
   bool  m_useEventTime;
+  bool  m_useEventLATCMaster;
 
 
   /// Private utility, called from initialize()
@@ -198,6 +199,8 @@ public:
 
   /// Absolute time spacing between events (milliseconds)
   long m_delayTime;
+
+  unsigned m_LATCMaster;
   
 };
 
