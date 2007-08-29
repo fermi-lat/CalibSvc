@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.23 2006/03/21 01:41:07 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.24 2006/03/30 00:05:17 jrb Exp $
 
 // Include files
 #include "CalibDataSvc.h"
@@ -41,6 +41,7 @@ CalibDataSvc::CalibDataSvc(const std::string& name,ISvcLocator* svc) :
   declareProperty("CalibFlavorList", m_flavorList);
   declareProperty("CalibRootName",   m_calibRootName  = "Calib" ); 
   declareProperty("UseEventTime", m_useEventTime = true);
+  declareProperty("UseEventMasterKey", m_useEventLATCMaster = true);
 
   // m_rootName and m_rootCLID are declared in base class DataSvc
   m_rootName = "/" + m_calibRootName;
