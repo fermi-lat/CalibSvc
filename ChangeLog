@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Aug 29 14:43:51 PDT 2007
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Don't change version until it's time to tag
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Aug 29 12:27:21 PDT 2007
 CalibSvc/cmt
 
