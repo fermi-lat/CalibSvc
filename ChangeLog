@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep  7 11:47:58 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	UsePeds.cxx 
+Log Message:
+Test new service which returns a calibration TDS path
+given enumeration element and optional flavor.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep  7 11:47:36 PDT 2007
 CalibSvc/src/CalibDataSvc
 
