@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep  7 11:46:38 PDT 2007
+CalibSvc/CalibSvc
+
+Added Files:
+	ICalibPathSvc.h 
+Log Message:
+Defines interface for new service which returns a calibration TDS path
+given enumeration element and optional flavor.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r26, operation: add
 Package: CalibSvc
