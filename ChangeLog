@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep  7 15:18:23 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	UseAcd.cxx UseAnc.cxx UseAsym.cxx UseBadStrips.cxx 
+	UseCalib.cxx UseGains.cxx UseIntNonlin.cxx UseLightAsym.cxx 
+	UseMevPerDac.cxx UsePeds.cxx UseSAABoundary.cxx UseScale.cxx 
+	UseTholdCI.cxx UseTholdMuon.cxx UseTkr.cxx UseTot.cxx 
+Log Message:
+Adapt all test programs to the new way of getting TDS paths
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep  7 15:17:57 PDT 2007
 CalibSvc/src/CalibDataSvc
 
