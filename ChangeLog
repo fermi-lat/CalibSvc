@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep  7 11:47:36 PDT 2007
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Implement interface for new service which returns a calibration TDS path
+given enumeration element and optional flavor.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep  7 11:47:08 PDT 2007
 CalibSvc/src
 
