@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.7 2004/10/07 19:49:12 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.8 2004/10/15 17:40:31 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -6,10 +6,11 @@
 #include "GaudiKernel/Service.h"
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/SmartDataPtr.h"
-#include "CalibData/CalibModel.h"
+// #include "CalibData/CalibModel.h"
 #include "CalibData/Cal/CalCalibPed.h"
 #include "CalibData/CalibTime.h"
 #include "idents/CalXtalId.h"                // shouldn't be necessary
+#include "CalibSvc/ICalibPathSvc.h"
 
 /**
    @file UsePeds.cxx
@@ -40,6 +41,7 @@ private:
   void processNew(CalibData::CalCalibPed* pNew, const std::string& path);
 
   IDataProviderSvc* m_pCalibDataSvc;
+  ICalibPathSvc*    m_pCalibPathSvc;
   int               m_ser;
 };
 
@@ -77,6 +79,15 @@ StatusCode UsePeds::initialize() {
     return sc;
   }
 
+  sc = service("CalibDataSvc", m_pCalibPathSvc, true);
+
+  if ( !sc.isSuccess() ) {
+    log << MSG::ERROR 
+	<< "Could not get ICalibPathSvc interface of CalibDataSvc" 
+	<< endreq;
+    return sc;
+  }
+
   // Get properties from the JobOptionsSvc
   sc = setProperties();
   return StatusCode::SUCCESS;
@@ -93,12 +104,16 @@ StatusCode UsePeds::execute( ) {
   //  CalibData::CalibTest1* test1 = 
   //    SmartDataPtr<CalibData::CalibTest1>(m_pCalibDataSvc, CalibData::Test_Gen);
   
-  std::string fullPath = "/Calib/CAL_Ped/ideal";
-
+  //       std::string fullPath = "/Calib/CAL_Ped/ideal";   <-----
+  
   // For the following to work on Windows, must add 
   //     apply_pattern use_CalibData_symbols 
   //  to requirements (it's a no-op for Linux)
   //  std::string fullPath = CalibData::CAL_Ped + "/ideal";
+
+  std::string fullPath = 
+    m_pCalibPathSvc->getCalibPath(ICalibPathSvc::Calib_CAL_Ped,
+                                  std::string("ideal") );
   DataObject *pObject;
   
 
