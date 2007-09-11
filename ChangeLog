@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 11 16:38:45 PDT 2007
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+1. apply_pattern package_include  needs to be public
+2. get rid of unnecessary uses of astro and LdfEvent
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r27p1, operation: add
 Package: CalibSvc
