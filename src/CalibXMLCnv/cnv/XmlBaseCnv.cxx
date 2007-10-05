@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.28 2005/01/03 19:32:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.29 2006/01/18 23:12:24 jrb Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -38,8 +38,7 @@ XERCES_CPP_NAMESPACE_USE
     
 XmlBaseCnv::~XmlBaseCnv() {}
 
-// static CnvFactory<XmlBaseCnv> s_factory;
-// const ICnvFactory& XmlBaseCnvFactory = s_factory;
+
 XmlBaseCnv::XmlBaseCnv( ISvcLocator* svc, const CLID& clid) :
   Converter (XML_StorageType, clid, svc),
   m_xmlSvc (0), m_metaSvc(0), m_vstart(0), m_vend(0) /*,
