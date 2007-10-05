@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct  5 11:46:52 PDT 2007
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Add Moot service, converters
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct  5 11:46:38 PDT 2007
 CalibSvc/src/CalibXMLCnv/cnv
 
