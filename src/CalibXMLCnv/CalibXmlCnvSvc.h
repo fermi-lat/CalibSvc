@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.6 2006/03/30 00:05:21 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h,v 1.7 2006/03/30 01:11:46 jrb Exp $
 #ifndef CalibXmlCnvSvc_h
 #define CalibXmlCnvSvc_h  1
 
@@ -108,20 +108,9 @@ class CalibXmlCnvSvc : public ConversionSvc, virtual public ICalibXmlSvc
   virtual StatusCode updateRepRefs ( IOpaqueAddress* pAddress, 
 				     DataObject* pObject );
   */
-
-
   
- public:
-
-  // Probably don't need this.  meta conversion service should
-  // already have fetched and stored everything we need.
-  //  calibUtil::Metadata* getMeta();
-
  private:
 
-  //Probably don't need this
-  // /// Handle for metadata access
-  // calibUtil::Metadata*    m_meta;
 
   // Not sure we need this
   /// Handle to the IConversionSvc interface of the DetectorPersistencySvc
