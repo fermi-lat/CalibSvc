@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct  5 11:46:38 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.cxx XmlSAABoundaryCnv.cxx 
+Removed Files:
+	XmlSAABoundaryCnv.h 
+Log Message:
+Reorganize SAABoundaryCnv class to be all in one file (less clutter)
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct  5 11:45:46 PDT 2007
 CalibSvc/src/CalibXMLCnv
 
