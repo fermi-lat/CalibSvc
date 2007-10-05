@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct  5 11:44:34 PDT 2007
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Changes for handling Moot info
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct  5 11:44:10 PDT 2007
 CalibSvc/cmt
 
