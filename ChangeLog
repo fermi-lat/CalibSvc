@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct  5 11:43:27 PDT 2007
+CalibSvc/CalibSvc
+
+Added Files:
+	IMootSvc.h MootTds.h 
+Log Message:
+MootTds: First attempt at defining Tds structures for MOOT parameters
+IMootSvc: Public interface for Moot services
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 27 16:55:06 PDT 2007
 CalibSvc/src/MootSvc/cnv
 
