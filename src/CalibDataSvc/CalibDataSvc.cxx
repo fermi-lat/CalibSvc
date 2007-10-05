@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.27 2007/09/07 22:17:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.28 2007/10/05 18:44:34 jrb Exp $
 
 // Include files
 #include <algorithm>
@@ -561,7 +561,7 @@ StatusCode CalibDataSvc::loadObject(IConversionSvc* pLoader,
 StatusCode  CalibDataSvc::updateFswKeys() {
   // For now either we update from event or we don't update at all
   if (!m_useEventKeys) return StatusCode::SUCCESS;
-  using enums::Lsf;
+  using namespace enums;
 
   SmartDataPtr<LsfEvent::MetaEvent> metaEvt(m_eventSvc, "/Event/MetaEvent");
 
