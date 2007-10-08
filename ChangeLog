@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct  8 11:50:04 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt 
+Log Message:
+Revert back to standard test file, accessible on both Linux and Windows
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r28p1, operation: add
 Package: CalibSvc
