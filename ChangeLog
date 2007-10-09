@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Oct  9 11:19:44 PDT 2007
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibPathSvc.h 
+Log Message:
+Added AcdRange, AcdHighRange, AcdCoherentNoise calibrations and switched to using templated code to read acd calibrations xml
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r28p2, operation: add
 Package: CalibSvc
