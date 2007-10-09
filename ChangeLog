@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Tue Oct  9 11:19:44 PDT 2007
+CalibSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Added AcdRange, AcdHighRange, AcdCoherentNoise calibrations and switched to using templated code to read acd calibrations xml
+    *
+------------------------------------------------------------
+User: echarles  Tue Oct  9 11:19:44 PDT 2007
 CalibSvc/cmt
 
 Modified Files:
