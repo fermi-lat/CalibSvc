@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: echarles  Tue Oct  9 11:19:45 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlAcdBaseCnv.cxx XmlAcdBaseCnv.h 
+Added Files:
+	XmlAcdCnv.cxx XmlAcdCnv.h 
+Removed Files:
+      Tag: v0r27p2
+	XmlAcdCnoCnv.cxx XmlAcdGainCnv.cxx XmlAcdPedCnv.cxx 
+	XmlAcdVetoCnv.cxx 
+Log Message:
+Added AcdRange, AcdHighRange, AcdCoherentNoise calibrations and switched to using templated code to read acd calibrations xml
+    *
+------------------------------------------------------------
 User: echarles  Tue Oct  9 11:19:44 PDT 2007
 CalibSvc/src/CalibDataSvc
 
