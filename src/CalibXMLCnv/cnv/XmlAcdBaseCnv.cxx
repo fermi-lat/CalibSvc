@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlAcdBaseCnv.cxx,v 1.3 2005/01/03 19:32:37 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlAcdBaseCnv.cxx,v 1.4 2006/04/10 05:46:01 jrb Exp $
 #include "GaudiKernel/MsgStream.h"
 #include "XmlAcdBaseCnv.h"
 #include "xmlBase/Dom.h"
@@ -103,5 +103,7 @@ DOMElement* XmlAcdBaseCnv::findNextPmt(const DOMElement* pmtElt) {
       throw ex2;
     }
   }
+
   return elt;
 }
+
