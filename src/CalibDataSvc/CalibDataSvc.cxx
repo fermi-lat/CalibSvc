@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.31 2007/10/10 01:54:02 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.32 2007/10/10 17:45:16 jrb Exp $
 
 // Include files
 #include <algorithm>
 #include "CalibDataSvc.h"
-#include "../src/MootSvc/MootSvc.h"
+#include "../MootSvc/MootSvc.h"
 #include "CalibCLIDNode.h"
 #include "CalibData/CalibTime.h"
 #include "GaudiKernel/IAddressCreator.h"
