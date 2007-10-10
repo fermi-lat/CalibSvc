@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 10 10:45:16 PDT 2007
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+A couple little changes for Moot access
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r29p1, operation: add
 Package: CalibSvc
