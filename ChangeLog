@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Oct  9 18:54:02 PDT 2007
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for compilation
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r29, operation: add
 Package: CalibSvc
