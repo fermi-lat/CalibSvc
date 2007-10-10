@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 10 11:36:56 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	UseAcd.cxx 
+Log Message:
+Some updates for re-implemented Acd calibration TDS classes; not done yet
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 10 10:46:02 PDT 2007
 CalibSvc/src/test
 
