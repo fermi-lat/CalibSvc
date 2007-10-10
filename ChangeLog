@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Oct  9 18:54:02 PDT 2007
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+patch for compilation
+    *
+------------------------------------------------------------
+User: heather  Tue Oct  9 18:54:02 PDT 2007
 CalibSvc/doc
 
 Modified Files:
