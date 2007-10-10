@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 10 10:45:39 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Removed Files:
+	XmlAcdCnoCnv.cxx XmlAcdGainCnv.cxx XmlAcdPedCnv.cxx 
+	XmlAcdVetoCnv.cxx 
+Log Message:
+Remove obsolete files, no longer needed after Eric's refactoring
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 10 10:45:16 PDT 2007
 CalibSvc/src/CalibDataSvc
 
