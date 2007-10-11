@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 TAG
+Tag name: v0r27p2, operation: add
+Package: CalibSvc
+User: heather  Thu Oct 11 08:17:49 2007
+Files:
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdCnoCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdVetoCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdPedCnv.cxx  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdGainCnv.cxx  1.4
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v0r29p2, operation: add
 Package: CalibSvc
 User: jrb  Wed Oct 10 14:16:39 2007
