@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.17 2006/03/30 01:11:32 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.1 2007/10/05 18:47:24 jrb Exp $
 #ifndef MootCnvSvc_h
 #define MootCnvSvc_h  1
 
@@ -122,8 +122,6 @@ typedef hash_map<const char*, int> HashMap;
   // For now we handle only parameter classes belonging to a precinct
   // other than 'generic'
   StatusCode makeMootNodes(const std::string& parent);
-
-  
 
  private:
 
