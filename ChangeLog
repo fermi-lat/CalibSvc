@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 15 15:27:28 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt.moot 
+Log Message:
+Set 'use moot' option to true 
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct 15 15:27:03 PDT 2007
 CalibSvc/src/MootSvc
 
