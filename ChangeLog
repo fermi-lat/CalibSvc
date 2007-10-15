@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 15 15:27:03 PDT 2007
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx MootSvc.h 
+Log Message:
+Call initialize ourselves if necessary
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r27p2, operation: add
 Package: CalibSvc
