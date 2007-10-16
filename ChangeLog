@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: markusa  Tue Oct 16 15:28:55 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt.saa 
+Added Files:
+	UseLATAlignment.cxx jobOptions.txt.align 
+Log Message:
+added lat alignment calibration parser
+
+
+
+    *
+------------------------------------------------------------
+User: markusa  Tue Oct 16 15:28:55 PDT 2007
 CalibSvc/src/CalibXMLCnv/cnv
 
 Added Files:
