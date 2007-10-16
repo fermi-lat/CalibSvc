@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: markusa  Tue Oct 16 15:28:55 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+	XmlLATAlignmentCnv.cxx XmlLATAlignmentCnv.h 
+Log Message:
+added lat alignment calibration parser
+
+
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct 15 15:27:28 PDT 2007
 CalibSvc/src/test
 
