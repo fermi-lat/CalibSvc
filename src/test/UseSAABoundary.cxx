@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseSAABoundary.cxx,v 1.1 2007/08/01 16:39:09 markusa Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseSAABoundary.cxx,v 1.2 2007/09/07 22:18:23 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -6,7 +6,7 @@
 #include "GaudiKernel/Service.h"
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/SmartDataPtr.h"
-#include "CalibData/CalibSAABoundary.h"
+#include "CalibData/Nas/CalibSAABoundary.h"
 #include "CalibSvc/ICalibPathSvc.h"
 
 /// Simple algorithm to test functioning of "the other" TDS
@@ -89,9 +89,6 @@ StatusCode UseSAABoundary::execute( ) {
 
   MsgStream log(msgSvc(), name());
 
-  // Cheat for now since Windows is having trouble finding definition
-  // of Calibdata::Test_t
-  //  std::string fullPath = "/Calib/NAS_SAABoundary/vanilla";
 
   SmartDataPtr<CalibData::CalibSAABoundary> test1Copy(m_pCalibDataSvc, m_path);
 

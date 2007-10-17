@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlSAABoundaryCnv.cxx,v 1.1 2007/08/01 16:39:09 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlSAABoundaryCnv.cxx,v 1.2 2007/10/05 18:46:38 jrb Exp $
 
 #include <string>
 #include <vector>
@@ -16,7 +16,7 @@
 #include "CalibSvc/ICalibXmlSvc.h"
 #include "CalibSvc/ICalibMetaCnvSvc.h"
 
-#include "CalibData/CalibSAABoundary.h"
+#include "CalibData/Nas/CalibSAABoundary.h"
 #include "CalibData/CalibTime.h"
 #include "xmlBase/Dom.h"
 

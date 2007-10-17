@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlLATAlignmentCnv.cxx,v 1.1 2007/10/16 22:28:54 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlLATAlignmentCnv.cxx,v 1.2 2007/10/17 02:44:49 markusa Exp $
 
 #include <string>
 #include "GaudiKernel/CnvFactory.h"
@@ -13,7 +13,7 @@
 #include "CalibSvc/ICalibXmlSvc.h"
 #include "CalibSvc/ICalibMetaCnvSvc.h"
 
-#include "CalibData/CalibLATAlignment.h"
+#include "CalibData/Nas/CalibLATAlignment.h"
 #include "CalibData/CalibTime.h"
 #include "xmlBase/Dom.h"
 
