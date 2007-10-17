@@ -1,7 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlSAABoundaryCnv.cxx,v 1.1 2007/08/01 16:39:09 markusa Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlLATAlignmentCnv.cxx,v 1.1 2007/10/16 22:28:54 markusa Exp $
 
 #include <string>
-#include "XmlLATAlignmentCnv.h"
 #include "GaudiKernel/CnvFactory.h"
 #include "GaudiKernel/IOpaqueAddress.h"
 #include "GaudiKernel/DataObject.h"
@@ -20,6 +19,31 @@
 
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
+#include "XmlBaseCnv.h"
+
+template <class TYPE> class CnvFactory;
+
+class XmlLATAlignmentCnv : public XmlBaseCnv {
+
+  /// Friend needed for instantiation
+  friend class CnvFactory<XmlLATAlignmentCnv>;
+public:
+  const CLID& objType() const;
+  static const CLID& classID();
+protected:
+
+  XmlLATAlignmentCnv(ISvcLocator* svcs);
+
+  virtual ~XmlLATAlignmentCnv() {}       // most likely nothing to do 
+
+  virtual StatusCode i_createObj(const DOMElement* element,
+                                 DataObject*& refpObject);
+				 
+  double m_roll;
+  double m_pitch;
+  double m_yaw;				 
+   
+};
 
 static CnvFactory<XmlLATAlignmentCnv> s_factory;
 const  ICnvFactory& XmlLATAlignmentCnvFactory = s_factory;
