@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 17 15:23:56 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlBaseCnv.h 
+Log Message:
+Avoid compile warnings for unused args
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r29p3, operation: add
 Package: CalibSvc
