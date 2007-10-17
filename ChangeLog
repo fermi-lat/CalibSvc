@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 17 12:56:13 PDT 2007
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibPathSvc.h 
+Log Message:
+Include mention of new LATAlignment calibration
+
+    *
+------------------------------------------------------------
 User: markusa  Tue Oct 16 19:44:49 PDT 2007
 CalibSvc/src/CalibXMLCnv/cnv
 
