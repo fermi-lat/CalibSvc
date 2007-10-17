@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 17 12:56:46 PDT 2007
+CalibSvc/src/test
+
+Modified Files:
+	UseLATAlignment.cxx UseSAABoundary.cxx 
+Log Message:
+Adjust for new location of CalibData includes
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 17 12:56:35 PDT 2007
 CalibSvc/src/CalibXMLCnv/cnv
 
