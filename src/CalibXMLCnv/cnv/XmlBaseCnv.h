@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.14.6.1 2006/02/13 23:02:32 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.15 2006/03/21 01:41:08 usher Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -112,12 +112,12 @@ protected:
 
   /// Find first range element.  Derived classes which need it
   /// must define their own implementation.
-  DOMElement* findFirstRange(const DOMElement* docElt) {
+  DOMElement* findFirstRange(const DOMElement* /* docElt */) {
     return 0;}
 
 
   /// Still another one to navigate XML file and find next set of range data
-  DOMElement* findNextRange(const DOMElement* rangeElt) {
+  DOMElement* findNextRange(const DOMElement* /* rangeElt */) {
     return 0;}
 
   /// Another one to find first dac collection element
