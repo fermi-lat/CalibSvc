@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: markusa  Tue Oct 16 19:44:49 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlLATAlignmentCnv.cxx 
+Removed Files:
+	XmlLATAlignmentCnv.h 
+Log Message:
+merged LATAlignmentCnv .cxx and .h as suggested by Joanne
+
+
+
+    *
+------------------------------------------------------------
 User: markusa  Tue Oct 16 15:28:55 PDT 2007
 CalibSvc/src/test
 
