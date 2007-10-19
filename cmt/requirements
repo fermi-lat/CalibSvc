@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.129 2007/10/10 21:15:34 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.130 2007/10/17 19:57:53 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -33,6 +33,7 @@ use ROOT   * IExternal
 use XMLEXT * IExternal v5r2*
 use MYSQLEXT * IExternal v*
 
+use LdfEvent v*
 
 ## Following line doesn't appear in real requirements, though maybe it should,
 ## because GlastSvc and RootIo already drag in Event
@@ -40,7 +41,6 @@ use MYSQLEXT * IExternal v*
 use GlastSvc v9r* -no_auto_imports
 use RootIo v* -no_auto_imports
 
-use LdfEvent v*
 use Event v11r* -no_auto_imports
 use rootTestData v* -no_auto_imports
 
