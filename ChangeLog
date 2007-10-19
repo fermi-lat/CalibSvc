@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 19 14:56:02 PDT 2007
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Move use of LdfEvent above all the -no_auto_imports uses; avoids problems
+finding include's in some cases
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 17 15:23:56 PDT 2007
 CalibSvc/src/CalibXMLCnv/cnv
 
