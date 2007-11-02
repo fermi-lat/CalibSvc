@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx,v 1.4 2004/11/11 00:12:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx,v 1.5 2005/01/03 19:32:38 jrb Exp $
 
 #include <string>
 #include "XmlCalLightAttCnv.h"
@@ -104,6 +104,7 @@ StatusCode XmlCalLightAttCnv::i_createObj(const DOMElement* docElt,
     LightAtt* pLightAtt = processRange(rangeElt);
     pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, 
                    m_nFace, pLightAtt);
+    delete pLightAtt;
     rangeElt = findNextRange(rangeElt);
   }
 

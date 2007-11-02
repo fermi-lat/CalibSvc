@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.8 2004/11/11 00:12:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx,v 1.9 2005/01/03 19:32:38 jrb Exp $
 
 #include <string>
 #include "XmlCalGainCnv.h"
@@ -88,7 +88,8 @@ StatusCode XmlCalGainCnv::i_createObj(const DOMElement* docElt,
   while (rangeElt != 0 ) {
     Gain* pGain = processRange(rangeElt);
     pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, 
-                   m_nFace, pGain);
+                             m_nFace, pGain);
+    delete pGain;
     rangeElt = findNextRange(rangeElt);
   }
 

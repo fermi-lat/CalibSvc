@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.5.2.2 2005/08/01 23:15:28 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx,v 1.6 2005/08/01 23:42:16 jrb Exp $
 
 #include <string>
 #include "XmlCalIntNonlinCnv.h"
@@ -116,6 +116,7 @@ StatusCode XmlCalIntNonlinCnv::i_createObj(const DOMElement* docElt,
     if (pIntNonlin) {
       pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, 
                      m_nFace, pIntNonlin);
+      delete pIntNonlin;
       rangeElt = findNextRange(rangeElt);
     }
     else {
@@ -137,6 +138,8 @@ StatusCode XmlCalIntNonlinCnv::i_createObj(const DOMElement* docElt,
     unsigned range;
     DacCol* pDacCol = processDacCol(dacColElt, &range);
     pObj->putDacCol(range, pDacCol);
+    delete pDacCol;
+
     dacColElt = findNextDacCol(dacColElt);
   }
   return StatusCode::SUCCESS;

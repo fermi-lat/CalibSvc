@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.cxx,v 1.3 2004/11/11 00:12:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.cxx,v 1.4 2005/01/03 19:32:38 jrb Exp $
 
 #include <string>
 #include "XmlCalLightAsymCnv.h"
@@ -99,6 +99,7 @@ StatusCode XmlCalLightAsymCnv::i_createObj(const DOMElement* docElt,
     LightAsym* pLightAsym = processRange(rangeElt);
     pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, 
                    m_nFace, pLightAsym);
+    delete pLightAsym;
     rangeElt = findNextRange(rangeElt);
   }
 

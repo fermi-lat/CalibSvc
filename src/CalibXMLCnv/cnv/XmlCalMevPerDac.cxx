@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMevPerDac.cxx,v 1.2 2004/11/11 00:12:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalMevPerDac.cxx,v 1.3 2005/01/03 19:32:38 jrb Exp $
 
 /** @class XmlCalMevPerDacCnv
 
@@ -179,6 +179,7 @@ StatusCode XmlCalMevPerDacCnv::i_createObj(const DOMElement* docElt,
     CalMevPerDac* pMevPerDac = processRange(rangeElt);
     pObj->putRange(m_nRow, m_nCol, m_nLayer, m_nXtal, m_nRange, 
                    m_nFace, pMevPerDac);
+    delete pMevPerDac;
     rangeElt = findNextRange(rangeElt);
   }
 
