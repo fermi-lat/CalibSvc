@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov  2 13:31:12 PDT 2007
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlCalAsym.cxx XmlCalGainCnv.cxx XmlCalIntNonlinCnv.cxx 
+	XmlCalLightAsymCnv.cxx XmlCalLightAttCnv.cxx 
+	XmlCalMevPerDac.cxx XmlCalMuSlopeCnv.cxx XmlCalPedCnv.cxx 
+	XmlCalTholdCI.cxx XmlCalTholdMuon.cxx 
+Log Message:
+Fix per-calibration-readin memory leaks
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r30, operation: add
 Package: CalibSvc
