@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Jan 23 15:43:03 PST 2008
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlAcdCnv.h 
+Log Message:
+update comments for acd review
+    *
+------------------------------------------------------------
 TAG
 Tag name: v0r30p2, operation: add
 Package: CalibSvc
