@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 16:08:15 PST 2008
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibPathSvc.h 
+Log Message:
+added AcdRibbon calibration
+    *
+------------------------------------------------------------
 User: echarles  Wed Jan 23 15:43:03 PST 2008
 CalibSvc/src/CalibXMLCnv/cnv
 
