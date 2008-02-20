@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Feb 19 20:52:46 PST 2008
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v0r31 for AcdRibbon calibration
+    *
+------------------------------------------------------------
 User: echarles  Tue Feb 19 16:08:17 PST 2008
 CalibSvc/src/CalibXMLCnv/cnv
 
