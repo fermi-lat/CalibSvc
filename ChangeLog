@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar  7 18:37:36 PST 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx 
+Log Message:
+Get and store Moot parm. information so it can be served
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar  7 17:45:47 PST 2008
 CalibSvc/src/MootTds
 
