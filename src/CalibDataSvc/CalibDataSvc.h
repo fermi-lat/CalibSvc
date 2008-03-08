@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.15 2007/09/07 18:47:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.16 2007/10/05 18:44:34 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -115,6 +115,9 @@ public:
   /// For use of CalibMySQLCnvSvc, to set "use event time mode"
   virtual void setUseEventTime(bool useEventTime) {
     m_useEventTime = useEventTime;}
+
+  /// Utility updates fsw keys if necessary, called by MootSvc
+
  private:
   //properties
   /// Calibration Data Persistency Storage type 
@@ -156,7 +159,6 @@ public:
       other about it.
   */
   bool  m_useEventTime;
-  bool  m_useEventKeys;
 
 
   /// Private utility, called from initialize()
@@ -166,9 +168,6 @@ public:
   /// the event; if not do it.
   StatusCode updateTime();
 
-  /// Private utility to check if fsw keys needs updating
-  /// for this event.  To start with just look at LATC master
-  StatusCode updateFswKeys();
 
   /*
   /// Typedef for ptr to function which will attempt to fetch 

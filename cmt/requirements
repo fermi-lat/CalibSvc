@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.136 2008/02/20 04:52:45 echarles Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.137 2008/02/20 19:44:27 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -57,8 +57,6 @@ macro_append includes ' $(ppcmd)"$(Event_root)" '
 library CalibSvc -import=calibUtil -import=calibRootData -import=CalibData  *.cxx\
                         CalibDataSvc/*.cxx      \
                         MootSvc/*.cxx       \
-                        MootSvc/cnv/*.cxx   \
-                        MootTds/*.cxx        \
                         CalibMySQLCnv/*.cxx     \
                         CalibXMLCnv/*.cxx       \
                         CalibXMLCnv/cnv/*.cxx   \
