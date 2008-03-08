@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar  7 17:45:46 PST 2008
+CalibSvc/CalibSvc
+
+Modified Files:
+	IMootSvc.h 
+Removed Files:
+	MootTds.h 
+Log Message:
+Not quite done yet, but goal is to make filepaths for LATC source files 
+corresponding to config. for current event available via MootSvc 
+Unlike earlier attempt, do not attempt to use calibration (or any) TDS;
+it's not a good fit for the task at hand.
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-31-01, operation: add
 Package: CalibSvc
