@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 11 16:40:45 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx 
+Log Message:
+Change jo MootSvc.UseEventKeys default to "true"
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-32-00, operation: add
 Package: CalibSvc
