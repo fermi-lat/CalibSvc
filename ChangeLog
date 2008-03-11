@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 11 13:19:24 PDT 2008
+CalibSvc/CalibSvc
+
+Modified Files:
+	IMootSvc.h 
+Log Message:
+Minor clean-up
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar  7 18:37:36 PST 2008
 CalibSvc/src/MootSvc
 
