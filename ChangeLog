@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Tue Mar 11 13:48:16 PDT 2008
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+MootSvc:       Main function of interest is getMootParmPath
+CalibDataSvc:  Does not need to know about MootSvc; excise references
+UseMoot:       Test program to exercise MootSvc client functions
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Mar 11 13:19:24 PDT 2008
 CalibSvc/CalibSvc
 
