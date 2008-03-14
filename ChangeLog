@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Fri Mar 14 16:47:54 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx MootSvc.h 
+Log Message:
+MootSvc: Disconnect from MOOT db after some events of non-activity
+CalibDataSvc: Fix annoying warning message at NAS_LATAlignment
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Mar 14 16:47:54 PDT 2008
 CalibSvc/src/CalibDataSvc
 
 Modified Files:
