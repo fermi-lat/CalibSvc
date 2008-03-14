@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 14 16:47:54 PDT 2008
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx 
+Log Message:
+MootSvc: Disconnect from MOOT db after some events of non-activity
+CalibDataSvc: Fix annoying warning message at NAS_LATAlignment
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-32-01, operation: add
 Package: CalibSvc
