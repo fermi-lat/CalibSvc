@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May  7 15:37:25 PDT 2008
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibPathSvc.h 
+Log Message:
+Support tracker alignment calibrations, both inter- and intra-tower
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-32-02, operation: add
 Package: CalibSvc
