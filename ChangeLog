@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Mon May 26 22:31:36 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt.moot 
+Log Message:
+Services to make filter configs available to Offline
+
+    *
+------------------------------------------------------------
+User: jrb  Mon May 26 22:31:36 PDT 2008
 CalibSvc/src/MootSvc
 
 Modified Files:
