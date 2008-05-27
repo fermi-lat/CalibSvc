@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Mon May 26 22:31:36 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx MootSvc.h 
+Log Message:
+Services to make filter configs available to Offline
+
+    *
+------------------------------------------------------------
+User: jrb  Mon May 26 22:31:36 PDT 2008
 CalibSvc/src
 
 Modified Files:
