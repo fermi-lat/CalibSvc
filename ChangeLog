@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Wed May 28 13:31:01 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	UseMoot.cxx jobOptions.txt.moot 
+Log Message:
+Bug fix for getActiveFilter - don't delete something not meant to be deleted!
+
+    *
+------------------------------------------------------------
+User: jrb  Wed May 28 13:31:01 PDT 2008
 CalibSvc/src/MootSvc
 
 Modified Files:
