@@ -1,5 +1,140 @@
 ------------------------------------------------------------
 TAG
+Tag name: CalibSvc-00-34-01, operation: add
+Package: CalibSvc
+User: glastrm  Wed May 28 13:45:27 2008
+Files:
+  CalibSvc/.cvsignore  1.4
+  CalibSvc/ChangeLog  1.652
+  CalibSvc/CalibSvc/IMootSvc.h  1.4
+  CalibSvc/CalibSvc/ICalibPathSvc.h  1.5
+  CalibSvc/CalibSvc/ICalibMetaCnvSvc.h  1.7
+  CalibSvc/CalibSvc/IInstrumentName.h  1.3
+  CalibSvc/CalibSvc/ICalibXmlSvc.h  1.3
+  CalibSvc/CalibSvc/ICalibRootSvc.h  1.2
+  CalibSvc/cmt/.cvsignore  1.1.1.1
+  CalibSvc/cmt/requirements  1.144
+  CalibSvc/doc/release.notes  1.102
+  CalibSvc/src/mainpage.h  1.20
+  CalibSvc/src/defaultOptions.txt  1.2
+  CalibSvc/src/CalibDataSvc/CalibDataSvc.h  1.17
+  CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx  1.38
+  CalibSvc/src/CalibDataSvc/CalibCLIDNode.cxx  1.3
+  CalibSvc/src/CalibDataSvc/CalibCLIDNode.h  1.3
+  CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx  1.28
+  CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h  1.18
+  CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.h  1.5
+  CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx  1.6
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrScaleCnv.cxx  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.cxx  1.3
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.h  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.h  1.3
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.h  1.2
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.h  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.h  1.5
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrScaleCnv.h  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.cxx  1.3
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx  1.7
+  CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx  1.8
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.cxx  1.6
+  CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx  1.7
+  CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h  1.8
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.h  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlTkrAlignCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.h  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.cxx  1.10
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalTholdCI.cxx  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlTkrBaseCnv.h  1.2
+  CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx  1.8
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.cxx  1.6
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.cxx  1.5
+  CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.h  1.6
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.cxx  1.5
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.cxx  1.8
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAncTaggerGainCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalBaseCnv.h  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAncQdcPedCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdCnv.cxx  1.2
+  CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h  1.16
+  CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx  1.7
+  CalibSvc/src/CalibXMLCnv/cnv/XmlSAABoundaryCnv.cxx  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalPedCnv.cxx  1.10
+  CalibSvc/src/CalibXMLCnv/cnv/XmlTkrBaseCnv.cxx  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdBaseCnv.h  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.h  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalMevPerDac.cxx  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlLATAlignmentCnv.cxx  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.cxx  1.7
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalMuSlopeCnv.h  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlTkrSplitsCnv.cxx  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdCnv.h  1.2
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalGainCnv.h  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAncBaseCnv.h  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAncBaseCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalAsym.cxx  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalTholdMuon.cxx  1.4
+  CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx  1.30
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAncTaggerPedCnv.cxx  1.1
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAttCnv.h  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlCalIntNonlinCnv.h  1.3
+  CalibSvc/src/CalibXMLCnv/cnv/XmlAcdBaseCnv.cxx  1.5
+  CalibSvc/src/Dll/CalibSvc_dll.cxx  1.2
+  CalibSvc/src/Dll/CalibSvc_load.cxx  1.20
+  CalibSvc/src/MootSvc/MootSvc.cxx  1.10
+  CalibSvc/src/MootSvc/MootSvc.h  1.7
+  CalibSvc/src/test/jobOptions.txt.strips  1.2
+  CalibSvc/src/test/UseAcd.cxx  1.5
+  CalibSvc/src/test/UseTkr.cxx  1.4
+  CalibSvc/src/test/jobOptions.txt.tholdCI  1.3
+  CalibSvc/src/test/jobOptions.txt.digi  1.3
+  CalibSvc/src/test/jobOptions.txt.2root  1.2
+  CalibSvc/src/test/UseBadStrips.cxx  1.5
+  CalibSvc/src/test/UseIntNonlin.cxx  1.6
+  CalibSvc/src/test/jobOptions.txt.gainsWriteRoot  1.3
+  CalibSvc/src/test/jobOptions.txt.noSuch  1.2
+  CalibSvc/src/test/jobOptions.txt.align  1.1
+  CalibSvc/src/test/jobOptions.txt.splits  1.3
+  CalibSvc/src/test/jobOptions.txt.mc  1.3
+  CalibSvc/src/test/digi.root  1.1
+  CalibSvc/src/test/UseLightAsym.cxx  1.3
+  CalibSvc/src/test/UseTholdMuon.cxx  1.4
+  CalibSvc/src/test/jobOptions-intNonlin.txt  1.4
+  CalibSvc/src/test/UseTholdCI.cxx  1.2
+  CalibSvc/src/test/UseTkrAlign.cxx  1.1
+  CalibSvc/src/test/UseGains.cxx  1.4
+  CalibSvc/src/test/UseAnc.cxx  1.3
+  CalibSvc/src/test/jobOptions.txt.standard  1.4
+  CalibSvc/src/test/jobOptions.txt.dataTime  1.4
+  CalibSvc/src/test/jobOptions.txt.scale  1.3
+  CalibSvc/src/test/UseScale.cxx  1.3
+  CalibSvc/src/test/jobOptions-acd.txt  1.4
+  CalibSvc/src/test/UseAsym.cxx  1.4
+  CalibSvc/src/test/jobOptions.txt.tot  1.3
+  CalibSvc/src/test/jobOptions.txt.anc  1.1
+  CalibSvc/src/test/UseSAABoundary.cxx  1.3
+  CalibSvc/src/test/UseLATAlignment.cxx  1.2
+  CalibSvc/src/test/jobOptions-lightAsym.txt  1.4
+  CalibSvc/src/test/UseMoot.cxx  1.3
+  CalibSvc/src/test/jobOptions.txt.moot  1.6
+  CalibSvc/src/test/jobOptions.txt.tholdMuon  1.3
+  CalibSvc/src/test/jobOptions.txt.recon  1.2
+  CalibSvc/src/test/UseMevPerDac.cxx  1.3
+  CalibSvc/src/test/jobOptions.txt.asym  1.4
+  CalibSvc/src/test/jobOptions.txt.tkrAlign  1.1
+  CalibSvc/src/test/jobOptions.txt.enter_time  1.5
+  CalibSvc/src/test/UseCalib.cxx  1.9
+  CalibSvc/src/test/UsePeds.cxx  1.10
+  CalibSvc/src/test/jobOptions.txt.mevPerDac  1.3
+  CalibSvc/src/test/jobOptions.txt.gainsRoot  1.4
+  CalibSvc/src/test/jobOptions.txt  1.28
+  CalibSvc/src/test/jobOptions.txt.saa  1.2
+  CalibSvc/src/test/UseTot.cxx  1.4
+  CalibSvc/src/util/CalibEvtClock.cxx  1.1
+  CalibSvc/src/util/CalibEvtClock.h  1.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v0r34p1, operation: add
 Package: CalibSvc
 User: jrb  Wed May 28 13:31:58 2008
