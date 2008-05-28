@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.cxx,v 1.8 2008/05/27 05:31:36 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.cxx,v 1.9 2008/05/28 06:03:39 jrb Exp $
 #include <cstdio>
 #include <cstdlib>
 #include <stdexcept>
@@ -417,7 +417,6 @@ MootSvc::getActiveFilter(unsigned acqMode, unsigned handlerId,
   if (!pConstit) return 0;
 
   CalibData::MootFilterCfg* f = makeMootFilterCfg(*pConstit);
-  delete pConstit;
   return f;
 }
 
