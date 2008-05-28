@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Tue May 27 23:03:39 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx MootSvc.h 
+Log Message:
+Add job option allowing user to specify MOOT config
+
+    *
+------------------------------------------------------------
+User: jrb  Tue May 27 23:03:39 PDT 2008
 CalibSvc/src
 
 Modified Files:
