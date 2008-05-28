@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.5 2008/03/14 23:47:54 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.6 2008/05/27 05:31:36 jrb Exp $
 #ifndef MootCnvSvc_h
 #define MootCnvSvc_h  1
 
@@ -144,7 +144,7 @@ class MootSvc :  public Service,
   IInstrumentName*     m_instrSvc;   // might not need this one
   IDataProviderSvc* m_eventSvc;
 
-  unsigned          m_hw; // latc master from most recent event
+  unsigned          m_hw; // latc master from most recent event or from Config
   unsigned          m_mootConfigKey; // For current run
   unsigned          m_startTime;     // use this to look up moot config
   unsigned          m_scid;          // use this to look up moot config
@@ -153,6 +153,7 @@ class MootSvc :  public Service,
   bool  m_useEventKeys;                       // job options
   bool  m_verbose;                            // controls MoodConnection
   bool  m_lookUpStartTime;                    // true if we get it from event
+  bool  m_fixedConfig;                        // diagnostic
 
   CalibData::MootParmCol*  m_mootParmCol;
 };
