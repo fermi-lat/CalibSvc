@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue May 27 23:03:40 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	UseMoot.cxx jobOptions.txt.moot 
+Log Message:
+Add job option allowing user to specify MOOT config
+
+    *
+------------------------------------------------------------
 User: jrb  Tue May 27 23:03:39 PDT 2008
 CalibSvc/src/MootSvc
 
