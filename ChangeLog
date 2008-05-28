@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue May 27 23:03:39 PDT 2008
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Add job option allowing user to specify MOOT config
+
+    *
+------------------------------------------------------------
 User: jrb  Mon May 26 22:31:36 PDT 2008
 CalibSvc/src/test
 
