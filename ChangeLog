@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed May 28 13:31:01 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx 
+Log Message:
+Bug fix for getActiveFilter - don't delete something not meant to be deleted!
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-34-00, operation: add
 Package: CalibSvc
