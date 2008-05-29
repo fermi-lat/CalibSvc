@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Wed May 28 23:13:39 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt.moot 
+Log Message:
+1. Bug fixes, improvements in getting scid, startTime, etc. from data
+2. Re-get Mood connection as needed
+
+    *
+------------------------------------------------------------
+User: jrb  Wed May 28 23:13:39 PDT 2008
 CalibSvc/src/MootSvc
 
 Modified Files:
