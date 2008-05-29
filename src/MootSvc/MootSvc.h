@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.7 2008/05/28 06:03:39 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.8 2008/05/29 06:13:39 jrb Exp $
 #ifndef MootCnvSvc_h
 #define MootCnvSvc_h  1
 
@@ -130,7 +130,7 @@ class MootSvc :  public Service,
   std::string findPrecinct(const std::string& pclass);
 
   StatusCode updateMootParmCol();
-  StatusCode updateFswEvtInfo();  // keys and started_at
+  StatusCode updateFswEvtInfo();  // keys, started_at, scid
 
   /// Handles for metadata access
   MOOT::MootQuery*    m_q;
