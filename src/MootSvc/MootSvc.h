@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.6 2008/05/27 05:31:36 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.7 2008/05/28 06:03:39 jrb Exp $
 #ifndef MootCnvSvc_h
 #define MootCnvSvc_h  1
 
@@ -153,6 +153,7 @@ class MootSvc :  public Service,
   bool  m_useEventKeys;                       // job options
   bool  m_verbose;                            // controls MoodConnection
   bool  m_lookUpStartTime;                    // true if we get it from event
+  bool  m_lookUpScid;                         // true if we get it from event
   bool  m_fixedConfig;                        // diagnostic
 
   CalibData::MootParmCol*  m_mootParmCol;
