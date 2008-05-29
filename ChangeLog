@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed May 28 23:13:39 PDT 2008
+CalibSvc/src
+
+Modified Files:
+	mainpage.h 
+Log Message:
+1. Bug fixes, improvements in getting scid, startTime, etc. from data
+2. Re-get Mood connection as needed
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-34-01, operation: add
 Package: CalibSvc
