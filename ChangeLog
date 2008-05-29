@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 29 16:51:20 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx MootSvc.h 
+Log Message:
+Check for changed config info in data as needed
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-34-02, operation: add
 Package: CalibSvc
