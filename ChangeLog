@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri May 30 15:53:22 PDT 2008
+CalibSvc/src/MootSvc
+
+Modified Files:
+	MootSvc.cxx MootSvc.h 
+Log Message:
+Add option to turn ourselves off;
+Do a better job of catching exceptions
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-34-04, operation: add
 Package: CalibSvc
