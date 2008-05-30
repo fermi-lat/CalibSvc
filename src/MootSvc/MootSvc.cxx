@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.cxx,v 1.11 2008/05/29 06:13:39 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.cxx,v 1.12 2008/05/29 23:51:20 jrb Exp $
 #include <cstdio>
 #include <cstdlib>
 #include <stdexcept>
@@ -65,7 +65,7 @@ MootSvc::MootSvc(const std::string& name, ISvcLocator* svc)
   declareProperty("MootArchive", m_archive = std::string("") );
   declareProperty("UseEventKeys", m_useEventKeys = true);
   declareProperty("Verbose", m_verbose = false);
-  declareProperty("scid" , m_scid = 77);  // source id for flight data
+  declareProperty("scid" , m_scid = 0);  // by default, look it up
   declareProperty("StartTime", m_startTime = 0);
   declareProperty("MootConfigKey", m_mootConfigKey = 0);
 }
