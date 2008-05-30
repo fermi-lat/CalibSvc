@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Fri May 30 15:53:22 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	jobOptions.txt.moot 
+Log Message:
+Add option to turn ourselves off;
+Do a better job of catching exceptions
+
+    *
+------------------------------------------------------------
+User: jrb  Fri May 30 15:53:22 PDT 2008
 CalibSvc/src/MootSvc
 
 Modified Files:
