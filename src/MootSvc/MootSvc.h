@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.8 2008/05/29 06:13:39 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/MootSvc/MootSvc.h,v 1.9 2008/05/29 23:51:20 jrb Exp $
 #ifndef MootCnvSvc_h
 #define MootCnvSvc_h  1
 
@@ -155,6 +155,7 @@ class MootSvc :  public Service,
   bool  m_lookUpStartTime;                    // true if we get it from event
   bool  m_lookUpScid;                         // true if we get it from event
   bool  m_fixedConfig;                        // diagnostic
+  bool  m_noMoot;                             // if true, just go away
 
   CalibData::MootParmCol*  m_mootParmCol;
 };
