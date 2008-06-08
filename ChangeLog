@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Sun Jun  8 10:48:06 PDT 2008
+CalibSvc/CalibSvc
+
+Removed Files:
+	IMootSvc.h 
+Log Message:
+Remove moot-specific code from this package; add dependence on new
+MootSvc package
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-34-06, operation: add
 Package: CalibSvc
