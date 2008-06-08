@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Sun Jun  8 10:48:07 PDT 2008
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Remove moot-specific code from this package; add dependence on new
+MootSvc package
+
+    *
+------------------------------------------------------------
 User: jrb  Sun Jun  8 10:48:06 PDT 2008
 CalibSvc/CalibSvc
 
