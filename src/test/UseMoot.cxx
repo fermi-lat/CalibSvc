@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseMoot.cxx,v 1.2 2008/05/28 06:03:40 jrb Exp $
+//$Header: $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -7,7 +7,7 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/SmartDataPtr.h"
 #include "CalibData/Moot/MootData.h"
-#include "CalibSvc/IMootSvc.h"
+#include "MootSvc/IMootSvc.h"
 #include "CalibSvc/ICalibPathSvc.h"
 #include <string>
 
@@ -38,7 +38,6 @@ private:
   void processNewParm();
   void processNewFilters();
 
-  //  IDataProviderSvc* m_pCalibDataSvc;
   IMootSvc*                m_pMootSvc;
   std::string              m_parmPath;
   unsigned                 m_hw;     // cached hardware key
