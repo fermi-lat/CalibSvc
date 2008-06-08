@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.16 2007/10/05 18:44:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.h,v 1.17 2008/03/08 01:45:47 jrb Exp $
 #ifndef CalibDataSvc_h
 #define CalibDataSvc_h
 
@@ -116,8 +116,6 @@ public:
   virtual void setUseEventTime(bool useEventTime) {
     m_useEventTime = useEventTime;}
 
-  /// Utility updates fsw keys if necessary, called by MootSvc
-
  private:
   //properties
   /// Calibration Data Persistency Storage type 
@@ -213,8 +211,6 @@ public:
 
   /// Absolute time spacing between events (milliseconds)
   long m_delayTime;
-
-  int m_useMoot;     // default to 0 (== 'no') for now
 
   unsigned m_LATCMaster;
   MsgStream *m_log;
