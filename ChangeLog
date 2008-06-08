@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Sun Jun  8 10:48:07 PDT 2008
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+Remove moot-specific code from this package; add dependence on new
+MootSvc package
+
+    *
+------------------------------------------------------------
+User: jrb  Sun Jun  8 10:48:07 PDT 2008
 CalibSvc/src
 
 Modified Files:
