@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 10 17:02:42 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	UseMoot.cxx jobOptions.txt.moot 
+Log Message:
+More flexible testing of moot services
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-35-00, operation: add
 Package: CalibSvc
