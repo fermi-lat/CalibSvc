@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseMoot.cxx,v 1.4 2008/06/08 17:48:08 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseMoot.cxx,v 1.5 2008/06/11 00:02:42 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -95,7 +95,7 @@ StatusCode UseMoot::execute( ) {
 
   if (firstCall) {
     for (MOOT::InfoItem item = MOOT::INFOITEM_MOOTCONFIGKEY;
-         item <= MOOT::INFOITEM_HWKEY; item = item + 1) {
+        item <= MOOT::INFOITEM_HWKEY; item = static_cast<MOOT::InfoItem> (item + 1) ) {
       MOOT::InfoSrc src = m_pMootSvc->getInfoItemSrc(item);
       (*m_log) << "Source for item " << item; 
       switch (src) {
