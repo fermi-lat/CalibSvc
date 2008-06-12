@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jun 12 11:30:41 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	UseMoot.cxx 
+Log Message:
+minor patch for win
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-36-00, operation: add
 Package: CalibSvc
