@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Jul  9 14:13:41 PDT 2008
+GlastRelease-scons/CalibSvc
+
+Added Files:
+	CalibSvcLib.py SConscript 
+Log Message:
+Added SConscript files to packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-36-01, operation: add
 Package: CalibSvc
