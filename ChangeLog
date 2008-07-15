@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 14 18:42:59 PDT 2008
+CalibSvc/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v0r37: Added factories for ACD calibrations: AcdCarbon, AcdHighPed, AcdCnoFit, AcdVetoFit
+    *
+------------------------------------------------------------
 User: echarles  Mon Jul 14 18:42:58 PDT 2008
 CalibSvc/cmt
 
