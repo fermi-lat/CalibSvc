@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header$
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/SConscript,v 1.1 2008/07/09 21:13:41 glastrm Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
-# Version: CalibSvc-00-36-01
+# Version: CalibSvc-00-37-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
