@@ -1,4 +1,23 @@
 ------------------------------------------------------------
+User: glastrm  Mon Jul 21 08:17:28 PDT 2008
+GlastRelease-scons/CalibSvc/src/test
+
+Modified Files:
+	jobOptions-acd.txt jobOptions-intNonlin.txt 
+	jobOptions-lightAsym.txt jobOptions.txt jobOptions.txt.2root 
+	jobOptions.txt.align jobOptions.txt.anc jobOptions.txt.asym 
+	jobOptions.txt.dataTime jobOptions.txt.digi 
+	jobOptions.txt.gainsRoot jobOptions.txt.gainsWriteRoot 
+	jobOptions.txt.mc jobOptions.txt.mevPerDac jobOptions.txt.moot 
+	jobOptions.txt.noSuch jobOptions.txt.recon jobOptions.txt.saa 
+	jobOptions.txt.scale jobOptions.txt.splits 
+	jobOptions.txt.standard jobOptions.txt.strips 
+	jobOptions.txt.tholdCI jobOptions.txt.tholdMuon 
+	jobOptions.txt.tkrAlign jobOptions.txt.tot 
+Log Message:
+Removed dependency on CMT env variables
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-37-00, operation: add
 Package: CalibSvc
