@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 21 23:27:49 PDT 2008
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v0r37p1
+    *
+------------------------------------------------------------
 User: glastrm  Mon Jul 21 08:17:28 PDT 2008
 GlastRelease-scons/CalibSvc/src/test
 
