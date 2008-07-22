@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jul 21 23:47:15 PDT 2008
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootTkrScaleCnv.cxx RootTkrTotCnv.cxx 
+Log Message:
+Close calib root files when we're through
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-37-01, operation: add
 Package: CalibSvc
