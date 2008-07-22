@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.6 2006/06/08 23:53:41 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.7 2006/06/16 22:07:38 jrb Exp $
 
 #include <string>
 #include <ios>
@@ -66,13 +66,19 @@ StatusCode RootTkrTotCnv::i_createObj (const std::string& fname,
     if (tree) {
       // handle generic tracker part
       ret = readTower(tree, iTow, totCol);
-      if (ret != StatusCode::SUCCESS) return ret;
-
+      if (ret != StatusCode::SUCCESS) {
+        closeRead();
+        return ret;
+      }
       // read in Tot info for each uniplane
       ret = readUnis(tree, iTow,  totCol);
-      if (ret != StatusCode::SUCCESS) return ret;
+      if (ret != StatusCode::SUCCESS) {
+        closeRead();
+        return ret;
+      }
     }
   }
+  closeRead();
   return ret;
 }
 
