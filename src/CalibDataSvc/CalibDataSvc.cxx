@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.38 2008/05/07 22:37:25 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx,v 1.39 2008/06/08 17:48:07 jrb Exp $
 
 // Include files
 #include <algorithm>
@@ -225,6 +225,12 @@ void CalibDataSvc::initPathArrays() {
   m_calibCLIDs[Calib_ACD_HighRange] = CLID_Calib_ACD_HighRange;
   m_calibCLIDs[Calib_ACD_CoherentNoise] = CLID_Calib_ACD_CoherentNoise;
   m_calibCLIDs[Calib_ACD_Ribbon] = CLID_Calib_ACD_Ribbon;
+
+  m_calibCLIDs[Calib_ACD_HighPed] = CLID_Calib_ACD_HighPed;
+  m_calibCLIDs[Calib_ACD_Carbon] = CLID_Calib_ACD_Carbon;
+  m_calibCLIDs[Calib_ACD_VetoFit] = CLID_Calib_ACD_VetoFit;
+  m_calibCLIDs[Calib_ACD_CnoFit] = CLID_Calib_ACD_CnoFit;
+
   m_calibCLIDs[Calib_CalibTest1] = CLID_Calib_CalibTest1;
   m_calibCLIDs[Calib_NAS_TowerCfg] = CLID_Calib_NAS_TowerCfg;
   m_calibCLIDs[Calib_NAS_SAABoundary] = CLID_Calib_NAS_SAABoundary;
