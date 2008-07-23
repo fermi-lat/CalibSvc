@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 23 11:11:46 PDT 2008
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibPathSvc.h 
+Log Message:
+1. Largely cosmetic changes in LAT alignment calibration
+2. Put it all the machinery for ACD_HighPed, ACD_Carbon, ACD_VetoFit,
+   ACE_CnoFit even though we don't expect to access these calibrations from
+   Gleam
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-38-00, operation: add
 Package: CalibSvc
