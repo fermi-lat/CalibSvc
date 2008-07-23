@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 23 13:04:01 PDT 2008
+CalibSvc/src/test
+
+Modified Files:
+	UseLATAlignment.cxx jobOptions.txt.align 
+Log Message:
+Minor clean-up
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jul 23 13:03:44 PDT 2008
 CalibSvc/cmt
 
