@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 30 14:51:15 PDT 2008
+CalibSvc/src/Dll
+
+Modified Files:
+	CalibSvc_load.cxx 
+Log Message:
+Declare LATAlignment converter
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-39-01, operation: add
 Package: CalibSvc
