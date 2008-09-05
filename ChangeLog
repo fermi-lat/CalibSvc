@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Sep  5 13:46:37 PDT 2008
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlAcdCnv.cxx 
+Log Message:
+tag v0r40: Added AcdPE calibration
+    *
+------------------------------------------------------------
+User: echarles  Fri Sep  5 13:46:37 PDT 2008
 CalibSvc/src/CalibDataSvc
 
 Modified Files:
