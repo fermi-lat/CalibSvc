@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Fri Sep  5 13:46:36 PDT 2008
+CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibPathSvc.h 
+Log Message:
+tag v0r40: Added AcdPE calibration
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-39-02, operation: add
 Package: CalibSvc
