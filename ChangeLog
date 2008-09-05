@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v0r40, operation: mov
+Package: CalibSvc
+User: glastrm  Fri Sep  5 14:30:17 2008
+Files:
+  CalibSvc/SConscript  1.8
+
+    *
+------------------------------------------------------------
 User: glastrm  Fri Sep  5 14:30:11 PDT 2008
 CalibSvc
 
