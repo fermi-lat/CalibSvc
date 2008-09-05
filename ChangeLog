@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Sep  5 13:46:36 PDT 2008
+CalibSvc/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag v0r40: Added AcdPE calibration
+    *
+------------------------------------------------------------
+User: echarles  Fri Sep  5 13:46:36 PDT 2008
 CalibSvc/CalibSvc
 
 Modified Files:
