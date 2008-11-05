@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: ecephas  Wed Nov  5 13:15:33 PST 2008
+GlastRelease-scons/CalibSvc
+
+Modified Files:
+	CalibSvcLib.py 
+Log Message:
+Added the following libraries:
+
+	     env.Tool('addLibrary', library = env['rootLibs'])
+	     env.Tool('addLibrary', library = env['rootGuiLibs'])
+     	     env.Tool('LdfEventLib')
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-40-00, operation: add
 Package: CalibSvc
