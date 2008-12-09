@@ -2,6 +2,16 @@
 TAG
 Tag name: CalibSvc-00-40-00, operation: mov
 Package: CalibSvc
+User: glast  Mon Dec  8 16:19:02 2008
+Files:
+  CalibSvc/CalibSvcLib.py  1.2
+  CalibSvc/CalibSvcLib.py  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: CalibSvc-00-40-00, operation: mov
+Package: CalibSvc
 User: glast  Mon Dec  8 14:41:24 2008
 Files:
   CalibSvc/SConscript  1.9
