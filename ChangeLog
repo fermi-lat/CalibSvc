@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+TAG
+Tag name: CalibSvc-00-40-00, operation: mov
+Package: CalibSvc
+User: glastrm  Thu Jan 22 16:31:18 2009
+Files:
+  CalibSvc/SConscript  1.10
+  CalibSvc/SConscript  1.10
+  CalibSvc/SConscript  1.10
+  CalibSvc/CalibSvcLib.py  1.2
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:06:48 PST 2009
 GlastRelease-scons/CalibSvc
 
