@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Sep 14 12:25:05 PDT 2009
+GlastRelease-scons/CalibSvc
+
+Modified Files:
+	.cvsignore SConscript 
+Log Message:
+*.cxx: Fix compile warnings
+SConscript: Fix for test app
+.cvsignore: ignore build, *.pyc
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-40-00, operation: mov
 Package: CalibSvc
