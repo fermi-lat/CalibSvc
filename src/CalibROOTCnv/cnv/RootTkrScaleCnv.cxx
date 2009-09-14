@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrScaleCnv.cxx,v 1.1 2005/03/31 21:26:55 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/cnv/RootTkrScaleCnv.cxx,v 1.2 2008/07/22 06:47:15 jrb Exp $
 
 #include <string>
 #include <ios>
@@ -154,11 +154,12 @@ StatusCode RootTkrScaleCnv::readUnis(TTree* tree, int iTow,
     dest->resize(nObjs, rootUni->childIsStrip() );
 
     if (nObjs > 0) {   // copy strip or gtfe info
-      for (unsigned iObj = 0;  iObj < nObjs; iObj++) {
+      for (unsigned iObj = 0;  iObj < (unsigned) nObjs; iObj++) {
         const calibRootData::ChargeScaleObj* rObj = rootUni->getObj(iObj);
         TkrScaleObj tdsObj(rObj->getId(), rObj->getScale(),
                              rObj->getError(), rObj->getChi2(), rObj->getDf());
-        bool ok = dest->putObj(tdsObj);
+        // bool ok = 
+        dest->putObj(tdsObj);
       }
     }    
     delete rootUni;  // is this required or forbidden?

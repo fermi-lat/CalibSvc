@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.5 2006/03/30 00:05:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.6 2006/03/30 01:11:45 jrb Exp $
 
 #include "GaudiKernel/IDetDataSvc.h"
 #include "GaudiKernel/IConversionSvc.h"
@@ -122,7 +122,7 @@ StatusCode CalibRootCnvSvc::createAddress(long svc_type,
 
   MsgStream log( msgSvc(), name() );
 
-  if (svc_type != CALIBROOT_StorageType) {
+  if ((unsigned) svc_type != CALIBROOT_StorageType) {
     log << MSG::ERROR << "bad storage type" << (int)svc_type << endreq;
     return StatusCode::FAILURE;
   }
