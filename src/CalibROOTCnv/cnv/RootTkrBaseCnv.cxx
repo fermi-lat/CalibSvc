@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.cxx,v 1.2 2004/12/27 02:08:11 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.cxx,v 1.3 2004/12/29 08:34:58 jrb Exp $
 #include "GaudiKernel/MsgStream.h"
 #include "RootTkrBaseCnv.h"
 
@@ -88,8 +88,8 @@ StatusCode RootTkrBaseCnv::readTower(TTree* pTree, unsigned iTow,
 
 
 bool RootTkrBaseCnv::checkTower(const idents::TkrId& id, int iTow) {
-  return ((iTow/TKRBASE_MAXCOL == id.getTowerY())  &&
-          (iTow%TKRBASE_MAXCOL == id.getTowerX())   );
+  return (((unsigned) iTow/TKRBASE_MAXCOL == id.getTowerY())  &&
+          ((unsigned) iTow%TKRBASE_MAXCOL == id.getTowerX())   );
 }
 
 // For now only handle towerX, towerY, tray and botTop fields. These

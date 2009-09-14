@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/SConscript,v 1.8 2008/09/05 21:30:11 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/SConscript,v 1.10 2009/01/23 00:06:48 ecephas Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
 # Version: CalibSvc-00-40-00
 Import('baseEnv')
@@ -14,7 +14,7 @@ CalibSvc = libEnv.SharedLibrary('CalibSvc', listFiles(['src/*.cxx', 'src/CalibDa
                                                        'src/CalibROOTCnv/*.cxx', 'src/CalibROOTCnv/cnv/*.cxx',
                                                        'src/util/*.cxx', 'src/Dll/*.cxx']))
 progEnv.Tool('CalibSvcLib')
-test_CalibSvc = progEnv.GaudiProgram('test_CalibSvc', listFiles(['src/test*.cxx']), test = 1)
+test_CalibSvc = progEnv.GaudiProgram('test_CalibSvc', listFiles(['src/test/*.cxx']), test = 1)
 
 progEnv.Tool('registerObjects', package = 'CalibSvc', libraries = [CalibSvc], testApps = [test_CalibSvc], includes = listFiles(['CalibSvc/*.h']))
 
