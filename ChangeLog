@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jun 10 17:06:29 PDT 2010
+GlastRelease-scons/CalibSvc/src/test
+
+Modified Files:
+	UsePeds.cxx 
+Log Message:
+For SCons only set environment variable CALIBUTILROOT so that calib
+can be found
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jun 10 17:05:55 PDT 2010
 GlastRelease-scons/CalibSvc
 
