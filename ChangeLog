@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 12:24:06 PDT 2010
+GlastRelease-scons/CalibSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+install job options for all variants of test program
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-40-03, operation: add
 Package: CalibSvc
