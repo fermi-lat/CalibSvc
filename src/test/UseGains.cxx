@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseGains.cxx,v 1.3 2004/08/09 23:48:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/test/UseGains.cxx,v 1.4 2007/09/07 22:18:23 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -10,6 +10,7 @@
 #include "CalibSvc/ICalibPathSvc.h"
 #include "CalibData/Cal/CalCalibGain.h"
 #include "idents/CalXtalId.h"                // shouldn't be necessary
+#include "facilities/commonUtilities.h"
 
 /**
    @file UseGains.cxx                         
@@ -84,6 +85,12 @@ StatusCode UseGains::initialize() {
     return sc;
   }
 
+#ifdef SCons
+  // define CALIBUTILROOT.  It's embedded in metadata for our calib
+  std::string calibUtilRoot = 
+    facilities::commonUtilities::getPackagePath("calibUtil");
+  facilities::commonUtilities::setEnvironment("CALIBUTILROOT", calibUtilRoot);
+#endif
   sc = service("CalibDataSvc", m_pCalibPathSvc, true);
 
   if ( !sc.isSuccess() ) {
