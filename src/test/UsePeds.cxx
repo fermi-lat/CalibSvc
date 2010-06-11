@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UsePeds.cxx,v 1.9 2007/09/07 18:47:58 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/test/UsePeds.cxx,v 1.10 2007/09/07 22:18:23 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -10,6 +10,7 @@
 #include "CalibData/CalibTime.h"
 #include "idents/CalXtalId.h"                // shouldn't be necessary
 #include "CalibSvc/ICalibPathSvc.h"
+#include "facilities/commonUtilities.h"
 
 /**
    @file UsePeds.cxx
@@ -68,8 +69,12 @@ StatusCode UsePeds::initialize() {
 
   // So far don't have any properties, but in case we do some day..
   setProperties();
-
-
+#ifdef SCons
+  // define CALIBUTILROOT
+  std::string calibUtilRoot = 
+    facilities::commonUtilities::getPackagePath("calibUtil");
+  facilities::commonUtilities::setEnvironment("CALIBUTILROOT", calibUtilRoot);
+#endif
   sc = service("CalibDataSvc", m_pCalibDataSvc, true);
 
   if ( !sc.isSuccess() ) {
