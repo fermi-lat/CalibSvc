@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/test/UsePeds.cxx,v 1.10 2007/09/07 22:18:23 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/test/UsePeds.cxx,v 1.11 2010/06/11 00:06:29 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -70,7 +70,7 @@ StatusCode UsePeds::initialize() {
   // So far don't have any properties, but in case we do some day..
   setProperties();
 #ifdef SCons
-  // define CALIBUTILROOT
+  // define CALIBUTILROOT.  It's embedded in metadata for our calib
   std::string calibUtilRoot = 
     facilities::commonUtilities::getPackagePath("calibUtil");
   facilities::commonUtilities::setEnvironment("CALIBUTILROOT", calibUtilRoot);
