@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Fri Jun 11 12:24:06 PDT 2010
+GlastRelease-scons/CalibSvc/src/test
+
+Modified Files:
+	UseGains.cxx UsePeds.cxx jobOptions.txt.enter_time 
+	jobOptions.txt.mc 
+Log Message:
+install job options for all variants of test program
+    *
+------------------------------------------------------------
+User: jrb  Fri Jun 11 12:24:06 PDT 2010
 GlastRelease-scons/CalibSvc
 
 Modified Files:
