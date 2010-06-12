@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun 11 18:33:17 PDT 2010
+CalibSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun 11 12:24:06 PDT 2010
 GlastRelease-scons/CalibSvc/src/test
 
