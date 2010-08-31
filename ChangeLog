@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Aug 30 19:18:50 PDT 2010
+CalibSvc/src/util
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	CalibEvtClock.cxx 
+Log Message:
+updates for gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Aug 30 19:18:50 PDT 2010
 CalibSvc/src/test
 
 Modified Files:
