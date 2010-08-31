@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Aug 30 19:18:47 PDT 2010
+CalibSvc/src/CalibDataSvc
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	CalibDataSvc.cxx CalibDataSvc.h 
+Log Message:
+updates for gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Aug 30 19:18:47 PDT 2010
 CalibSvc/doc
 
 Modified Files:
