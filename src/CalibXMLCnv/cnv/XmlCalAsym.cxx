@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalAsym.cxx,v 1.3 2005/01/03 19:32:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalAsym.cxx,v 1.4 2007/11/02 20:31:12 jrb Exp $
 
 /** @class XmlCalAsymCnv
 
@@ -58,8 +58,9 @@ private:
 };
 
 // Begin implementation
-static CnvFactory<XmlCalAsymCnv> s_factory;
-const  ICnvFactory& XmlCalAsymCnvFactory = s_factory;
+//static CnvFactory<XmlCalAsymCnv> s_factory;
+//const  ICnvFactory& XmlCalAsymCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlCalAsymCnv);
 
 
 

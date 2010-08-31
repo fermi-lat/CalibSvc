@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.7 2005/04/13 06:12:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx,v 1.8 2006/01/18 23:12:22 jrb Exp $
 /**
             @file  RootBaseCnv.cxx
 
@@ -57,7 +57,7 @@ StatusCode RootBaseCnv::initialize() {
   // I guess the service names are assigned in jobOptions?
 
   serviceLocator()->getService ("CalibDataSvc",
-                                IID_IDataProviderSvc,
+                                IDataProviderSvc::interfaceID(),
                                 (IInterface*&)dp);
   setDataProvider(dp);
   

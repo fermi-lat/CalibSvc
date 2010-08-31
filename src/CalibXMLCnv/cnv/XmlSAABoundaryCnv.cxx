@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlSAABoundaryCnv.cxx,v 1.2 2007/10/05 18:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlSAABoundaryCnv.cxx,v 1.3 2007/10/17 19:56:34 jrb Exp $
 
 #include <string>
 #include <vector>
@@ -46,8 +46,9 @@ protected:
    
 };
 
-static CnvFactory<XmlSAABoundaryCnv> s_factory;
-const  ICnvFactory& XmlSAABoundaryCnvFactory = s_factory;
+//static CnvFactory<XmlSAABoundaryCnv> s_factory;
+//const  ICnvFactory& XmlSAABoundaryCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlSAABoundaryCnv);
 
 
 XmlSAABoundaryCnv::XmlSAABoundaryCnv( ISvcLocator* svc) :
