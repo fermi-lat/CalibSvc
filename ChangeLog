@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Aug 30 19:18:46 PDT 2010
+CalibSvc/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+updates for gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Aug 30 19:18:46 PDT 2010
 CalibSvc/CalibSvc
 
 Modified Files:
