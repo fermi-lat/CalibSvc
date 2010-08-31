@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.cxx,v 1.5 2005/04/13 23:06:54 jrb Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.cxx,v 1.6 2005/04/16 00:56:04 jrb Exp $
 
 #include <string>
 #include "RootCalGainCnv.h"
@@ -26,8 +26,9 @@
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
 
-static CnvFactory<RootCalGainCnv> s_factory;
-const  ICnvFactory& RootCalGainCnvFactory = s_factory;
+//static CnvFactory<RootCalGainCnv> s_factory;
+//const  ICnvFactory& RootCalGainCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(RootCalGainCnv);
 
 
 

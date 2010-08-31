@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.17 2006/03/30 01:11:32 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h,v 1.18 2007/12/11 00:30:57 jrb Exp $
 #ifndef CalibMySQLCnvSvc_h
 #define CalibMySQLCnvSvc_h  1
 
@@ -101,7 +101,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   /// The string storage type is discovered at runtime in the Metadata dbs.
   virtual StatusCode createCalib(DataObject*& refpObject,
                                  const std::string& fullpath,
-                                 const ITime&       time,
+                                 const Gaudi::Time&       time,
                                  const std::string& instrument,
                                  const CLID&        classID,
                                  IRegistry*         entry=0);
@@ -111,7 +111,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   /// The string storage type is discovered at runtime in the metadata dbs.
   virtual StatusCode updateCalib(DataObject*        pObject,
                                  const std::string& fullpath,
-                                 const ITime&       time,
+                                 const Gaudi::Time&       time,
                                  const std::string& instName,
                                  const CLID&        classID,
                                  IRegistry*         entry=0);
@@ -123,7 +123,7 @@ class CalibMySQLCnvSvc : public ConversionSvc,
   virtual calibUtil::Metadata* getMeta();
 
   virtual StatusCode getValidInterval(unsigned int& serNo,
-                                      ITime** pvStart, ITime** pvEnd);
+                                      Gaudi::Time** pvStart, Gaudi::Time** pvEnd);
 
   // virtual void setCalibEnterTime(const ITime&  time, unsigned int interval);
 

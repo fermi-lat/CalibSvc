@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseMoot.cxx,v 1.5 2008/06/11 00:02:42 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseMoot.cxx,v 1.6 2008/06/12 18:30:41 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -49,9 +49,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseMoot> Factory;
-const IAlgFactory& UseMootFactory = Factory;
-
+//static const AlgFactory<UseMoot> Factory;
+//const IAlgFactory& UseMootFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseMoot);
 
 UseMoot::UseMoot(const std::string&  name, 
                  ISvcLocator*        pSvcLocator )

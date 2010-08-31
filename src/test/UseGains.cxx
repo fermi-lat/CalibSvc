@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseGains.cxx,v 1.3 2004/08/09 23:48:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseGains.cxx,v 1.4 2007/09/07 22:18:23 jrb Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -53,8 +53,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseGains> Factory;
-const IAlgFactory& UseGainsFactory = Factory;
+//static const AlgFactory<UseGains> Factory;
+//const IAlgFactory& UseGainsFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseGains);
 
 
 UseGains::UseGains(const std::string&  name, 
@@ -218,8 +219,8 @@ void UseGains::processNew(CalibData::CalCalibGain* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
   
   if (!done) {
     done = true;
