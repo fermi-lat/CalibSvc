@@ -1,10 +1,10 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.163 2009/11/05 18:43:14 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.163.20.1 2010/08/31 02:18:46 heather Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
-version v0r40p2gr01
+version v0r40p2gr02
 
 author Joanne Bogart <jrb@slac.stanford.edu>
 
@@ -59,7 +59,7 @@ macro_append includes ' $(ppcmd)"$(idents_root)" '
 
 macro_append includes ' $(ppcmd)"$(Event_root)" ' 
 
-library CalibSvc -import=calibUtil -import=calibRootData -import=CalibData  *.cxx\
+library CalibSvc -import=calibUtil -import=calibRootData -import=CalibData -import=xmlUtil  *.cxx\
                         CalibDataSvc/*.cxx      \
                         CalibMySQLCnv/*.cxx     \
                         CalibXMLCnv/*.cxx       \
