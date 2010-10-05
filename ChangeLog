@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Oct  4 20:12:34 PDT 2010
+CalibSvc/cmt
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	requirements 
+Log Message:
+update for win build
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-40-02-gr01, operation: add
 Package: CalibSvc
