@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTholdCI.cxx,v 1.1 2004/10/07 20:06:17 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTholdCI.cxx,v 1.2.514.1 2010/08/31 02:18:50 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -50,8 +50,8 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseTholdCI> Factory;
-const IAlgFactory& UseTholdCIFactory = Factory;
+//static const AlgFactory<UseTholdCI> Factory;
+//const IAlgFactory& UseTholdCIFactory = Factory;
 
 
 UseTholdCI::UseTholdCI(const std::string&  name, 
@@ -161,8 +161,8 @@ void UseTholdCI::processNew(CalibData::CalTholdCICol* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
   
   if (!done) {
     done = true;

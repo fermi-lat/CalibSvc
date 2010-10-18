@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlLATAlignmentCnv.cxx,v 1.3 2007/10/17 19:56:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlLATAlignmentCnv.cxx,v 1.4.234.1 2010/08/31 02:18:49 heather Exp $
 
 #include <string>
 #include "GaudiKernel/CnvFactory.h"
@@ -41,8 +41,9 @@ protected:
 				 
 };
 
-static CnvFactory<XmlLATAlignmentCnv> s_factory;
-const  ICnvFactory& XmlLATAlignmentCnvFactory = s_factory;
+//static CnvFactory<XmlLATAlignmentCnv> s_factory;
+//const  ICnvFactory& XmlLATAlignmentCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlLATAlignmentCnv);
 
 
 XmlLATAlignmentCnv::XmlLATAlignmentCnv( ISvcLocator* svc) :

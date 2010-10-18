@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseScale.cxx,v 1.2 2005/07/07 01:08:13 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseScale.cxx,v 1.3.514.1 2010/08/31 02:18:50 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -51,8 +51,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseScale> Factory;
-const IAlgFactory& UseScaleFactory = Factory;
+//static const AlgFactory<UseScale> Factory;
+//const IAlgFactory& UseScaleFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseScale);
 
 
 UseScale::UseScale(const std::string&  name, 
@@ -170,8 +171,8 @@ void UseScale::processNew(CalibData::TkrScaleCol* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
 
   unsigned tray = 0;
   bool top = true;

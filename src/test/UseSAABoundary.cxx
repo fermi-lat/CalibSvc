@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseSAABoundary.cxx,v 1.2 2007/09/07 22:18:23 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseSAABoundary.cxx,v 1.3.472.1 2010/08/31 02:18:50 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -30,8 +30,9 @@ private:
 };
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseSAABoundary> Factory;
-const IAlgFactory& UseSAABoundaryFactory = Factory;
+//static const AlgFactory<UseSAABoundary> Factory;
+//const IAlgFactory& UseSAABoundaryFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseSAABoundary);
 
 
 UseSAABoundary::UseSAABoundary( const std::string&  name, 
@@ -108,8 +109,8 @@ StatusCode UseSAABoundary::execute( ) {
   log << MSG::INFO 
       << "SAA boundary obj, serial #" <<  test1Copy->getSerNo() << endreq;
 
-  log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hours()
-      << "  Vend: " << (test1Copy->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hour(true)
+      << "  Vend: " << (test1Copy->validTill()).hour(true) << endreq;
 
   log << MSG::INFO << "Vertex: " <<  vertex.first
       << " , " << vertex.second << endreq;

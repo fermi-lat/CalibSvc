@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.7 2004/11/11 00:12:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBadStripsCnv.cxx,v 1.8.656.1 2010/08/31 02:18:48 heather Exp $
 
 #include <string>
 #include "XmlBadStripsCnv.h"
@@ -24,8 +24,9 @@
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
 
-static CnvFactory<XmlBadStripsCnv> s_factory;
-const  ICnvFactory& XmlBadStripsCnvFactory = s_factory;
+//static CnvFactory<XmlBadStripsCnv> s_factory;
+//const  ICnvFactory& XmlBadStripsCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlBadStripsCnv);
 
 XmlBadStripsCnv::XmlBadStripsCnv( ISvcLocator* svc) :
   XmlBaseCnv(svc, CLID_Calib_TKR_BadChan) {

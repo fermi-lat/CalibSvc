@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.15 2006/03/21 01:41:08 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.h,v 1.16.472.1 2010/08/31 02:18:48 heather Exp $
 #ifndef CalibData_XmlBaseCnv_h
 #define CalibData_XmlBaseCnv_h
 
@@ -14,13 +14,14 @@
 #include <vector>
 #include "GaudiKernel/Converter.h"
 #include "GaudiKernel/CnvFactory.h"
+#include "GaudiKernel/Time.h"
 #include <xercesc/dom/DOMElement.hpp>
 
 class ISvcLocator;
 class GenericAddress;
 class ICalibXmlSvc;
 class ICalibMetaCnvSvc;
-class ITime;
+//class ITime;
 
 namespace CalibData {
   class CalibTime;
@@ -150,8 +151,8 @@ protected:
   ICalibMetaCnvSvc* m_metaSvc;
 
   int m_serNo;
-  ITime*  m_vstart;
-  ITime*  m_vend;
+  Gaudi::Time*  m_vstart;
+  Gaudi::Time*  m_vend;
 
 
 };

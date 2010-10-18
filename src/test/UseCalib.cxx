@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.8 2003/02/04 21:29:21 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseCalib.cxx,v 1.9.514.1 2010/08/31 02:18:49 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -30,8 +30,9 @@ private:
 };
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseCalib> Factory;
-const IAlgFactory& UseCalibFactory = Factory;
+//static const AlgFactory<UseCalib> Factory;
+//const IAlgFactory& UseCalibFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseCalib);
 
 
 UseCalib::UseCalib( const std::string&  name, 
@@ -101,8 +102,8 @@ StatusCode UseCalib::execute( ) {
   log << MSG::INFO 
       << "Test_1 obj, serial #" <<  test1Copy->getSerNo() 
       << "  value = " << test1Copy->getValue() << endreq;
-  log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hours()
-      << "  Vend: " << (test1Copy->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hour(true)
+      << "  Vend: " << (test1Copy->validTill()).hour(true) << endreq;
 
   m_pCalibDataSvc->updateObject((CalibData::CalibTest1 *)test1Copy);
 
@@ -114,8 +115,8 @@ StatusCode UseCalib::execute( ) {
   log << MSG::INFO 
       << "After update Test_1 object, serial #" <<  test1Copy->getSerNo() 
       << " has value = " << test1Copy->getValue() << endreq;
-  log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hours()
-      << "  Vend: " << (test1Copy->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (test1Copy->validSince()).hour(true)
+      << "  Vend: " << (test1Copy->validTill()).hour(true) << endreq;
 
   return StatusCode::SUCCESS;
 }
