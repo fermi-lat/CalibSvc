@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Sun Oct 17 19:50:19 PDT 2010
+CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	RootBaseCnv.cxx RootBaseCnv.h RootCalGainCnv.cxx 
+	RootTkrScaleCnv.cxx RootTkrTotCnv.cxx 
+Log Message:
+gaudi updates
+    *
+------------------------------------------------------------
 User: heather  Sun Oct 17 19:50:18 PDT 2010
 CalibSvc/src/CalibROOTCnv
 
