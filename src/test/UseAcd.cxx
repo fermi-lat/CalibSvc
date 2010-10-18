@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAcd.cxx,v 1.4 2007/09/07 22:18:22 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseAcd.cxx,v 1.5.474.1 2010/08/31 02:18:49 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -54,8 +54,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseAcd> Factory;
-const IAlgFactory& UseAcdFactory = Factory;
+//static const AlgFactory<UseAcd> Factory;
+//const IAlgFactory& UseAcdFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseAcd);
 
 
 UseAcd::UseAcd(const std::string&  name, 
@@ -186,13 +187,13 @@ void UseAcd::processNew(CalibData::AcdGainCalib* pNewGain,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << pathGain << endreq
       << "Serial #" <<  pNewGain->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNewGain->validSince()).hours()
-      << "  Vend: " << (pNewGain->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNewGain->validSince()).hour(true)
+      << "  Vend: " << (pNewGain->validTill()).hour(true) << endreq;
   
   log << MSG::INFO << "And retrieved with path " << pathPed << endreq
       << "Serial #" <<  pNewPed->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNewPed->validSince()).hours()
-      << "  Vend: " << (pNewPed->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNewPed->validSince()).hour(true)
+      << "  Vend: " << (pNewPed->validTill()).hour(true) << endreq;
   
   if (!done) {
     done = true;

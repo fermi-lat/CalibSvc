@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.6 2006/03/30 00:05:21 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx,v 1.7.650.1 2010/08/31 02:18:48 heather Exp $
 
 // one or both of following includes may not be necessary..
 // depends on whether we keep and use private members
@@ -17,8 +17,9 @@
 #include "xmlBase/XmlParser.h"
 
 // Make instances only via static factory class
-static SvcFactory<CalibXmlCnvSvc> calibXmlCnvSvc_factory;
-const ISvcFactory& CalibXmlCnvSvcFactory = calibXmlCnvSvc_factory;
+//static SvcFactory<CalibXmlCnvSvc> calibXmlCnvSvc_factory;
+//const ISvcFactory& CalibXmlCnvSvcFactory = calibXmlCnvSvc_factory;
+DECLARE_SERVICE_FACTORY(CalibXmlCnvSvc);
 
 CalibXmlCnvSvc::CalibXmlCnvSvc(const std::string& name, 
                                ISvcLocator* svc) :
@@ -55,7 +56,7 @@ StatusCode CalibXmlCnvSvc::initialize() {
   // it has to implement IDataProviderSvc
   IDataProviderSvc* pCDS = 0;
   sc = serviceLocator()->getService 
-    ("CalibDataSvc",  IID_IDataProviderSvc, (IInterface*&)pCDS);
+    ("CalibDataSvc",  IDataProviderSvc::interfaceID(), (IInterface*&)pCDS);
   if ( !sc.isSuccess() ) {
     log << MSG::ERROR << "Could not locate CalibDataSvc" << endreq;
     return sc;
@@ -88,7 +89,7 @@ StatusCode CalibXmlCnvSvc::initialize() {
   
   // Query the IAddressCreator interface of the detector persistency service
   IAddressCreator* iAddrCreator;
-  sc = m_detPersSvc->queryInterface(IID_IAddressCreator, 
+  sc = m_detPersSvc->queryInterface(IAddressCreator::interfaceID(), 
 				    (void**) &iAddrCreator);
   if ( !sc.isSuccess() ) {
     log << MSG::ERROR 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.6 2004/11/11 00:12:35 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTest1Cnv.cxx,v 1.7.656.1 2010/08/31 02:18:49 heather Exp $
 
 #include <string>
 #include "XmlTest1Cnv.h"
@@ -21,8 +21,9 @@
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
 
-static CnvFactory<XmlTest1Cnv> s_factory;
-const  ICnvFactory& XmlTest1CnvFactory = s_factory;
+//static CnvFactory<XmlTest1Cnv> s_factory;
+//const  ICnvFactory& XmlTest1CnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlTest1Cnv);
 
 
 

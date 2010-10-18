@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.cxx,v 1.4 2005/01/03 19:32:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalLightAsymCnv.cxx,v 1.5.472.1 2010/08/31 02:18:49 heather Exp $
 
 #include <string>
 #include "XmlCalLightAsymCnv.h"
@@ -22,8 +22,9 @@
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
 
-static CnvFactory<XmlCalLightAsymCnv> s_factory;
-const  ICnvFactory& XmlCalLightAsymCnvFactory = s_factory;
+//static CnvFactory<XmlCalLightAsymCnv> s_factory;
+//const  ICnvFactory& XmlCalLightAsymCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlCalLightAsymCnv);
 
 
 
