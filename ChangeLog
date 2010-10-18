@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: heather  Sun Oct 17 19:50:20 PDT 2010
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	XmlAcdCnv.cxx XmlAncQdcPedCnv.cxx XmlAncTaggerGainCnv.cxx 
+	XmlAncTaggerPedCnv.cxx XmlBadStripsCnv.cxx XmlBaseCnv.cxx 
+	XmlBaseCnv.h XmlCalAsym.cxx XmlCalGainCnv.cxx 
+	XmlCalIntNonlinCnv.cxx XmlCalLightAsymCnv.cxx 
+	XmlCalLightAttCnv.cxx XmlCalMevPerDac.cxx XmlCalMuSlopeCnv.cxx 
+	XmlCalPedCnv.cxx XmlCalTholdCI.cxx XmlCalTholdMuon.cxx 
+	XmlLATAlignmentCnv.cxx XmlSAABoundaryCnv.cxx XmlTest1Cnv.cxx 
+	XmlTkrAlignCnv.cxx XmlTkrSplitsCnv.cxx 
+Log Message:
+gaudi updates
+    *
+------------------------------------------------------------
 User: heather  Sun Oct 17 19:50:19 PDT 2010
 CalibSvc/src/CalibXMLCnv
 
