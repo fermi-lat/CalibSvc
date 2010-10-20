@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/SConscript,v 1.18 2010/06/12 01:33:17 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/SConscript,v 1.18.2.1 2010/10/18 02:50:16 heather Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
 # Version: CalibSvc-00-40-04-gr01
 
@@ -10,14 +10,14 @@ progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
 libEnv.Tool('addLinkDeps', package='CalibSvc', toBuild='component')
-CalibSvc =libEnv.SharedLibrary('CalibSvc',
-                               listFiles(['src/*.cxx','src/CalibDataSvc/*.cxx',
-                                          'src/CalibMySQLCnv/*.cxx',
-                                          'src/CalibXMLCnv/*.cxx',
-                                          'src/CalibXMLCnv/cnv/*.cxx',
-                                          'src/CalibROOTCnv/*.cxx',
-                                          'src/CalibROOTCnv/cnv/*.cxx',
-                                          'src/util/*.cxx', 'src/Dll/*.cxx']))
+CalibSvc =libEnv.ComponentLibrary('CalibSvc',
+                                  listFiles(['src/*.cxx','src/CalibDataSvc/*.cxx',
+                                             'src/CalibMySQLCnv/*.cxx',
+                                             'src/CalibXMLCnv/*.cxx',
+                                             'src/CalibXMLCnv/cnv/*.cxx',
+                                             'src/CalibROOTCnv/*.cxx',
+                                             'src/CalibROOTCnv/cnv/*.cxx',
+                                             'src/util/*.cxx']))
 progEnv.Tool('CalibSvcLib')
 
 test_CalibSvc = progEnv.GaudiProgram('test_CalibSvc',
