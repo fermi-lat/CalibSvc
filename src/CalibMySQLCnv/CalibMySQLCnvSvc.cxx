@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.28.360.1 2010/08/31 02:18:47 heather Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx,v 1.28.362.1 2010/10/18 02:50:18 heather Exp $
 #include <string>
 #include <cstdio>
 #include <stdexcept>
@@ -391,9 +391,9 @@ StatusCode CalibMySQLCnvSvc::updateObj(IOpaqueAddress* pAddress,
 	<< "Updated object does not implement IValidity" << endreq;
     return StatusCode::FAILURE;
   }
-  log << MSG::DEBUG << "New calib DataObject is valid since "
-  << pValidity->validSince().hour(true) 
-  << " till " << pValidity->validTill().hour(true)  
+  log << MSG::DEBUG << "New calib DataObject is valid (year only)  since "
+  << pValidity->validSince().year(false) 
+  << " till " << pValidity->validTill().year(false)  
   << endreq;
 
   //  log << MSG::DEBUG << "Method updateObj exiting" << endreq;
@@ -607,8 +607,16 @@ StatusCode CalibMySQLCnvSvc::createCalib(DataObject*&       refpObject,
     facilities::Timestamp* since;
     facilities::Timestamp* till;
     m_meta->getInterval(ser, since, till);
-    pValidity->setValidity(CalibData::CalibTime(*since).getGaudiTime(), 
-                           CalibData::CalibTime(*till).getGaudiTime());
+    log << MSG::DEBUG << "since, till " << since->getString() << " , " 
+        << till->getString() << endreq;
+
+    Gaudi::Time gSince = CalibData::CalibTime(*since).getGaudiTime();
+    Gaudi::Time gTill = CalibData::CalibTime(*till).getGaudiTime();
+    //log << MSG::DEBUG << "gSince " << gSince.year(false) << " " 
+    //    << gSince.month(false) << " " << gSince.day(false) << " " 
+    //    << gSince.hour(false) << " " << gSince.minute(false) << " " 
+    //    <<gSince.second(false) << endreq;
+    pValidity->setValidity(gSince, gTill);
   }
 
   log << MSG::DEBUG << "New object successfully created" << endreq;
