@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Feb  2 07:40:22 PST 2011
+CalibSvc
+
+Modified Files:
+	SConscript 
+Log Message:
+make use of GlastSvc generic
+    *
+------------------------------------------------------------
 TAG
 Tag name: CalibSvc-00-40-05, operation: add
 Package: CalibSvc
