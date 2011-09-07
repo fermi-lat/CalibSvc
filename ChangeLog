@@ -1,5 +1,33 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: CalibSvc
+User: heather  Wed Sep  7 10:45:21 2011
+Files:
+  CalibSvc/.cvsignore  1.5
+  CalibSvc/ChangeLog  1.826
+  CalibSvc/CalibSvcLib.py  1.2
+  CalibSvc/SConscript  1.20
+  CalibSvc/CalibSvc/ICalibPathSvc.h  1.7
+  CalibSvc/CalibSvc/ICalibMetaCnvSvc.h  1.7
+  CalibSvc/CalibSvc/IInstrumentName.h  1.3
+  CalibSvc/CalibSvc/ICalibXmlSvc.h  1.3
+  CalibSvc/CalibSvc/ICalibRootSvc.h  1.2
+  CalibSvc/cmt/.cvsignore  1.1.1.1
+  CalibSvc/cmt/requirements  1.167
+  CalibSvc/doc/release.notes  1.123
+  CalibSvc/src/mainpage.h  1.23
+  CalibSvc/src/defaultOptions.txt  1.2
+  CalibSvc/src/CalibDataSvc/CalibDataSvc.h  1.18
+  CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx  1.41
+  CalibSvc/src/CalibDataSvc/CalibCLIDNode.cxx  1.3
+  CalibSvc/src/CalibDataSvc/CalibCLIDNode.h  1.3
+  CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx  1.28
+  CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h  1.18
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: CalibSvc
 User: glastrm  Tue Sep  6 14:14:06 2011
