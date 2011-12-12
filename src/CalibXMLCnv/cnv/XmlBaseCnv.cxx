@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.29 2006/01/18 23:12:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibXMLCnv/cnv/XmlBaseCnv.cxx,v 1.30.476.1 2010/10/18 02:50:19 heather Exp $
 
 #include "XmlBaseCnv.h"
 
@@ -53,13 +53,13 @@ StatusCode XmlBaseCnv::initialize() {
   // I guess the service names are assigned in jobOptions?
 
   serviceLocator()->getService ("CalibDataSvc",
-                                IID_IDataProviderSvc,
+                                IDataProviderSvc::interfaceID(),
                                 (IInterface*&)dp);
   setDataProvider(dp);
   
   // Locate the Xml Conversion Service
   serviceLocator()->getService ("CalibXmlCnvSvc",
-                                IID_ICalibXmlSvc,
+                                ICalibXmlSvc::interfaceID(),
                                 (IInterface*&)m_xmlSvc);
 
   // Locate meta conversion service

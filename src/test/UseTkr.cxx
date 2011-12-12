@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTkr.cxx,v 1.3 2006/04/12 16:18:30 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/test/UseTkr.cxx,v 1.4.516.1 2010/10/18 02:50:21 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -48,8 +48,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseTkr> Factory;
-const IAlgFactory& UseTkrFactory = Factory;
+//static const AlgFactory<UseTkr> Factory;
+//const IAlgFactory& UseTkrFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseTkr);
 
 
 UseTkr::UseTkr(const std::string&  name, 
@@ -157,8 +158,8 @@ void UseTkr::processNew(CalibData::TkrSplitsCalib* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
 
   std::string vStart = pNew->getValidStart()->getString();
   std::string vEnd = pNew->getValidEnd()->getString();

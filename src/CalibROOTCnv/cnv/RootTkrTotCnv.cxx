@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.8 2008/07/22 06:47:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx,v 1.9.22.1 2010/10/18 02:50:19 heather Exp $
 
 #include <string>
 #include <ios>
@@ -29,8 +29,9 @@
 // Temporary.  Hope to find a better way to do this
 #include "CalibData/CalibModel.h"
 
-static CnvFactory<RootTkrTotCnv> s_factory;
-const  ICnvFactory& RootTkrTotCnvFactory = s_factory;
+//static CnvFactory<RootTkrTotCnv> s_factory;
+//const  ICnvFactory& RootTkrTotCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(RootTkrTotCnv);
 
 RootTkrTotCnv::RootTkrTotCnv( ISvcLocator* svc) :
   RootTkrBaseCnv(svc, CLID_Calib_TKR_TOTSignal) { 

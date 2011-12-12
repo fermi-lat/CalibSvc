@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseBadStrips.cxx,v 1.4 2004/08/09 23:48:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/test/UseBadStrips.cxx,v 1.5.516.1 2010/10/18 02:50:20 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -80,8 +80,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseBadStrips> Factory;
-const IAlgFactory& UseBadStripsFactory = Factory;
+//static const AlgFactory<UseBadStrips> Factory;
+//const IAlgFactory& UseBadStripsFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseBadStrips);
 
 
 UseBadStrips::UseBadStrips(const std::string&  name, 
@@ -226,8 +227,8 @@ void UseBadStrips::processNew(CalibData::BadStrips* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
   log << MSG::INFO << "Bad type: " << pNew->getBadType() 
       << " has " << pNew->getBadTowerCount() << " bad towers " << endreq;
 
