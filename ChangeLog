@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 12 12:44:29 PST 2011
+GlastRelease-scons/CalibSvc/src/test
+
+Modified Files:
+	UseAcd.cxx UseAnc.cxx UseAsym.cxx UseBadStrips.cxx 
+	UseCalib.cxx UseGains.cxx UseIntNonlin.cxx UseLATAlignment.cxx 
+	UseLightAsym.cxx UseMevPerDac.cxx UseMoot.cxx UsePeds.cxx 
+	UseSAABoundary.cxx UseScale.cxx UseTholdCI.cxx 
+	UseTholdMuon.cxx UseTkr.cxx UseTkrAlign.cxx UseTot.cxx 
+	jobOptions.txt 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:44:28 PST 2011
 GlastRelease-scons/CalibSvc/src/CalibXMLCnv/cnv
 
