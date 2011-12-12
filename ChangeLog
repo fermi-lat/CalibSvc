@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 12 12:44:27 PST 2011
+GlastRelease-scons/CalibSvc/src/CalibROOTCnv/cnv
+
+Modified Files:
+	RootBaseCnv.cxx RootBaseCnv.h RootCalGainCnv.cxx 
+	RootTkrScaleCnv.cxx RootTkrTotCnv.cxx 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:44:26 PST 2011
 GlastRelease-scons/CalibSvc/src/CalibROOTCnv
 
