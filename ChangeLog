@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 12 12:44:28 PST 2011
+GlastRelease-scons/CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+	XmlAcdCnv.cxx XmlAncQdcPedCnv.cxx XmlAncTaggerGainCnv.cxx 
+	XmlAncTaggerPedCnv.cxx XmlBadStripsCnv.cxx XmlBaseCnv.cxx 
+	XmlBaseCnv.h XmlCalAsym.cxx XmlCalGainCnv.cxx 
+	XmlCalIntNonlinCnv.cxx XmlCalLightAsymCnv.cxx 
+	XmlCalLightAttCnv.cxx XmlCalMevPerDac.cxx XmlCalMuSlopeCnv.cxx 
+	XmlCalPedCnv.cxx XmlCalTholdCI.cxx XmlCalTholdMuon.cxx 
+	XmlLATAlignmentCnv.cxx XmlSAABoundaryCnv.cxx XmlTest1Cnv.cxx 
+	XmlTkrAlignCnv.cxx XmlTkrSplitsCnv.cxx 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:44:27 PST 2011
 GlastRelease-scons/CalibSvc/src/CalibXMLCnv
 
