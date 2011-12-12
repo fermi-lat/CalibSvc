@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlAcdPedCnv.cxx,v 1.4 2006/04/10 05:46:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibXMLCnv/cnv/XmlAncQdcPedCnv.cxx,v 1.1.618.1 2010/10/18 02:50:19 heather Exp $
 
 #include <string>
 
@@ -31,11 +31,12 @@
 */
 #include "XmlAncBaseCnv.h"
 
-class XmlAncQdcPedCnv;
+//class XmlAncQdcPedCnv;
 
 // template <class TYPE> class CnvFactory;
-static CnvFactory<XmlAncQdcPedCnv> s_factory;
-const  ICnvFactory& XmlAncQdcPedCnvFactory = s_factory;
+//static CnvFactory<XmlAncQdcPedCnv> s_factory;
+//const  ICnvFactory& XmlAncQdcPedCnvFactory = s_factory;
+//DECLARE_CONVERTER_FACTORY(XmlAncQdcPedCnv);
 
 class XmlAncQdcPedCnv : public XmlAncBaseCnv {
 
@@ -55,6 +56,7 @@ protected:
 
 };
 
+DECLARE_CONVERTER_FACTORY(XmlAncQdcPedCnv);
 
 //
 

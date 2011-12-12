@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.6 2006/03/30 01:11:45 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx,v 1.7.22.1 2010/10/18 02:50:18 heather Exp $
 
 #include "GaudiKernel/IDetDataSvc.h"
 #include "GaudiKernel/IConversionSvc.h"
@@ -15,8 +15,9 @@
 #include "cnv/RootBaseCnv.h"
 
 // Make instances only via static factory class
-static SvcFactory<CalibRootCnvSvc> calibRootCnvSvc_factory;
-const ISvcFactory& CalibRootCnvSvcFactory = calibRootCnvSvc_factory;
+//static SvcFactory<CalibRootCnvSvc> calibRootCnvSvc_factory;
+//const ISvcFactory& CalibRootCnvSvcFactory = calibRootCnvSvc_factory;
+DECLARE_SERVICE_FACTORY(CalibRootCnvSvc);
 
 CalibRootCnvSvc::CalibRootCnvSvc(const std::string& name, 
                                ISvcLocator* svc) :
@@ -53,7 +54,7 @@ StatusCode CalibRootCnvSvc::initialize() {
   // it has to implement IDataProviderSvc
   m_detDataSvc = 0;
   sc = serviceLocator()->getService 
-    ("CalibDataSvc",  IID_IDataProviderSvc, (IInterface*&) m_detDataSvc);
+    ("CalibDataSvc",  IDataProviderSvc::interfaceID(), (IInterface*&) m_detDataSvc);
   if ( !sc.isSuccess() ) {
     log << MSG::ERROR << "Could not locate CalibDataSvc" << endreq;
     return sc;
@@ -83,7 +84,7 @@ StatusCode CalibRootCnvSvc::initialize() {
   
   // Query the IAddressCreator interface of the detector persistency service
   IAddressCreator* iAddrCreator;
-  sc = m_detPersSvc->queryInterface(IID_IAddressCreator, 
+  sc = m_detPersSvc->queryInterface(IAddressCreator::interfaceID(), 
 				    (void**) &iAddrCreator);
   if ( !sc.isSuccess() ) {
     log << MSG::ERROR 

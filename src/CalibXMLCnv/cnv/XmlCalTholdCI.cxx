@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalTholdCI.cxx,v 1.3 2005/01/03 19:32:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/CalibSvc/src/CalibXMLCnv/cnv/XmlCalTholdCI.cxx,v 1.4.474.1 2010/10/18 02:50:20 heather Exp $
 
 /** @class XmlCalTholdCICnv
 
@@ -59,8 +59,9 @@ private:
 };
 
 // Begin implementation
-static CnvFactory<XmlCalTholdCICnv> s_factory;
-const  ICnvFactory& XmlCalTholdCICnvFactory = s_factory;
+//static CnvFactory<XmlCalTholdCICnv> s_factory;
+//const  ICnvFactory& XmlCalTholdCICnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlCalTholdCICnv);
 
 
 
