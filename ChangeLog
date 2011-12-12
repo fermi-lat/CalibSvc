@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Dec 12 12:44:25 PST 2011
+GlastRelease-scons/CalibSvc/CalibSvc
+
+Modified Files:
+	ICalibMetaCnvSvc.h 
+Log Message:
+merge Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Mon Dec 12 12:44:24 PST 2011
 GlastRelease-scons/CalibSvc
 
