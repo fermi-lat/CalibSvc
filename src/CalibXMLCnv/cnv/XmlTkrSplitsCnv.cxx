@@ -1,4 +1,4 @@
-//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTkrSplitsCnv.cxx,v 1.2 2004/11/11 00:12:35 jrb Exp $
+//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTkrSplitsCnv.cxx,v 1.4 2011/12/12 20:44:28 heather Exp $
 /**
    file XmlTkrSplitsCnv.cxx
 
@@ -47,8 +47,9 @@ protected:
 
 };
 
-static CnvFactory<XmlTkrSplitsCnv> s_factory;
-const  ICnvFactory& XmlTkrSplitsCnvFactory = s_factory;
+//static CnvFactory<XmlTkrSplitsCnv> s_factory;
+//const  ICnvFactory& XmlTkrSplitsCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlTkrSplitsCnv);
 
 XmlTkrSplitsCnv::XmlTkrSplitsCnv( ISvcLocator* svc) :
   XmlTkrBaseCnv(svc, CLID_Calib_TKR_Splits) { 

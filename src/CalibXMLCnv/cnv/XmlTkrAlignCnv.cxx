@@ -1,4 +1,4 @@
-//  $Header: $
+//  $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlTkrAlignCnv.cxx,v 1.2 2011/12/12 20:44:28 heather Exp $
 /**
    file XmlTkrAlignCnv.cxx
 
@@ -101,8 +101,9 @@ protected:
                                  DataObject*& refpObject);
 };
 
-static CnvFactory<XmlTkrTowerAlignCnv> s_towerFactory;
-const  ICnvFactory& XmlTkrTowerAlignCnvFactory = s_towerFactory;
+//static CnvFactory<XmlTkrTowerAlignCnv> s_towerFactory;
+//const  ICnvFactory& XmlTkrTowerAlignCnvFactory = s_towerFactory;
+DECLARE_CONVERTER_FACTORY(XmlTkrTowerAlignCnv);
 
 XmlTkrTowerAlignCnv::XmlTkrTowerAlignCnv( ISvcLocator* svc) :
   XmlBaseCnv(svc, CLID_Calib_TKR_TowerAlign) { }
@@ -164,8 +165,10 @@ protected:
                                  DataObject*& refpObject);
 };
 
-static CnvFactory<XmlTkrInternalAlignCnv> s_internalFactory;
-const  ICnvFactory& XmlTkrInternalAlignCnvFactory = s_internalFactory;
+//static CnvFactory<XmlTkrInternalAlignCnv> s_internalFactory;
+//const  ICnvFactory& XmlTkrInternalAlignCnvFactory = s_internalFactory;
+DECLARE_CONVERTER_FACTORY(XmlTkrInternalAlignCnv);
+
 
 XmlTkrInternalAlignCnv::XmlTkrInternalAlignCnv( ISvcLocator* svc) :
   XmlBaseCnv(svc, CLID_Calib_TKR_InternalAlign) { 
