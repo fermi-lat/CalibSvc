@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 30 09:39:32 PST 2012
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	XmlCalMuSlopeCnv.cxx 
+Log Message:
+Gaudi v21r7
+    *
+------------------------------------------------------------
 User: heather  Mon Jan 30 09:39:31 PST 2012
 CalibSvc/src/CalibXMLCnv
 
