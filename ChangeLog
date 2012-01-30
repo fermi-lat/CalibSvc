@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 30 09:28:11 PST 2012
+CalibSvc/src/CalibXMLCnv/cnv
+
+Added Files:
+      Tag: GlastRelease-17-35-24-br01
+	XmlBadStripsCnv.cxx 
+Log Message:
+add mistakenly removed file
+    *
+------------------------------------------------------------
 User: heather  Mon Jan 30 09:26:48 PST 2012
 CalibSvc/src/CalibXMLCnv/cnv
 
