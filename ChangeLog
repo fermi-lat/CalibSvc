@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 User: heather  Mon Jan 30 09:39:32 PST 2012
+CalibSvc/src/test
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	UseAcd.cxx UseAnc.cxx UseAsym.cxx UseBadStrips.cxx 
+	UseCalib.cxx UseGains.cxx UseIntNonlin.cxx UseLATAlignment.cxx 
+	UseLightAsym.cxx UseMevPerDac.cxx UseMoot.cxx UsePeds.cxx 
+	UseSAABoundary.cxx UseScale.cxx UseTholdCI.cxx 
+	UseTholdMuon.cxx UseTkr.cxx UseTkrAlign.cxx UseTot.cxx 
+	jobOptions.txt 
+Log Message:
+Gaudi v21r7
+    *
+------------------------------------------------------------
+User: heather  Mon Jan 30 09:39:32 PST 2012
 CalibSvc/src/CalibXMLCnv/cnv
 
 Modified Files:
