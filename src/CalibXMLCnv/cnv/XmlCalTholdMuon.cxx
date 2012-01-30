@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalTholdMuon.cxx,v 1.3 2005/01/03 19:32:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/CalibXMLCnv/cnv/XmlCalTholdMuon.cxx,v 1.5 2011/12/12 20:44:28 heather Exp $
 
 /** @class XmlCalTholdMuonCnv
 
@@ -59,8 +59,9 @@ private:
 };
 
 // Begin implementation
-static CnvFactory<XmlCalTholdMuonCnv> s_factory;
-const  ICnvFactory& XmlCalTholdMuonCnvFactory = s_factory;
+//static CnvFactory<XmlCalTholdMuonCnv> s_factory;
+//const  ICnvFactory& XmlCalTholdMuonCnvFactory = s_factory;
+DECLARE_CONVERTER_FACTORY(XmlCalTholdMuonCnv);
 
 
 
