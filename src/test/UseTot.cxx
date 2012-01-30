@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTot.cxx,v 1.3 2005/07/07 01:08:13 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseTot.cxx,v 1.5 2011/12/12 20:44:28 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -47,8 +47,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseTot> Factory;
-const IAlgFactory& UseTotFactory = Factory;
+//static const AlgFactory<UseTot> Factory;
+//const IAlgFactory& UseTotFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseTot);
 
 
 UseTot::UseTot(const std::string&  name, 
@@ -164,8 +165,8 @@ void UseTot::processNew(CalibData::TkrTotCol* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
   
   unsigned tray = 0;
   bool top = true;

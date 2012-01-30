@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseLightAsym.cxx,v 1.2 2004/08/09 23:48:55 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/src/test/UseLightAsym.cxx,v 1.4 2011/12/12 20:44:28 heather Exp $
 #include <stdio.h>
 #include "GaudiKernel/Algorithm.h"
 #include "GaudiKernel/AlgFactory.h"
@@ -47,8 +47,9 @@ private:
 
 
 /// Instantiation of a static factory to create instances of this algorithm
-static const AlgFactory<UseLightAsym> Factory;
-const IAlgFactory& UseLightAsymFactory = Factory;
+//static const AlgFactory<UseLightAsym> Factory;
+//const IAlgFactory& UseLightAsymFactory = Factory;
+DECLARE_ALGORITHM_FACTORY(UseLightAsym);
 
 
 UseLightAsym::UseLightAsym(const std::string&  name, 
@@ -156,8 +157,8 @@ void UseLightAsym::processNew(CalibData::CalCalibLightAsym* pNew,
   MsgStream log(msgSvc(), name());
   log << MSG::INFO << "Retrieved with path " << path << endreq
       << "Serial #" <<  pNew->getSerNo() << endreq; 
-  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hours()
-      << "  Vend: " << (pNew->validTill()).hours() << endreq;
+  log << MSG::INFO << "Vstart: " <<  (pNew->validSince()).hour(true)
+      << "  Vend: " << (pNew->validTill()).hour(true) << endreq;
   
   if (!done) {
     done = true;
