@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 30 09:26:48 PST 2012
+CalibSvc/src/CalibXMLCnv/cnv
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	XmlAcdCnv.cxx XmlAncQdcPedCnv.cxx XmlAncTaggerGainCnv.cxx 
+	XmlAncTaggerPedCnv.cxx XmlBaseCnv.cxx XmlCalAsym.cxx 
+	XmlCalGainCnv.cxx XmlCalIntNonlinCnv.cxx 
+	XmlCalLightAsymCnv.cxx XmlCalLightAttCnv.cxx 
+	XmlCalMevPerDac.cxx XmlCalPedCnv.cxx XmlCalTholdCI.cxx 
+	XmlCalTholdMuon.cxx XmlLATAlignmentCnv.cxx 
+	XmlSAABoundaryCnv.cxx XmlTest1Cnv.cxx XmlTkrAlignCnv.cxx 
+	XmlTkrSplitsCnv.cxx 
+Removed Files:
+      Tag: GlastRelease-17-35-24-br01
+	XmlBadStripsCnv.cxx 
+Log Message:
+Gaudi v21r7
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-br02, operation: add
 Package: CalibSvc
