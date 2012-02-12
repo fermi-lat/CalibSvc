@@ -2,6 +2,63 @@
 TAG
 Tag name: GlastRelease-19-04-01-gr11, operation: add
 Package: CalibSvc
+User: heather  Sun Feb 12 11:52:24 2012
+Files:
+  CalibSvc/src/test/jobOptions.txt.strips  1.3
+  CalibSvc/src/test/UseAcd.cxx  1.5
+  CalibSvc/src/test/UseTkr.cxx  1.4
+  CalibSvc/src/test/jobOptions.txt.tholdCI  1.4
+  CalibSvc/src/test/jobOptions.txt.digi  1.4
+  CalibSvc/src/test/jobOptions.txt.2root  1.3
+  CalibSvc/src/test/UseBadStrips.cxx  1.5
+  CalibSvc/src/test/UseIntNonlin.cxx  1.6
+  CalibSvc/src/test/jobOptions.txt.gainsWriteRoot  1.4
+  CalibSvc/src/test/jobOptions.txt.noSuch  1.3
+  CalibSvc/src/test/jobOptions.txt.align  1.4
+  CalibSvc/src/test/jobOptions.txt.splits  1.4
+  CalibSvc/src/test/jobOptions.txt.mc  1.5
+  CalibSvc/src/test/digi.root  1.1
+  CalibSvc/src/test/UseLightAsym.cxx  1.3
+  CalibSvc/src/test/UseTholdMuon.cxx  1.4
+  CalibSvc/src/test/jobOptions-intNonlin.txt  1.5
+  CalibSvc/src/test/UseTholdCI.cxx  1.2
+  CalibSvc/src/test/UseTkrAlign.cxx  1.1
+  CalibSvc/src/test/UseGains.cxx  1.5
+  CalibSvc/src/test/UseAnc.cxx  1.3
+  CalibSvc/src/test/jobOptions.txt.standard  1.5
+  CalibSvc/src/test/jobOptions.txt.dataTime  1.5
+  CalibSvc/src/test/jobOptions.txt.scale  1.4
+  CalibSvc/src/test/UseScale.cxx  1.3
+  CalibSvc/src/test/jobOptions-acd.txt  1.5
+  CalibSvc/src/test/UseAsym.cxx  1.4
+  CalibSvc/src/test/jobOptions.txt.tot  1.4
+  CalibSvc/src/test/jobOptions.txt.anc  1.2
+  CalibSvc/src/test/UseSAABoundary.cxx  1.3
+  CalibSvc/src/test/UseLATAlignment.cxx  1.4
+  CalibSvc/src/test/jobOptions-lightAsym.txt  1.5
+  CalibSvc/src/test/UseMoot.cxx  1.6
+  CalibSvc/src/test/jobOptions.txt.moot  1.11
+  CalibSvc/src/test/jobOptions.txt.tholdMuon  1.4
+  CalibSvc/src/test/jobOptions.txt.recon  1.3
+  CalibSvc/src/test/UseMevPerDac.cxx  1.3
+  CalibSvc/src/test/jobOptions.txt.asym  1.5
+  CalibSvc/src/test/jobOptions.txt.tkrAlign  1.2
+  CalibSvc/src/test/jobOptions.txt.enter_time  1.6
+  CalibSvc/src/test/UseCalib.cxx  1.9
+  CalibSvc/src/test/UsePeds.cxx  1.12
+  CalibSvc/src/test/jobOptions.txt.mevPerDac  1.4
+  CalibSvc/src/test/jobOptions.txt.gainsRoot  1.5
+  CalibSvc/src/test/jobOptions.txt  1.29
+  CalibSvc/src/test/jobOptions.txt.saa  1.3
+  CalibSvc/src/test/UseTot.cxx  1.4
+  CalibSvc/src/util/CalibEvtClock.cxx  1.1
+  CalibSvc/src/util/CalibEvtClock.h  1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-04-01-gr11, operation: add
+Package: CalibSvc
 User: heather  Sun Feb 12 11:52:15 2012
 Files:
   CalibSvc/.cvsignore  1.5
