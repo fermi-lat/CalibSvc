@@ -1,6 +1,6 @@
 package CalibSvc
 
-# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.168 2011/12/12 20:44:25 heather Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/CalibSvc/cmt/requirements,v 1.169 2012/08/20 18:13:34 jrb Exp $
 ### Might end up changing this name to have a prefix a bit more general
 ### than "Calib"; e.g., DetSvc or CondSvc
 
@@ -35,7 +35,7 @@ use GaudiInterface * IExternal
 use ROOT   * IExternal 
 use XMLEXT * IExternal v5r2*
 use MYSQLEXT * IExternal v*
-use RootmapPolicy v* GlastPolicy
+#use RootmapPolicy v* GlastPolicy
 
 use LdfEvent v*
 
@@ -70,7 +70,7 @@ library CalibSvc -import=calibUtil -import=calibRootData -import=CalibData -impo
                         ${CalibSvc_headers}
 
 
-apply_pattern generate_rootmap library=CalibSvc
+#apply_pattern generate_rootmap library=CalibSvc
 
 ## macro WinInclude "" WIN32 "test/*.h test/*.txt"
 
