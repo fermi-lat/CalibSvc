@@ -1,5 +1,49 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-lr01, operation: add
+Package: CalibSvc
+User: heather  Tue Dec  9 01:16:34 2014
+Files:
+  CalibSvc/.cvsignore  1.5
+  CalibSvc/ChangeLog  1.968
+  CalibSvc/CalibSvcLib.py  1.3
+  CalibSvc/SConscript  1.22
+  CalibSvc/CalibSvc/ICalibPathSvc.h  1.7
+  CalibSvc/CalibSvc/ICalibMetaCnvSvc.h  1.8
+  CalibSvc/CalibSvc/IInstrumentName.h  1.3
+  CalibSvc/CalibSvc/ICalibXmlSvc.h  1.3
+  CalibSvc/CalibSvc/ICalibRootSvc.h  1.2
+  CalibSvc/cmt/.cvsignore  1.1.1.1
+  CalibSvc/cmt/requirements  1.169
+  CalibSvc/doc/release.notes  1.125
+  CalibSvc/src/mainpage.h  1.23
+  CalibSvc/src/defaultOptions.txt  1.2
+  CalibSvc/src/CalibDataSvc/CalibDataSvc.h  1.19
+  CalibSvc/src/CalibDataSvc/CalibDataSvc.cxx  1.42
+  CalibSvc/src/CalibDataSvc/CalibCLIDNode.cxx  1.3
+  CalibSvc/src/CalibDataSvc/CalibCLIDNode.h  1.3
+  CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.cxx  1.29
+  CalibSvc/src/CalibMySQLCnv/CalibMySQLCnvSvc.h  1.19
+  CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.h  1.5
+  CalibSvc/src/CalibROOTCnv/CalibRootCnvSvc.cxx  1.8
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrScaleCnv.cxx  1.4
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.cxx  1.3
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.h  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.h  1.3
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalBaseCnv.h  1.2
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.h  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.h  1.6
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrScaleCnv.h  1.1
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrBaseCnv.cxx  1.4
+  CalibSvc/src/CalibROOTCnv/cnv/RootTkrTotCnv.cxx  1.10
+  CalibSvc/src/CalibROOTCnv/cnv/RootBaseCnv.cxx  1.9
+  CalibSvc/src/CalibROOTCnv/cnv/RootCalGainCnv.cxx  1.7
+  CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.cxx  1.8
+  CalibSvc/src/CalibXMLCnv/CalibXmlCnvSvc.h  1.8
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-20-09-10, operation: add
 Package: CalibSvc
 User: heather  Wed May 14 08:35:57 2014
